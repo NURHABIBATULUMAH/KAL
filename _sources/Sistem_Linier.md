@@ -7,14 +7,25 @@ Sistem Persamaan Linier sering kali disebutkan juga dengan Persamaan Linier, pad
 
 Contoh persamaan linier :
 
-**2x + 3y = 12**
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; font-family: Arial, sans-serif;">
+  <div style="text-align: center; font-size: 24px;">
+    <p>2x + 3y = 12</p>
+  </div>
+</div>
+
+Dari persamaan linier tersebut akan membentuk suatu garis lurus.
+
 
 **Sistem Persamaan Linier** merupakan kumpulan beberapa persamaan linier yang saling berkaitan, dan tujuannya adalah mencari nilai variabel yang memenuhi semua persamaan dalam sistem tersebut. Sistem ini bisa memiliki dua atau lebih persamaan linier, dan solusinya adalah nilai-nilai variabel yang memenuhi setiap persamaan dalam sistem tersebut.
 
 contoh sistem persamaan linier : 
 
-**2x + 3y = 6**
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; font-family: Arial, sans-serif;">
+  <div style="text-align: center; font-size: 24px;">
+    <p>2x + 3y = 6</p>
+    <p>x - y = 1</p>
+  </div>
+</div>
 
-**x - y = 1**
 
 Sistem ini terdiri dari dua persamaan linier, jadi kita harus mencari nilai x dan y yang memenuhi dua persamaan tersebut.
