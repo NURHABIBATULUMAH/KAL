@@ -6,4 +6,3 @@ Check out the content pages bundled with this sample book to see more.
 
 ```{tableofcontents}
 ```
-[Lihat Materi 1]("/Sistem_Linier.html")
