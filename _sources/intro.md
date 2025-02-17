@@ -2,6 +2,7 @@
 
 Matakuliah Komputasi Aljabar 
 
+ # Struktur Data
 
 ```{tableofcontents}
 ```
