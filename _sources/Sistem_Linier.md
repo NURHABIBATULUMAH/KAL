@@ -1,0 +1,2 @@
+# Persamaan Linier
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore provident assumenda minus reprehenderit iure autem atque unde placeat explicabo aperiam nostrum eum, officia facilis voluptatum nesciunt eos modi rem quae.</p>
