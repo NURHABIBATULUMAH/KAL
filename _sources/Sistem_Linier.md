@@ -7,11 +7,12 @@ Sistem Persamaan Linier sering kali disebutkan juga dengan Persamaan Linier, pad
 
 Contoh persamaan linier :
 
-<div style="display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; font-family: Arial, sans-serif;">
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; padding: 0; font-family: Arial, sans-serif;">
   <div style="text-align: center; font-size: 24px;">
-    <p>2x + 3y = 12</p>
+    <p style="margin: 0; padding: 0;">2x + 3y = 12</p>
   </div>
 </div>
+
 
 Dari persamaan linier tersebut akan membentuk suatu garis lurus.
 
@@ -20,12 +21,13 @@ Dari persamaan linier tersebut akan membentuk suatu garis lurus.
 
 contoh sistem persamaan linier : 
 
-<div style="display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; font-family: Arial, sans-serif;">
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; padding: 0; font-family: Arial, sans-serif;">
   <div style="text-align: center; font-size: 24px;">
-    <p>2x + 3y = 6</p>
-    <p>x - y = 1</p>
+    <p style="margin: 0; padding: 0;">2x + 3y = 6</p>
+    <p style="margin: 0; padding: 0;">x - y = 1</p>
   </div>
 </div>
+
 
 
 Sistem ini terdiri dari dua persamaan linier, jadi kita harus mencari nilai x dan y yang memenuhi dua persamaan tersebut.
