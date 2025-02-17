@@ -2,7 +2,8 @@
 
 Matakuliah Komputasi Aljabar 
 
- # Struktur Data
+ ## Materi Matakuliah Komputasi Aljabar Linier
+ ### 1. Sistem Linier
 
 ```{tableofcontents}
 ```
