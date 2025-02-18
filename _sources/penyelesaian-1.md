@@ -8,7 +8,7 @@ contoh :
 <center> 2x + 3y = 5 </center>
 <center> 4x - y = 6 </center>
 
-```{code-cell}
+```python
 import numpy as np
 import matplotlib.pyplot as plt
 
