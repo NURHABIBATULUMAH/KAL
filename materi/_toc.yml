@@ -1,0 +1,14 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+chapters:
+- file: markdown
+- file: notebooks
+- file: markdown-notebooks
+- file: Sistem_Linier
+  sections:
+  - file: penyelesaian-1
+  - file: penyelesaian-2
+  - file: penyelesaian-3

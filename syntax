@@ -1,0 +1,21 @@
+AWALAN MEMBUAT
+- pip install jupyter-book
+- jb create materi
+- jb build materi
+- cd materi/_build
+- git clone https://github.com/NURHABIBATULUMAH/KAL.git
+- cd ..
+- cd ..
+- pip install ghp-import
+- cd materi
+- ghp-import -n -p -f _build/html
+
+UNTUK MENGGANTI/MENGEDIT JANGAN DI _build, di bagian intro dll
+setelah di edit masuk terminal 
+- masuk ke materi
+- jb build .
+- ghp-import -n -p -f _build/html
+- refreshhh
+
+LINK MATEERI
+https://moelaab.github.io/kal/Pengantar.html
