@@ -4,11 +4,10 @@
 format: jb-book
 root: intro
 chapters:
-- file: markdown
-- file: notebooks
-- file: markdown-notebooks
 - file: Sistem_Linier
   sections:
-  - file: penyelesaian-1
-  - file: penyelesaian-2
-  - file: penyelesaian-3
+  - file: cara_penyelesaian
+    sections:
+    - file: penyelesaian-1
+    - file: penyelesaian-2
+    - file: penyelesaian-3

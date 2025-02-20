@@ -4,3 +4,4 @@ Matakuliah Komputasi Aljabar Linier ini membahas mengenai matriks dan aljabar li
 
  ### Materi Matakuliah Komputasi Aljabar Linier
  #### 1. Sistem Linier
+ #### 2. 
