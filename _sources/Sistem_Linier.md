@@ -17,6 +17,7 @@ Dari persamaan linier tersebut akan membentuk suatu garis lurus.
 contoh sistem persamaan linier : 
 
 **2x + 3y = 6**
+
 **x - y = 1**
 
 
