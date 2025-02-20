@@ -5,8 +5,8 @@ Persamaan dalam sistem ini selalu bertentangan satu sama lain sehingga tidak mun
 
 contoh :
 
-<center> x + y = 5 </center>
-<center> x + y = 3 </center>
+**<center> x + y = 5 </center>**
+**<center> x + y = 3 </center>**
 
 - Penyelesaian :
 
