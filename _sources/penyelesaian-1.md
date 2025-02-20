@@ -16,12 +16,13 @@ contoh :
 %matplotlib inline
 import numpy as np
 import matplotlib.pyplot as plt
+
 fig, ax = plt.subplots()
 ax.plot(x,(10-4*x)/3)
 ax.plot(x,(12-2*x)/5)
 
-ax.text(1,1.6,'$x_1+3x_2 = 5$')
-ax.text(-3,0.5,'$x_1-2x_2 = -5$')
+ax.text(1,1.6,'$4x+3y = 10$')
+ax.text(-3,0.5,'$2x+5y = 12$')
 
 ax.set_xlim(-4,4)
 ax.set_ylim(-2,6)
@@ -33,6 +34,6 @@ ax.set_xticks(list(range(-4,5)))
 ax.set_aspect('equal')
 ax.grid(True,ls=':')
 ```
-
+![plot](plot1.png)
 
 Dalam persamaan pertama dan persamaan kedua mewakili dua garis yang berpotongan dalam satu titik.
