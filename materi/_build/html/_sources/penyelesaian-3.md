@@ -37,3 +37,6 @@ ax.grid(True,ls=':')
 ![plot](plot3.png)
 
 
+Dalam kasus ini persmaan pertama dan persamaan kedua saling berkaitan maka akan menghasilkan garis yang sama. Dalam hal ini, semua titik pada garis tersebut adalah solusi dari sistem persamaan linier tersebut, yang berarti sistem ini memiliki solusi yang tak terhingga banyaknya.
+
+
