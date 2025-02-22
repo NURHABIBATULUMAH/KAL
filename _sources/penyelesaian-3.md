@@ -3,8 +3,8 @@
 Sistem penyelesaian tak terhingga artinya ada banyak nilai untuk variabel yang dapat memenuhi semua persamaan dalam sistem tersebut. Persamaan persamaan ini bergantung satu sama lain, sehingga penyelesaiannya tak terbatas pada satu titik saja.
 
 contoh :
-**<center> x + y = 3 </center>**
-**<center> 2x + 2y = 6 </center>**
+$$ x + y = 3 $$
+$$ 2x + 2y = 6 $$
 
 - Penyelesaian :
 
@@ -34,7 +34,7 @@ ax.set_aspect('equal')
 ax.grid(True,ls=':')
 ```
 
-![plot](plot3.png)
+![plot](gambar/plot3.png)
 
 
 Dalam kasus ini persmaan pertama dan persamaan kedua saling berkaitan maka akan menghasilkan garis yang sama. Dalam hal ini, semua titik pada garis tersebut adalah solusi dari sistem persamaan linier tersebut, yang berarti sistem ini memiliki solusi yang tak terhingga banyaknya.

@@ -60,6 +60,8 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'penyelesaian-2';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -377,8 +379,10 @@
 <p>Sistem tidak ada penyelesaian artinya tidak ada variable yang bisa memenuhi semua persamaan dalam sistem tersebut.
 Persamaan dalam sistem ini selalu bertentangan satu sama lain sehingga tidak mungkin memiliki solusi. Dalam 2 dimensi persamaan tersebut tidak akan memiliki titik potong.</p>
 <p>contoh :</p>
-<p><strong><center> x + y = 5 </center></strong>
-<strong><center> x + y = 3 </center></strong></p>
+<div class="math notranslate nohighlight">
+\[x + y = 5 \]</div>
+<div class="math notranslate nohighlight">
+\[x + y = 3 \]</div>
 <ul class="simple">
 <li><p>Penyelesaian :</p></li>
 </ul>
@@ -406,7 +410,7 @@ Persamaan dalam sistem ini selalu bertentangan satu sama lain sehingga tidak mun
 </pre></div>
 </div>
 <p><img alt="plot" src="_images/plot2.png" /></p>
-<p>Dalam kasus tersebut, pada persamaan pertama <em>x + y = 5</em> dan pada persamaan kedua <em>x + y = 3</em>. Ini bertentangan karena tidak mungkin (x+y) bernilai dua angka berbeda pada waktu bersamaan.</p>
+<p>Dalam kasus tersebut, pada persamaan pertama <span class="math notranslate nohighlight">\(x + y = 5\)</span> dan pada persamaan kedua <span class="math notranslate nohighlight">\(x + y = 3\)</span>. Ini bertentangan karena tidak mungkin <span class="math notranslate nohighlight">\((x+y)\)</span> bernilai dua angka berbeda pada waktu bersamaan.</p>
 <p>Jadi dalam grafik ini dua garis yang mewakili persamaan tersebut tidak akan berpotongan.</p>
 </section>
 
