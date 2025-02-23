@@ -5,8 +5,9 @@ Persamaan dalam sistem ini selalu bertentangan satu sama lain sehingga tidak mun
 
 contoh :
 
-**<center> x + y = 5 </center>**
-**<center> x + y = 3 </center>**
+$$x + y = 5 $$
+
+$$x + y = 3 $$
 
 - Penyelesaian :
 
@@ -36,9 +37,9 @@ ax.set_aspect('equal')
 ax.grid(True,ls=':')
 ```
 
-![plot](plot2.png)
+![plot](gambar/plot2.png)
 
 
-Dalam kasus tersebut, pada persamaan pertama _x + y = 5_ dan pada persamaan kedua _x + y = 3_. Ini bertentangan karena tidak mungkin (x+y) bernilai dua angka berbeda pada waktu bersamaan. 
+Dalam kasus tersebut, pada persamaan pertama $x + y = 5$ dan pada persamaan kedua $x + y = 3$. Ini bertentangan karena tidak mungkin $(x+y)$ bernilai dua angka berbeda pada waktu bersamaan. 
 
 Jadi dalam grafik ini dua garis yang mewakili persamaan tersebut tidak akan berpotongan.

@@ -5,8 +5,10 @@ Sistem persamaan linier dikatakan memiliki penyelesaian tunggal jika semua persa
 Sistem ini memiliki satu solusi unik yang memenuhi semua persamaan dan tidak ada persamaan yang bergantungan satu sama lain.
 
 contoh :
-**<center> 4x + 3y = 10 </center>**
-**<center> 2x + 5y = 12 </center>**
+
+$$ 4x + 3y = 10 $$
+
+$$ 2x + 5y = 12 $$
 
 - Penyelesaian : 
 
@@ -34,6 +36,6 @@ ax.set_xticks(list(range(-4,5)))
 ax.set_aspect('equal')
 ax.grid(True,ls=':')
 ```
-![plot](plot1.png)
+![plot](gambar/plot1.png)
 
 Dalam persamaan pertama dan persamaan kedua mewakili dua garis yang berpotongan dalam satu titik.
