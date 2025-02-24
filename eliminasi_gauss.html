@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>penyelesaian eliminasi gauss &#8212; kal</title>
+    <title>Penyelesaian Sistem Persamaan Linear &#8212; kal</title>
   
   
   
@@ -177,8 +177,7 @@
 <li class="toctree-l3"><a class="reference internal" href="penyelesaian-3.html">Sistem Penyelesaian Tak Terhingga</a></li>
 </ul>
 </details></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">penyelesaian eliminasi gauss</a></li>
-
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Penyelesaian Sistem Persamaan Linear</a></li>
 </ul>
 </details></li>
 </ul>
@@ -363,7 +362,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>penyelesaian eliminasi gauss</h1>
+    <h1>Penyelesaian Sistem Persamaan Linear</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -373,10 +372,9 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">penyelesaian eliminasi gauss</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#penyelesaian-sistem-persamaan-linear">Penyelesaian Sistem Persamaan Linear</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-no-3-sistem-persamaan">soal no 3 sistem persamaan:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-no-4-sistem-persamaan">soal no 4 sistem persamaan:</a></li>
 </ul>
-
             </nav>
         </div>
     </div>
@@ -387,16 +385,10 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="penyelesaian-eliminasi-gauss">
-<h1>penyelesaian eliminasi gauss<a class="headerlink" href="#penyelesaian-eliminasi-gauss" title="Link to this heading">#</a></h1>
-<p>#Contoh soal eliminasi gauss
-soal no 3:</p>
-<p><span class="math notranslate nohighlight">\(2x_1+2x_2=4\)</span></p>
-<p><span class="math notranslate nohighlight">\(x_1+x_2\)</span></p>
-</section>
-<section id="penyelesaian-sistem-persamaan-linear">
+  <section id="penyelesaian-sistem-persamaan-linear">
 <h1>Penyelesaian Sistem Persamaan Linear<a class="headerlink" href="#penyelesaian-sistem-persamaan-linear" title="Link to this heading">#</a></h1>
-<p>soal no 3:</p>
+<section id="soal-no-3-sistem-persamaan">
+<h2>soal no 3 sistem persamaan:<a class="headerlink" href="#soal-no-3-sistem-persamaan" title="Link to this heading">#</a></h2>
 <div class="math notranslate nohighlight">
 \[
 2x_1 + 2x_2 = 4
@@ -452,6 +444,60 @@ x_2 = t
 \end{cases}
 \end{split}\]</div>
 <p>di mana (t) adalah parameter bebas.</p>
+</section>
+<section id="soal-no-4-sistem-persamaan">
+<h2>soal no 4 sistem persamaan:<a class="headerlink" href="#soal-no-4-sistem-persamaan" title="Link to this heading">#</a></h2>
+<div class="math notranslate nohighlight">
+\[
+x_1 + x_2 = 5
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+x_1 + 2x_3 = 6
+\]</div>
+<p>Kita akan menyelesaikannya menggunakan metode eliminasi Gauss. Pertama, kita tuliskan sistem ini dalam bentuk matriks augmented:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+1 &amp; 1 &amp; 0 &amp; | &amp; 5 \\
+1 &amp; 0 &amp; 2 &amp; | &amp; 6
+\end{bmatrix}
+\end{split}\]</div>
+<p>Langkah pertama adalah membuat elemen di bawah pivot (elemen pertama di kolom pertama) menjadi nol. Kita lakukan operasi berikut:</p>
+<div class="math notranslate nohighlight">
+\[
+R_2 \leftarrow R_2 - R_1
+\]</div>
+<p>Setelah melakukan perhitungan, kita mendapatkan:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+R_2: \quad 1 - 1 = 0 \\
+0 - 1 = -1 \\
+2 - 0 = 2 \\
+6 - 5 = 1
+\end{split}\]</div>
+<p>Sehingga, matriks augmented menjadi:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+1 &amp; 1 &amp; 0 &amp; | &amp; 5 \\
+0 &amp; -1 &amp; 2 &amp; | &amp; 1
+\end{bmatrix}
+\end{split}\]</div>
+<p>Selanjutnya, kita dapat menyelesaikan baris kedua untuk mengekspresikan (x_2) dalam bentuk (x_3):</p>
+<div class="math notranslate nohighlight">
+\[
+-1x_2 + 2x_3 = 1 \implies x_2 = 2x_3 - 1
+\]</div>
+<p>Sekarang kita substitusi (x_2) ke dalam persamaan pertama:</p>
+<div class="math notranslate nohighlight">
+\[
+x_1 + (2x_3 - 1) = 5
+\]</div>
+<p>Maka kita dapatkan:</p>
+<p>$$
+x_</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -510,10 +556,9 @@ x_2 = t
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">penyelesaian eliminasi gauss</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#penyelesaian-sistem-persamaan-linear">Penyelesaian Sistem Persamaan Linear</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-no-3-sistem-persamaan">soal no 3 sistem persamaan:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-no-4-sistem-persamaan">soal no 4 sistem persamaan:</a></li>
 </ul>
-
   </nav></div>
 
 </div></div>
