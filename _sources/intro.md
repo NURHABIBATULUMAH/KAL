@@ -19,7 +19,7 @@ $x_1+x_2$
 
 ## Penyelesaian Sistem Persamaan Linear
 
-Diberikan sistem persamaan:
+soal no 3:
 
 $$
 2x_1 + 2x_2 = 4
@@ -28,7 +28,7 @@ $$
 x_1 + x_2 = 2
 $$
 
-Kita akan menyelesaikannya menggunakan metode eliminasi Gauss. Pertama, kita tuliskan sistem ini dalam bentuk matriks augmented:
+buat sistem ini dalam bentuk matriks augmented:
 
 $$
 \begin{bmatrix}

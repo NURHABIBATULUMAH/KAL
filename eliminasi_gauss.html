@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>&lt;no title&gt; &#8212; kal</title>
+    <title>penyelesaian eliminasi gauss &#8212; kal</title>
   
   
   
@@ -169,14 +169,16 @@
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="Sistem_Linier.html">Sistem Persamaan Linier</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="Sistem_Linier.html">Sistem Persamaan Linier</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2 has-children"><a class="reference internal" href="cara_penyelesaian.html">Cara penyelesaian Sistem Persamaan Linier</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="penyelesaian-1.html">Sistem Penyelesaian Tunggal</a></li>
 <li class="toctree-l3"><a class="reference internal" href="penyelesaian-2.html">Sistem Tidak Ada Penyelesaian</a></li>
 <li class="toctree-l3"><a class="reference internal" href="penyelesaian-3.html">Sistem Penyelesaian Tak Terhingga</a></li>
 </ul>
 </details></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">penyelesaian eliminasi gauss</a></li>
+
 </ul>
 </details></li>
 </ul>
@@ -361,7 +363,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1><no title></h1>
+    <h1>penyelesaian eliminasi gauss</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -370,7 +372,9 @@
                 <h2> Contents </h2>
             </div>
             <nav aria-label="Page">
-                <ul class="simple visible nav section-nav flex-column">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">penyelesaian eliminasi gauss</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#penyelesaian-sistem-persamaan-linear">Penyelesaian Sistem Persamaan Linear</a></li>
 </ul>
 
             </nav>
@@ -383,49 +387,72 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <p>#Contoh soal eliminasi gauss
+  <section id="penyelesaian-eliminasi-gauss">
+<h1>penyelesaian eliminasi gauss<a class="headerlink" href="#penyelesaian-eliminasi-gauss" title="Link to this heading">#</a></h1>
+<p>#Contoh soal eliminasi gauss
 soal no 3:</p>
 <p><span class="math notranslate nohighlight">\(2x_1+2x_2=4\)</span></p>
 <p><span class="math notranslate nohighlight">\(x_1+x_2\)</span></p>
-<p>[
+</section>
+<section id="penyelesaian-sistem-persamaan-linear">
+<h1>Penyelesaian Sistem Persamaan Linear<a class="headerlink" href="#penyelesaian-sistem-persamaan-linear" title="Link to this heading">#</a></h1>
+<p>soal no 3:</p>
+<div class="math notranslate nohighlight">
+\[
+2x_1 + 2x_2 = 4
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+x_1 + x_2 = 2
+\]</div>
+<p>buat sistem ini dalam bentuk matriks augmented:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 \begin{bmatrix}
-2 &amp; 2 &amp; | &amp; 4 \
+2 &amp; 2 &amp; | &amp; 4 \\
 1 &amp; 1 &amp; | &amp; 2
 \end{bmatrix}
-]</p>
+\end{split}\]</div>
 <p>Langkah pertama adalah membuat elemen di bawah pivot menjadi nol. Kita lakukan operasi berikut:</p>
-<p>[
+<div class="math notranslate nohighlight">
+\[
 R_1 \leftarrow R_1 - 2R_2
-]</p>
+\]</div>
 <p>Setelah melakukan perhitungan, kita mendapatkan:</p>
-<p>[
-R_1: \quad 2 - 2 \cdot 1 = 0 \
-2 - 2 \cdot 1 = 0 \
+<div class="math notranslate nohighlight">
+\[\begin{split}
+R_1: \quad 2 - 2 \cdot 1 = 0 \\
+2 - 2 \cdot 1 = 0 \\
 4 - 2 \cdot 2 = 0
-]</p>
+\end{split}\]</div>
 <p>Sehingga, matriks augmented menjadi:</p>
-<p>[
+<div class="math notranslate nohighlight">
+\[\begin{split}
 \begin{bmatrix}
-0 &amp; 0 &amp; | &amp; 0 \
+0 &amp; 0 &amp; | &amp; 0 \\
 1 &amp; 1 &amp; | &amp; 2
 \end{bmatrix}
-]</p>
+\end{split}\]</div>
 <p>Dari baris kedua, kita dapat mengekspresikan (x_1) dalam bentuk (x_2):</p>
-<p>[
+<div class="math notranslate nohighlight">
+\[
 x_1 + x_2 = 2 \implies x_1 = 2 - x_2
-]</p>
+\]</div>
 <p>Karena kita memiliki satu persamaan dengan dua variabel, kita dapat menyatakan solusi dalam bentuk parameter. Misalkan (x_2 = t), maka:</p>
-<p>[
+<div class="math notranslate nohighlight">
+\[
 x_1 = 2 - t
-]</p>
+\]</div>
 <p>Jadi, solusi umum dari sistem persamaan ini adalah:</p>
-<p>[
+<div class="math notranslate nohighlight">
+\[\begin{split}
 \begin{cases}
-x_1 = 2 - t \
+x_1 = 2 - t \\
 x_2 = t
 \end{cases}
-]</p>
+\end{split}\]</div>
 <p>di mana (t) adalah parameter bebas.</p>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -482,7 +509,9 @@ x_2 = t
     <i class="fa-solid fa-list"></i> Contents
   </div>
   <nav class="bd-toc-nav page-toc">
-    <ul class="simple visible nav section-nav flex-column">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">penyelesaian eliminasi gauss</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#penyelesaian-sistem-persamaan-linear">Penyelesaian Sistem Persamaan Linear</a></li>
 </ul>
 
   </nav></div>
