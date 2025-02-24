@@ -178,6 +178,7 @@
 </ul>
 </details></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Penyelesaian Sistem Persamaan Linear</a></li>
+
 </ul>
 </details></li>
 </ul>
@@ -372,10 +373,18 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Penyelesaian Sistem Persamaan Linear</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-no-3-sistem-persamaan">soal no 3 sistem persamaan:</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-no-4-sistem-persamaan">soal no 4 sistem persamaan:</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-no-1-sistem-persamaan">soal no 1 sistem persamaan:</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Penyelesaian Sistem Persamaan Linear</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-1-eliminasi-baris">Langkah 1: Eliminasi Baris</a></li>
+</ul>
+</li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -531,86 +540,42 @@ x_3 = p
 <section id="soal-no-1-sistem-persamaan">
 <h2>soal no 1 sistem persamaan:<a class="headerlink" href="#soal-no-1-sistem-persamaan" title="Link to this heading">#</a></h2>
 <p>Contoh Soal 1</p>
-<p>\begin{aligned}
-x_1 + 2x_2 + 3x_3 &amp;= 6 \
-2x_1 + 4x_2 + 6x_3 &amp;= 12 \
-x_3 - x_2 &amp;= 2
-\end{aligned}</p>
-<p>Matriks augmented:</p>
-<p>\begin{bmatrix}
-1 &amp; 2 &amp; 3 &amp; | 6 \
-2 &amp; 4 &amp; 6 &amp; | 12 \
-0 &amp; -1 &amp; 1 &amp; | 2
-\end{bmatrix}</p>
-<p>Baris kedua dikurangi 2 kali baris pertama:</p>
-<p>\begin{bmatrix}
-1 &amp; 2 &amp; 3 &amp; | 6 \
-0 &amp; 0 &amp; 0 &amp; | 0 \
-0 &amp; -1 &amp; 1 &amp; | 2
-\end{bmatrix}</p>
-<p>Baris kedua menjadi nol, menunjukkan bahwa sistem memiliki solusi tak hingga.
-Variabel bebas: , maka</p>
-<p>x_2 = t - 2, \quad x_1 = -2x_2 - 3x_3 + 6 = -2(t-2) - 3t + 6 = -5t + 10.</p>
-<p>\begin{aligned}
-x_1 &amp;= -5t + 10, \
-x_2 &amp;= t - 2, \
-x_3 &amp;= t, \quad t \in \mathbb{R}.
-\end{aligned}</p>
-<hr class="docutils" />
-<p>Contoh Soal 2</p>
-<p>\begin{aligned}
-x_1 + x_2 + x_3 &amp;= 3 \
-2x_1 + 0x_2 + x_3 &amp;= 5 \
-x_1 - 2x_2 + 0x_3 &amp;= 3
-\end{aligned}</p>
-<p>Matriks augmented:</p>
-<p>\begin{bmatrix}
-1 &amp; 1 &amp; 1 &amp; | 3 \
-2 &amp; 0 &amp; 1 &amp; | 5 \
-1 &amp; -2 &amp; 0 &amp; | 3
-\end{bmatrix}</p>
-<p>Eliminasi dengan mengurangi baris kedua dengan 2 kali baris pertama:</p>
-<p>\begin{bmatrix}
-1 &amp; 1 &amp; 1 &amp; | 3 \
-0 &amp; -2 &amp; -1 &amp; | -1 \
-1 &amp; -2 &amp; 0 &amp; | 3
-\end{bmatrix}</p>
-<p>\begin{bmatrix}
-1 &amp; 1 &amp; 1 &amp; | 3 \
-0 &amp; -2 &amp; -1 &amp; | -1 \
-0 &amp; -3 &amp; -1 &amp; | 0
-\end{bmatrix}</p>
-<p>Eliminasi dengan mengubah baris ketiga:</p>
-<p>B_3 = B_3 - \frac{3}{2} B_2</p>
-<p>\begin{bmatrix} 1 &amp; 1 &amp; 1 &amp; | 3 \ 0 &amp; -2 &amp; -1 &amp; | -1 \ 0 &amp; 0 &amp; \frac{1}{2} &amp; | -\frac{3}{2} \end{bmatrix} ]</p>
-<p>Dari baris ketiga:</p>
-<p>x_3 = -3.</p>
-<p>-2x_2 -1(-3) = -1 \Rightarrow -2x_2 +3 = -1 \Rightarrow -2x_2 = -4 \Rightarrow x_2 = 2.</p>
-<p>x_1 + 2 + (-3) = 3 \Rightarrow x_1 -1 = 3 \Rightarrow x_1 = 4.</p>
-<p>(x_1, x_2, x_3) = (4, 2, -3).</p>
-<hr class="docutils" />
-<p>Contoh Soal 3</p>
-<p>\begin{aligned}
-2x_1 + 2x_2 &amp;= Y \
-x_1 + x_2 &amp;= 2
-\end{aligned}</p>
-<p>Matriks augmented:</p>
-<p>\begin{bmatrix}
-2 &amp; 2 &amp; | Y \
-1 &amp; 1 &amp; | 2
-\end{bmatrix}</p>
-<p>Eliminasi dengan membagi baris pertama dengan 2:</p>
-<p>\begin{bmatrix}
-1 &amp; 1 &amp; | \frac{Y}{2} \
-1 &amp; 1 &amp; | 2
-\end{bmatrix}</p>
-<p>Kurangi baris kedua dengan baris pertama:</p>
-<p>\begin{bmatrix}
-1 &amp; 1 &amp; | \frac{Y}{2} \
-0 &amp; 0 &amp; | 2 - \frac{Y}{2}
-\end{bmatrix}</p>
-<p>Jika , baris kedua menjadi , sehingga ada solusi tak hingga:</p>
-<p>x_1 = 2 - x_2.</p>
+</section>
+</section>
+<section id="id1">
+<h1>Penyelesaian Sistem Persamaan Linear<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<p>Diberikan sistem persamaan:</p>
+<div class="math notranslate nohighlight">
+\[
+x_1 + 2x_2 + 3x_3 = 6
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+2x_1 + 4x_2 + 6x_3 = 12
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+x_3 + x_2 = 2
+\]</div>
+<p>Kita akan menyelesaikannya menggunakan metode eliminasi Gauss. Pertama, kita tuliskan sistem ini dalam bentuk matriks augmented:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+1 &amp; 2 &amp; 3 &amp; | &amp; 6 \\
+2 &amp; 4 &amp; 6 &amp; | &amp; 12 \\
+0 &amp; 1 &amp; 1 &amp; | &amp; 2
+\end{bmatrix}
+\end{split}\]</div>
+<section id="langkah-1-eliminasi-baris">
+<h2>Langkah 1: Eliminasi Baris<a class="headerlink" href="#langkah-1-eliminasi-baris" title="Link to this heading">#</a></h2>
+<p>Langkah pertama adalah membuat elemen di bawah pivot (elemen pertama di kolom pertama) menjadi nol. Kita lakukan operasi berikut:</p>
+<div class="math notranslate nohighlight">
+\[
+R_2 \leftarrow R_2 - 2R_1
+\]</div>
+<p>Setelah melakukan perhitungan, kita mendapatkan:</p>
+<p>$$
+R_2: \quad 2 - 2 \cdot 1</p>
 </section>
 </section>
 
@@ -670,10 +635,18 @@ x_1 + x_2 &amp;= 2
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Penyelesaian Sistem Persamaan Linear</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-no-3-sistem-persamaan">soal no 3 sistem persamaan:</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-no-4-sistem-persamaan">soal no 4 sistem persamaan:</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-no-1-sistem-persamaan">soal no 1 sistem persamaan:</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Penyelesaian Sistem Persamaan Linear</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-1-eliminasi-baris">Langkah 1: Eliminasi Baris</a></li>
+</ul>
+</li>
+</ul>
+
   </nav></div>
 
 </div></div>
