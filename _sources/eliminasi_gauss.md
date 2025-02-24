@@ -1,4 +1,4 @@
-###Contoh soal eliminasi gauss
+#Contoh soal eliminasi gauss
  soal no 3:
 
 $2x_1+2x_2=4$
