@@ -122,4 +122,64 @@ $$
 Maka kita dapatkan:
 
 $$
-x_
+x_1 + 2x_3 - 1 = 5 \implies x_1 = 6 - 2x_3
+$$
+
+Karena kita memiliki dua persamaan dengan tiga variabel, kita dapat menyatakan solusi dalam bentuk parameter. Misalkan \(x_3 = t\), maka:
+
+$$
+x_1 = 6 - 2t
+$$
+$$
+x_2 = 2t - 1
+$$
+$$
+x_3 = t
+$$
+
+Jadi, solusi umum dari sistem persamaan ini adalah:
+
+$$
+\begin{cases}
+x_1 = 6 - 2t \\
+x_2 = 2t - 1 \\
+x_3 = t
+\end{cases}
+$$
+
+di mana \(t\) adalah parameter bebas.
+
+
+### soal no 1 sistem persamaan:
+
+
+$$
+x_1 + 2x_2 + 3x_3 = 6
+$$
+$$
+2x_1 + 4x_2 + 6x_3 = 12
+$$
+$$
+x_3 + x_2 = 2
+$$
+
+Kita akan menyelesaikannya menggunakan metode eliminasi Gauss. Pertama, kita tuliskan sistem ini dalam bentuk matriks augmented:
+
+$$
+\begin{bmatrix}
+1 & 2 & 3 & | & 6 \\
+2 & 4 & 6 & | & 12 \\
+0 & 1 & 1 & | & 2
+\end{bmatrix}
+$$
+
+Langkah pertama adalah membuat elemen di bawah pivot (elemen pertama di kolom pertama) menjadi nol. Kita lakukan operasi berikut:
+
+$$
+R_2 \leftarrow R_2 - 2R_1
+$$
+
+Setelah melakukan perhitungan, kita mendapatkan:
+
+$$
+R_2: \quad 2 - 2 \cdot 1
