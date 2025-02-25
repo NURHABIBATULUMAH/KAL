@@ -34,7 +34,7 @@ contoh sistem persamaan linier :
 
 Sistem ini terdiri dari dua persamaan linier, jadi kita harus mencari nilai x dan y yang memenuhi dua persamaan tersebut.
 
-# MACAM-MACAM PENYELESAIAN
+# Macam-Macam Penyelesaian
 
 ### Sistem Penyelesaian Tunggal
 
