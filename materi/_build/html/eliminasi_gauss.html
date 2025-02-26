@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Sistem Penyelesaian Tunggal &#8212; My sample book</title>
+    <title>Penyelesaian Sistem Persamaan Linear &#8212; kal</title>
   
   
   
@@ -62,11 +62,10 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'penyelesaian-1';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'eliminasi_gauss';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Sistem Tidak Ada Penyelesaian" href="penyelesaian-2.html" />
-    <link rel="prev" title="Cara penyelesaian Sistem Persamaan Linier" href="cara_penyelesaian.html" />
+    <link rel="prev" title="Sistem Penyelesaian Tak Terhingga" href="penyelesaian-3.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -148,8 +147,8 @@
       
     
     
-    <img src="_static/logo_web.jpg" class="logo__image only-light" alt="My sample book - Home"/>
-    <img src="_static/logo_web.jpg" class="logo__image only-dark pst-js-only" alt="My sample book - Home"/>
+    <img src="_static/logo_web.jpg" class="logo__image only-light" alt="kal - Home"/>
+    <img src="_static/logo_web.jpg" class="logo__image only-dark pst-js-only" alt="kal - Home"/>
   
   
 </a></div>
@@ -172,12 +171,10 @@
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="Sistem_Linier.html">Sistem Persamaan Linier</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2 current active has-children"><a class="reference internal" href="cara_penyelesaian.html">Cara penyelesaian Sistem Persamaan Linier</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l3 current active"><a class="current reference internal" href="#">Sistem Penyelesaian Tunggal</a></li>
-<li class="toctree-l3"><a class="reference internal" href="penyelesaian-2.html">Sistem Tidak Ada Penyelesaian</a></li>
-<li class="toctree-l3"><a class="reference internal" href="penyelesaian-3.html">Sistem Penyelesaian Tak Terhingga</a></li>
 </ul>
 </details></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Penyelesaian Sistem Persamaan Linear</a></li>
+
 </ul>
 </details></li>
 </ul>
@@ -256,7 +253,7 @@
       
       
       
-      <li><a href="https://github.com/NURHABIBATULUMAH/KAL.git/issues/new?title=Issue%20on%20page%20%2Fpenyelesaian-1.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/NURHABIBATULUMAH/KAL.git/issues/new?title=Issue%20on%20page%20%2Feliminasi_gauss.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -286,7 +283,7 @@
       
       
       
-      <li><a href="_sources/penyelesaian-1.md" target="_blank"
+      <li><a href="_sources/eliminasi_gauss.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -349,7 +346,9 @@
 <button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -360,11 +359,29 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Sistem Penyelesaian Tunggal</h1>
+    <h1>Penyelesaian Sistem Persamaan Linear</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Penyelesaian Sistem Persamaan Linear</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-no-3-sistem-persamaan">soal no 3 sistem persamaan:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-no-4-sistem-persamaan">soal no 4 sistem persamaan:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-no-1-sistem-persamaan">soal no 1 sistem persamaan:</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Penyelesaian Sistem Persamaan Linear</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-1-eliminasi-baris">Langkah 1: Eliminasi Baris</a></li>
+</ul>
+</li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -374,43 +391,188 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="sistem-penyelesaian-tunggal">
-<h1>Sistem Penyelesaian Tunggal<a class="headerlink" href="#sistem-penyelesaian-tunggal" title="Link to this heading">#</a></h1>
-<p>Sistem persamaan linier dikatakan memiliki penyelesaian tunggal jika semua persamaan berpotongan pada satu titik.</p>
-<p>Sistem ini memiliki satu solusi unik yang memenuhi semua persamaan dan tidak ada persamaan yang bergantungan satu sama lain.</p>
-<p>contoh :</p>
+  <section id="penyelesaian-sistem-persamaan-linear">
+<h1>Penyelesaian Sistem Persamaan Linear<a class="headerlink" href="#penyelesaian-sistem-persamaan-linear" title="Link to this heading">#</a></h1>
+<section id="soal-no-3-sistem-persamaan">
+<h2>soal no 3 sistem persamaan:<a class="headerlink" href="#soal-no-3-sistem-persamaan" title="Link to this heading">#</a></h2>
 <div class="math notranslate nohighlight">
-\[ 4x + 3y = 10 \]</div>
+\[
+2x_1 + 2x_2 = 4
+\]</div>
 <div class="math notranslate nohighlight">
-\[ 2x + 5y = 12 \]</div>
-<ul class="simple">
-<li><p>Penyelesaian :</p></li>
-</ul>
-<iframe scrolling="no" title="Simultaneous Equations:Elimination" src="https://www.geogebra.org/material/iframe/id/MXa3HKy3/width/977/height/574/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="977px" height="574px" style="border:0px;"> </iframe>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-
-<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,(</span><span class="mi">10</span><span class="o">-</span><span class="mi">4</span><span class="o">*</span><span class="n">x</span><span class="p">)</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,(</span><span class="mi">12</span><span class="o">-</span><span class="mi">2</span><span class="o">*</span><span class="n">x</span><span class="p">)</span><span class="o">/</span><span class="mi">5</span><span class="p">)</span>
-
-<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mf">1.6</span><span class="p">,</span><span class="s1">&#39;$4x+3y = 10$&#39;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="s1">&#39;$2x+5y = 12$&#39;</span><span class="p">)</span>
-
-<span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="o">-</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;k&#39;</span><span class="p">,</span><span class="n">linewidth</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;k&#39;</span><span class="p">,</span><span class="n">linewidth</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
-
-<span class="c1">## This options specifies the ticks based the list of numbers provided.</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="o">-</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">)))</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s1">&#39;equal&#39;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span><span class="n">ls</span><span class="o">=</span><span class="s1">&#39;:&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-<p><img alt="plot" src="_images/plot1.png" /></p>
-<p>Dalam persamaan pertama dan persamaan kedua mewakili dua garis yang berpotongan dalam satu titik.</p>
+\[
+x_1 + x_2 = 2
+\]</div>
+<p>buat sistem ini dalam bentuk matriks augmented:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+2 &amp; 2 &amp; | &amp; 4 \\
+1 &amp; 1 &amp; | &amp; 2
+\end{bmatrix}
+\end{split}\]</div>
+<ol class="arabic simple">
+<li><p>membuat elemen di bawah pivot menjadi nol.</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+R_1 \leftarrow R_1 - 2R_2
+\]</div>
+<ol class="arabic simple" start="2">
+<li><p>Setelah melakukan perhitungan, kita mendapatkan:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+R_1: \quad 2 - 2 \cdot 1 = 0 \\
+2 - 2 \cdot 1 = 0 \\
+4 - 2 \cdot 2 = 0
+\end{split}\]</div>
+<p>Sehingga, matriks augmented menjadi:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+1 &amp; 1 &amp; | &amp; 2 \\
+0 &amp; 0 &amp; | &amp; 0
+\end{bmatrix}
+\end{split}\]</div>
+<p>Dari baris kedua, kita dapat mengekspresikan (x_1) dalam bentuk (x_2):</p>
+<div class="math notranslate nohighlight">
+\[
+x_1 + x_2 = 2 \implies x_1 = 2 - x_2
+\]</div>
+<p>Karena kita memiliki satu persamaan dengan dua variabel, kita dapat menyatakan solusi dalam bentuk parameter. Misalkan (x_2 = t), maka:</p>
+<div class="math notranslate nohighlight">
+\[
+x_1 = 2 - t
+\]</div>
+<p>Jadi, solusi umum dari sistem persamaan ini adalah:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}
+x_1 = 2 - p \\
+x_2 = p
+\end{cases}
+\end{split}\]</div>
+<p>di mana (p) adalah parameter bebas.</p>
+</section>
+<section id="soal-no-4-sistem-persamaan">
+<h2>soal no 4 sistem persamaan:<a class="headerlink" href="#soal-no-4-sistem-persamaan" title="Link to this heading">#</a></h2>
+<div class="math notranslate nohighlight">
+\[
+x_1 + x_2 = 5
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+x_1 + 2x_3 = 6
+\]</div>
+<p>Kita akan menyelesaikannya menggunakan metode eliminasi Gauss. Pertama, kita tuliskan sistem ini dalam bentuk matriks augmented:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+1 &amp; 1 &amp; 0 &amp; | &amp; 5 \\
+1 &amp; 0 &amp; 2 &amp; | &amp; 6
+\end{bmatrix}
+\end{split}\]</div>
+<p>Langkah pertama adalah membuat elemen di bawah pivot (elemen pertama di kolom pertama) menjadi nol. Kita lakukan operasi berikut:</p>
+<div class="math notranslate nohighlight">
+\[
+R_2 \leftarrow R_2 - R_1
+\]</div>
+<p>Setelah melakukan perhitungan, kita mendapatkan:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+R_2: \quad 1 - 1 = 0 \\
+0 - 1 = -1 \\
+2 - 0 = 2 \\
+6 - 5 = 1
+\end{split}\]</div>
+<p>Sehingga, matriks augmented menjadi:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+1 &amp; 1 &amp; 0 &amp; | &amp; 5 \\
+0 &amp; -1 &amp; 2 &amp; | &amp; 1
+\end{bmatrix}
+\end{split}\]</div>
+<p>Selanjutnya, kita dapat menyelesaikan baris kedua untuk mengekspresikan (x_2) dalam bentuk (x_3):</p>
+<div class="math notranslate nohighlight">
+\[
+-1x_2 + 2x_3 = 1 \implies x_2 = 2x_3 - 1
+\]</div>
+<p>Sekarang kita substitusi (x_2) ke dalam persamaan pertama:</p>
+<div class="math notranslate nohighlight">
+\[
+x_1 + (2x_3 - 1) = 5
+\]</div>
+<p>Maka kita dapatkan:</p>
+<div class="math notranslate nohighlight">
+\[
+x_1 + 2x_3 - 1 = 5 \implies x_1 = 6 - 2x_3
+\]</div>
+<p>Karena kita memiliki dua persamaan dengan tiga variabel, kita dapat menyatakan solusi dalam bentuk parameter. Misalkan (x_3 = p), maka:</p>
+<div class="math notranslate nohighlight">
+\[
+x_1 = 6 - 2p
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+x_2 = 2p - 1
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+x_3 = p
+\]</div>
+<p>Jadi, solusi umum dari sistem persamaan ini adalah:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}
+x_1 = 6 - 2p \\
+x_2 = 2p - 1 \\
+x_3 = p
+\end{cases}
+\end{split}\]</div>
+<p>di mana (p) adalah parameter bebas.</p>
+</section>
+<section id="soal-no-1-sistem-persamaan">
+<h2>soal no 1 sistem persamaan:<a class="headerlink" href="#soal-no-1-sistem-persamaan" title="Link to this heading">#</a></h2>
+<p>Contoh Soal 1</p>
+</section>
+</section>
+<section id="id1">
+<h1>Penyelesaian Sistem Persamaan Linear<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<p>Diberikan sistem persamaan:</p>
+<div class="math notranslate nohighlight">
+\[
+x_1 + 2x_2 + 3x_3 = 6
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+2x_1 + 4x_2 + 6x_3 = 12
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+x_3 + x_2 = 2
+\]</div>
+<p>Kita akan menyelesaikannya menggunakan metode eliminasi Gauss. Pertama, kita tuliskan sistem ini dalam bentuk matriks augmented:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+1 &amp; 2 &amp; 3 &amp; | &amp; 6 \\
+2 &amp; 4 &amp; 6 &amp; | &amp; 12 \\
+0 &amp; 1 &amp; 1 &amp; | &amp; 2
+\end{bmatrix}
+\end{split}\]</div>
+<section id="langkah-1-eliminasi-baris">
+<h2>Langkah 1: Eliminasi Baris<a class="headerlink" href="#langkah-1-eliminasi-baris" title="Link to this heading">#</a></h2>
+<p>Langkah pertama adalah membuat elemen di bawah pivot (elemen pertama di kolom pertama) menjadi nol. Kita lakukan operasi berikut:</p>
+<div class="math notranslate nohighlight">
+\[
+R_2 \leftarrow R_2 - 2R_1
+\]</div>
+<p>Setelah melakukan perhitungan, kita mendapatkan:</p>
+<p>$$
+R_2: \quad 2 - 2 \cdot 1</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -444,22 +606,13 @@
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="cara_penyelesaian.html"
+       href="penyelesaian-3.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Cara penyelesaian Sistem Persamaan Linier</p>
+        <p class="prev-next-title">Sistem Penyelesaian Tak Terhingga</p>
       </div>
-    </a>
-    <a class="right-next"
-       href="penyelesaian-2.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Sistem Tidak Ada Penyelesaian</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -467,6 +620,32 @@
             </div>
             
             
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Penyelesaian Sistem Persamaan Linear</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-no-3-sistem-persamaan">soal no 3 sistem persamaan:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-no-4-sistem-persamaan">soal no 4 sistem persamaan:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-no-1-sistem-persamaan">soal no 1 sistem persamaan:</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Penyelesaian Sistem Persamaan Linear</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-1-eliminasi-baris">Langkah 1: Eliminasi Baris</a></li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
               
             
           </div>

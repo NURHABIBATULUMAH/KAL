@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Sistem Tidak Ada Penyelesaian &#8212; My sample book</title>
+    <title>Operasi Baris Elementer &#8212; kal</title>
   
   
   
@@ -62,11 +62,10 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'penyelesaian-2';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'obe';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Sistem Penyelesaian Tak Terhingga" href="penyelesaian-3.html" />
-    <link rel="prev" title="Sistem Penyelesaian Tunggal" href="penyelesaian-1.html" />
+    <link rel="prev" title="Penyelesaian Sistem Persamaan Linear" href="eliminasi_gauss.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -148,8 +147,8 @@
       
     
     
-    <img src="_static/logo_web.jpg" class="logo__image only-light" alt="My sample book - Home"/>
-    <img src="_static/logo_web.jpg" class="logo__image only-dark pst-js-only" alt="My sample book - Home"/>
+    <img src="_static/logo_web.jpg" class="logo__image only-light" alt="kal - Home"/>
+    <img src="_static/logo_web.jpg" class="logo__image only-dark pst-js-only" alt="kal - Home"/>
   
   
 </a></div>
@@ -171,15 +170,8 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="Sistem_Linier.html">Sistem Persamaan Linier</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2 current active has-children"><a class="reference internal" href="cara_penyelesaian.html">Cara penyelesaian Sistem Persamaan Linier</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="penyelesaian-1.html">Sistem Penyelesaian Tunggal</a></li>
-<li class="toctree-l3 current active"><a class="current reference internal" href="#">Sistem Tidak Ada Penyelesaian</a></li>
-<li class="toctree-l3"><a class="reference internal" href="penyelesaian-3.html">Sistem Penyelesaian Tak Terhingga</a></li>
-</ul>
-</details></li>
-</ul>
-</details></li>
+<li class="toctree-l1"><a class="reference internal" href="Sistem_Linier.html">Sistem Persamaan Linier</a></li>
+
 </ul>
 
     </div>
@@ -256,7 +248,7 @@
       
       
       
-      <li><a href="https://github.com/NURHABIBATULUMAH/KAL.git/issues/new?title=Issue%20on%20page%20%2Fpenyelesaian-2.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/NURHABIBATULUMAH/KAL.git/issues/new?title=Issue%20on%20page%20%2Fobe.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -286,7 +278,7 @@
       
       
       
-      <li><a href="_sources/penyelesaian-2.md" target="_blank"
+      <li><a href="_sources/obe.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -349,7 +341,9 @@
 <button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -360,11 +354,38 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Sistem Tidak Ada Penyelesaian</h1>
+    <h1>Operasi Baris Elementer</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tiga-jenis-operasi-baris-elementer">Tiga Jenis Operasi Baris Elementer</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menukar-dua-baris">1. Menukar dua baris</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mengalikan-baris-dengan-skala-non-nol">2. Mengalikan baris dengan skala non-nol</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menambahkan-kelipatan-satu-baris-ke-baris-lain">3. Menambahkan kelipatan satu baris ke baris lain</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-operasi-baris-elementer">Contoh Operasi Baris Elementer</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bentuk-eselon-baris-dan-eselon-baris-tereduksi">Bentuk Eselon Baris dan Eselon Baris Tereduksi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-bentuk-eselon-baris">a. Bentuk Eselon Baris:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-bentuk-eselon-baris-tereduksi">b. Bentuk Eselon Baris Tereduksi:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aplikasi-baris-elementer">Aplikasi Baris Elementer</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menyelesaikan-sistem-persamaan-linier">1. Menyelesaikan Sistem Persamaan Linier</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-invers-matriks">2. Mencari Invers Matriks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-determinan">3. Menghitung Determinan</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-soal">Contoh Soal:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jawaban">Jawaban:</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -374,44 +395,133 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="sistem-tidak-ada-penyelesaian">
-<h1>Sistem Tidak Ada Penyelesaian<a class="headerlink" href="#sistem-tidak-ada-penyelesaian" title="Link to this heading">#</a></h1>
-<p>Sistem tidak ada penyelesaian artinya tidak ada variable yang bisa memenuhi semua persamaan dalam sistem tersebut.
-Persamaan dalam sistem ini selalu bertentangan satu sama lain sehingga tidak mungkin memiliki solusi. Dalam 2 dimensi persamaan tersebut tidak akan memiliki titik potong.</p>
-<p>contoh :</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="operasi-baris-elementer">
+<h1>Operasi Baris Elementer<a class="headerlink" href="#operasi-baris-elementer" title="Link to this heading">#</a></h1>
+<p>Sebelumnya, kita mengetahui terlebih dahulu <strong>Konsep Dasar Matriks</strong>.</p>
+<p><strong>Matriks</strong> adalah kumpulan bilangan yang disusun dalam baris dan kolom.</p>
+<p>contoh:</p>
 <div class="math notranslate nohighlight">
-\[x + y = 5 \]</div>
-<div class="math notranslate nohighlight">
-\[x + y = 3 \]</div>
+\[\begin{split}
+\begin{bmatrix}
+1 &amp; 3 &amp; 5 \\
+2 &amp; 4 &amp; 6 \\
+7 &amp; 8 &amp; 9
+\end{bmatrix}
+\end{split}\]</div>
+<p>Note:</p>
+<p><span class="math notranslate nohighlight">\( R_1, R_2, R_3  \)</span>, untuk baris pertama, kedua, ketiga.</p>
+<section id="tiga-jenis-operasi-baris-elementer">
+<h2>Tiga Jenis Operasi Baris Elementer<a class="headerlink" href="#tiga-jenis-operasi-baris-elementer" title="Link to this heading">#</a></h2>
+<section id="menukar-dua-baris">
+<h3>1. Menukar dua baris<a class="headerlink" href="#menukar-dua-baris" title="Link to this heading">#</a></h3>
+<p>Notasi: <span class="math notranslate nohighlight">\(R_i \leftrightarrow R_j\)</span></p>
+<p>contoh: Menukar baris pertama <span class="math notranslate nohighlight">\(R_1\)</span> dengan baris kedua <span class="math notranslate nohighlight">\(R_2\)</span>.</p>
+</section>
+<section id="mengalikan-baris-dengan-skala-non-nol">
+<h3>2. Mengalikan baris dengan skala non-nol<a class="headerlink" href="#mengalikan-baris-dengan-skala-non-nol" title="Link to this heading">#</a></h3>
+<p>Notasi: <span class="math notranslate nohighlight">\(R_i \rightarrow k . R_i\)</span> dimana k <span class="math notranslate nohighlight">\(\neq 0\)</span></p>
+<p>contoh: Mengalikan baris pertama dengan 3 (<span class="math notranslate nohighlight">\(R_1 \rightarrow 3R_1\)</span>)</p>
+</section>
+<section id="menambahkan-kelipatan-satu-baris-ke-baris-lain">
+<h3>3. Menambahkan kelipatan satu baris ke baris lain<a class="headerlink" href="#menambahkan-kelipatan-satu-baris-ke-baris-lain" title="Link to this heading">#</a></h3>
+<p>Notasi: <span class="math notranslate nohighlight">\(R_i \rightarrow R_i +  k . R_j\)</span></p>
+<p>contoh: Menambahkan dua kali baris kedua ke baris pertama <span class="math notranslate nohighlight">\((R_1 \rightarrow R_1 + 2R_2)\)</span></p>
+</section>
+</section>
+<section id="contoh-operasi-baris-elementer">
+<h2>Contoh Operasi Baris Elementer<a class="headerlink" href="#contoh-operasi-baris-elementer" title="Link to this heading">#</a></h2>
+<p>Matriks Awal:
+$<span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+2 &amp; 4 &amp; 6 \\
+8 &amp; 10 &amp; 12 \\
+5 &amp; 3 &amp; 1
+\end{bmatrix}
+\)</span>$</p>
+<p>Langkah 1: Menukar <span class="math notranslate nohighlight">\(R_1\)</span> dan <span class="math notranslate nohighlight">\(R_2\)</span>
+$<span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+8 &amp; 10 &amp; 12 \\
+2 &amp; 4 &amp; 6 \\
+5 &amp; 3 &amp; 1
+\end{bmatrix}
+\)</span>$</p>
+<p>Langkah 2: Mengalikan <span class="math notranslate nohighlight">\(R_3\)</span> dengan <span class="math notranslate nohighlight">\(2\)</span>:
+$<span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+8 &amp; 10 &amp; 12 \\
+2 &amp; 4 &amp; 6 \\
+10 &amp; 6 &amp; 2
+\end{bmatrix}
+\)</span>$</p>
+<p>Langkah 3: Menambahkan <span class="math notranslate nohighlight">\(-3R_1\)</span> ke <span class="math notranslate nohighlight">\(R_3\)</span>:
+$<span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+8 &amp; 10 &amp; 12 \\
+2 &amp; 4 &amp; 6 \\
+-14 &amp; -24 &amp; -34
+\end{bmatrix}
+\)</span>$</p>
+</section>
+<section id="bentuk-eselon-baris-dan-eselon-baris-tereduksi">
+<h2>Bentuk Eselon Baris dan Eselon Baris Tereduksi<a class="headerlink" href="#bentuk-eselon-baris-dan-eselon-baris-tereduksi" title="Link to this heading">#</a></h2>
+<section id="a-bentuk-eselon-baris">
+<h3>a. Bentuk Eselon Baris:<a class="headerlink" href="#a-bentuk-eselon-baris" title="Link to this heading">#</a></h3>
 <ul class="simple">
-<li><p>Penyelesaian :</p></li>
+<li><p>Baris nol berada di bawah baris non-nol</p></li>
+<li><p>Elemen pivot (elemen pertama non-nol pada suatu baris) berada di kanan elemen pivot baris Sebelumnya</p></li>
 </ul>
-<iframe scrolling="no" title="Simultaneous Equations:Elimination" src="https://www.geogebra.org/material/iframe/id/MXa3HKy3/width/977/height/574/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="977px" height="574px" style="border:0px;"> </iframe>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-
-<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,(</span><span class="mi">5</span><span class="o">-</span><span class="n">x</span><span class="p">)</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,(</span><span class="mi">3</span><span class="o">-</span><span class="n">x</span><span class="p">)</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
-
-<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mf">1.6</span><span class="p">,</span><span class="s1">&#39;$x+y = 5$&#39;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.3</span><span class="p">,</span><span class="o">-</span><span class="mf">1.4</span><span class="p">,</span><span class="s1">&#39;$x+y = 3$&#39;</span><span class="p">)</span>
-
-<span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="o">-</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;k&#39;</span><span class="p">,</span><span class="n">linewidth</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;k&#39;</span><span class="p">,</span><span class="n">linewidth</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
-
-<span class="c1">## This options specifies the ticks based the list of numbers provided.</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="o">-</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">)))</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s1">&#39;equal&#39;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span><span class="n">ls</span><span class="o">=</span><span class="s1">&#39;:&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-<p><img alt="plot" src="_images/plot2.png" /></p>
-<p>Dalam kasus tersebut, pada persamaan pertama <span class="math notranslate nohighlight">\(x + y = 5\)</span> dan pada persamaan kedua <span class="math notranslate nohighlight">\(x + y = 3\)</span>. Ini bertentangan karena tidak mungkin <span class="math notranslate nohighlight">\((x+y)\)</span> bernilai dua angka berbeda pada waktu bersamaan.</p>
-<p>Jadi dalam grafik ini dua garis yang mewakili persamaan tersebut tidak akan berpotongan.</p>
+</section>
+<section id="b-bentuk-eselon-baris-tereduksi">
+<h3>b. Bentuk Eselon Baris Tereduksi:<a class="headerlink" href="#b-bentuk-eselon-baris-tereduksi" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Memenuhi semua syarat bentuk eselon baris</p></li>
+<li><p>Setiap elemen pivot bernilai 1</p></li>
+<li><p>Kolom yang mengandung elemen pivot hanya memiliki satu elemen non-nol (yaitu pivot)</p></li>
+</ul>
+</section>
+</section>
+<section id="aplikasi-baris-elementer">
+<h2>Aplikasi Baris Elementer<a class="headerlink" href="#aplikasi-baris-elementer" title="Link to this heading">#</a></h2>
+<section id="menyelesaikan-sistem-persamaan-linier">
+<h3>1. Menyelesaikan Sistem Persamaan Linier<a class="headerlink" href="#menyelesaikan-sistem-persamaan-linier" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Menggunakan eliminasi gauss atau gauss-jordan</p></li>
+</ul>
+</section>
+<section id="mencari-invers-matriks">
+<h3>2. Mencari Invers Matriks<a class="headerlink" href="#mencari-invers-matriks" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Menggabungkan matriks dengan matriks identitas dan melakukan OBE hingga diperoleh invers</p></li>
+</ul>
+</section>
+<section id="menghitung-determinan">
+<h3>3. Menghitung Determinan<a class="headerlink" href="#menghitung-determinan" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Menggunakan reduksi baris untuk menyederhanakan perhitungan determinan</p></li>
+</ul>
+</section>
+</section>
+<section id="contoh-soal">
+<h2>Contoh Soal:<a class="headerlink" href="#contoh-soal" title="Link to this heading">#</a></h2>
+<p>Selesaikan sistem persamaan berikut menggunakan OBE:</p>
+<div class="math notranslate nohighlight">
+\[x+2y-3z=8\]</div>
+<div class="math notranslate nohighlight">
+\[2x-y+2z=6\]</div>
+<div class="math notranslate nohighlight">
+\[x-y+z=4\]</div>
+<p>Penyelesaiam:</p>
+<ol class="arabic simple">
+<li><p>Ubah ke bentuk matriks augmentasi</p></li>
+<li><p>Lakukan OBE hingga memperoleh bentuk eselon baris Tereduksi</p></li>
+<li><p>Interprestasikan hasilnya</p></li>
+</ol>
+</section>
+<section id="jawaban">
+<h2>Jawaban:<a class="headerlink" href="#jawaban" title="Link to this heading">#</a></h2>
+<p>Sebelumnya itu terdiri dari beberapa persamaan linier</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -445,22 +555,13 @@ Persamaan dalam sistem ini selalu bertentangan satu sama lain sehingga tidak mun
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="penyelesaian-1.html"
+       href="eliminasi_gauss.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Sistem Penyelesaian Tunggal</p>
+        <p class="prev-next-title">Penyelesaian Sistem Persamaan Linear</p>
       </div>
-    </a>
-    <a class="right-next"
-       href="penyelesaian-3.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Sistem Penyelesaian Tak Terhingga</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -468,6 +569,41 @@ Persamaan dalam sistem ini selalu bertentangan satu sama lain sehingga tidak mun
             </div>
             
             
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tiga-jenis-operasi-baris-elementer">Tiga Jenis Operasi Baris Elementer</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menukar-dua-baris">1. Menukar dua baris</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mengalikan-baris-dengan-skala-non-nol">2. Mengalikan baris dengan skala non-nol</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menambahkan-kelipatan-satu-baris-ke-baris-lain">3. Menambahkan kelipatan satu baris ke baris lain</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-operasi-baris-elementer">Contoh Operasi Baris Elementer</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bentuk-eselon-baris-dan-eselon-baris-tereduksi">Bentuk Eselon Baris dan Eselon Baris Tereduksi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-bentuk-eselon-baris">a. Bentuk Eselon Baris:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-bentuk-eselon-baris-tereduksi">b. Bentuk Eselon Baris Tereduksi:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aplikasi-baris-elementer">Aplikasi Baris Elementer</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menyelesaikan-sistem-persamaan-linier">1. Menyelesaikan Sistem Persamaan Linier</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-invers-matriks">2. Mencari Invers Matriks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-determinan">3. Menghitung Determinan</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-soal">Contoh Soal:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jawaban">Jawaban:</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
