@@ -106,7 +106,7 @@ Selesaikan sistem persamaan berikut menggunakan OBE:
 
 $$x+2y-3z=8$$
 $$2x-y+2z=6$$
-$$x-y+z=4$$
+$$4x-y+3z=4$$
 
 Penyelesaiam:
 1. Ubah ke bentuk matriks augmentasi
@@ -114,4 +114,27 @@ Penyelesaiam:
 3. Interprestasikan hasilnya
 
 ### Jawaban:
-Pada soal di atas terdiri dari beberapa persamaan linier yang disebut dengan sistem persamaan linier 
+Pada soal di atas terdiri dari beberapa persamaan linier yang disebut dengan sistem persamaan linier. Untuk menyelesaikan, langkah pertama yaitu mengubah bentuk matriks augmented.
+
+Matriks Augmented yaitu menyusun persamaan menjadi matriks. Jika pada persamaan terdiri dari 3 persamaan dan 3 variable maka ukuran matriksnya akan 3 baris 4 kolom, dengan rincian 3 baris itu merupakan banyaknya persamaan, dan untuk nilai dari matriksnya diperoleh dari koefisien dari variable pada persamaan, sedangkan 4 kolom itu yang bagian paling kanan merupakan konstanta dari persamaan tersebut.
+
+penyelesaian: 
+
+**langkah 1:** merubah bentuk persamaan menjadi matriks augmented
+
+
+$$x+2y-3z=8$$
+$$2x-y+2z=6$$
+$$4x-y+3z=4$$
+
+maka untuk matriks augmentednya adalah: 
+
+$$
+\begin{bmatrix}
+1 & 2 & -3 & | & 8 \\
+2 & -1 & 2 & | & 6\\
+4 & -1 & 3 & | & 4
+\end{bmatrix}
+$$
+
+**langkah 2:**
