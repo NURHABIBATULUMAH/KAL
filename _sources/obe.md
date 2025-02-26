@@ -137,4 +137,66 @@ $$
 \end{bmatrix}
 $$
 
-**langkah 2:**
+**langkah 2:** bentuk eselon baris, yang pertama jadikan elemen pivot pertama (baris 1 kolom 1) bernilai 1, jika sudah bernilai 1 tidak perlu diubah, setelah itu nolkan elemen yang berada di bawah pivot ($R_2$ dan $R_3$).
+
+- $R_2 \rightarrow R_2 - 2R_1$:
+
+$$
+\begin{bmatrix}
+1 & 2 & -3 & | & 8 \\
+2 & -1 & 2 & | & 6\\
+4 & -1 & 3 & | & 4
+\end{bmatrix}
+$$
+
+$$
+\begin{bmatrix}
+1 & 2 & -3 & | & 8 \\
+0 & -5 & -8 & | & -10\\
+4 & -1 & 3 & | & 4
+\end{bmatrix}
+$$
+
+- $R_3 \rightarrow R_3 - 4R_1$
+
+$$
+\begin{bmatrix}
+1 & 2 & -3 & | & 8 \\
+0 & -5 & 8 & | & -10\\
+4 & -1 & 3 & | & 4
+\end{bmatrix}
+$$
+
+$$
+\begin{bmatrix}
+1 & 2 & -3 & | & 8 \\
+0 & -5 & 8 & | & -10\\
+0 & -9 & 15 & | & -28
+\end{bmatrix}
+$$
+
+- selanjutnya merubah elemen di bawah pivot kolom ke dua menjadi nol
+
+$R_3 \rightarrow R_3 - 9/5 R_2$
+
+$$
+\begin{bmatrix}
+1 & 2 & -3 & | & 8 \\
+0 & -5 & 8 & | & -10\\
+0 & -9 & 15 & | & -28
+\end{bmatrix}
+$$
+
+$$
+\begin{bmatrix}
+1 & 2 & -3 & | & 8 \\
+0 & -5 & 8 & | & -10\\
+0 & 0 & 0 & | & -10
+\end{bmatrix}
+$$
+
+Dari matriks tersebut pada garis ketiga mendapatkan persamaan:
+
+$$0x+0y+0z=-10$$
+
+Ini merupakan persamaan yang tidak konsisten, dan berarti sistem persamaan ini **tidak memiliki solusi.**

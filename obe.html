@@ -543,7 +543,69 @@
 4 &amp; -1 &amp; 3 &amp; | &amp; 4
 \end{bmatrix}
 \end{split}\]</div>
-<p><strong>langkah 2:</strong></p>
+<p><strong>langkah 2:</strong> bentuk eselon baris, yang pertama jadikan elemen pivot pertama (baris 1 kolom 1) bernilai 1, jika sudah bernilai 1 tidak perlu diubah, setelah itu nolkan elemen yang berada di bawah pivot (<span class="math notranslate nohighlight">\(R_2\)</span> dan <span class="math notranslate nohighlight">\(R_3\)</span>).</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(R_2 \rightarrow R_2 - 2R_1\)</span>:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+1 &amp; 2 &amp; -3 &amp; | &amp; 8 \\
+2 &amp; -1 &amp; 2 &amp; | &amp; 6\\
+4 &amp; -1 &amp; 3 &amp; | &amp; 4
+\end{bmatrix}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+1 &amp; 2 &amp; -3 &amp; | &amp; 8 \\
+0 &amp; -5 &amp; -8 &amp; | &amp; -10\\
+4 &amp; -1 &amp; 3 &amp; | &amp; 4
+\end{bmatrix}
+\end{split}\]</div>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(R_3 \rightarrow R_3 - 4R_1\)</span></p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+1 &amp; 2 &amp; -3 &amp; | &amp; 8 \\
+0 &amp; -5 &amp; 8 &amp; | &amp; -10\\
+4 &amp; -1 &amp; 3 &amp; | &amp; 4
+\end{bmatrix}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+1 &amp; 2 &amp; -3 &amp; | &amp; 8 \\
+0 &amp; -5 &amp; 8 &amp; | &amp; -10\\
+0 &amp; -9 &amp; 15 &amp; | &amp; -28
+\end{bmatrix}
+\end{split}\]</div>
+<ul class="simple">
+<li><p>selanjutnya merubah elemen di bawah pivot kolom ke dua menjadi nol</p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(R_3 \rightarrow R_3 - 9/5 R_2\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+1 &amp; 2 &amp; -3 &amp; | &amp; 8 \\
+0 &amp; -5 &amp; 8 &amp; | &amp; -10\\
+0 &amp; -9 &amp; 15 &amp; | &amp; -28
+\end{bmatrix}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+1 &amp; 2 &amp; -3 &amp; | &amp; 8 \\
+0 &amp; -5 &amp; 8 &amp; | &amp; -10\\
+0 &amp; 0 &amp; 0 &amp; | &amp; -10
+\end{bmatrix}
+\end{split}\]</div>
+<p>Dari matriks tersebut pada garis ketiga mendapatkan persamaan:</p>
+<div class="math notranslate nohighlight">
+\[0x+0y+0z=-10\]</div>
+<p>Ini merupakan persamaan yang tidak konsisten, dan berarti sistem persamaan ini <strong>tidak memiliki solusi.</strong></p>
 </section>
 </section>
 
