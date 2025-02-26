@@ -41,6 +41,7 @@ contoh: Menambahkan dua kali baris kedua ke baris pertama $(R_1 \rightarrow R_1 
 ### Contoh Operasi Baris Elementer
 
 Matriks Awal: 
+
 $$
 \begin{bmatrix}
 2 & 4 & 6 \\
@@ -50,6 +51,7 @@ $$
 $$
 
 Langkah 1: Menukar $R_1$ dan $R_2$
+
 $$
 \begin{bmatrix}
 8 & 10 & 12 \\
@@ -59,6 +61,7 @@ $$
 $$
 
 Langkah 2: Mengalikan $R_3$ dengan $2$:
+
 $$
 \begin{bmatrix}
 8 & 10 & 12 \\
@@ -68,6 +71,7 @@ $$
 $$
 
 Langkah 3: Menambahkan $-3R_1$ ke $R_3$:
+
 $$
 \begin{bmatrix}
 8 & 10 & 12 \\
@@ -110,4 +114,4 @@ Penyelesaiam:
 3. Interprestasikan hasilnya
 
 ### Jawaban:
-Sebelumnya itu terdiri dari beberapa persamaan linier
+Pada soal di atas terdiri dari beberapa persamaan linier yang disebut dengan sistem persamaan linier 
