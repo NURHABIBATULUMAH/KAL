@@ -170,13 +170,10 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-          <li class="toctree-l1 current active has-children"><a class="reference internal" href="Sistem_Linier.html">Sistem Persamaan Linier</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-            <ul class="current nav bd-sidenav">
-              <li class="toctree-l2 current active"><a class="current reference internal" href="eliminasi_gauss.html">Penyelesaian Sistem Persamaan Linear</a></li>
-              <li class="toctree-l2 current active"><a class="current reference internal" href="#">Operasi Baris Elementer</a></li>
-            </ul>
-          </details></li>
-          </ul>
+<li class="toctree-l1"><a class="reference internal" href="Sistem_Linier.html">Sistem Persamaan Linier</a></li>
+
+</ul>
+
     </div>
 </nav></div>
     </div>
@@ -387,6 +384,7 @@
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-soal">Contoh Soal:</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jawaban">Jawaban:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminasi-gauss">Eliminasi Gauss</a></li>
 </ul>
             </nav>
         </div>
@@ -527,9 +525,13 @@
 </section>
 <section id="jawaban">
 <h2>Jawaban:<a class="headerlink" href="#jawaban" title="Link to this heading">#</a></h2>
-<p>Pada soal di atas terdiri dari beberapa persamaan linier yang disebut dengan sistem persamaan linier. Untuk menyelesaikan, langkah pertama yaitu mengubah bentuk matriks augmented.</p>
+<p>Pada soal di atas terdiri dari beberapa persamaan linier yang disebut dengan sistem persamaan linier. Untuk menyelesaikan, soal ini maka menggunakan <strong>eliminasi gauss</strong>. Apa itu eleminiasi Gauss?</p>
+</section>
+<section id="eliminasi-gauss">
+<h2>Eliminasi Gauss<a class="headerlink" href="#eliminasi-gauss" title="Link to this heading">#</a></h2>
+<p><strong>Eliminasi Gauss</strong> merupakan suatu algoritma yang menggunakan operasi baris elementer untuk memecahkan sistem persamaan linear dengan mengubah menjadi matriks augmented lalu mengubah ke bentuk yang lebih mudah diselesaikan, seperti bentuk eselon baris. Tujuannya mengurangi jumlah variable secara bertahap hingga diperoleh solusi.</p>
 <p>Matriks Augmented yaitu menyusun persamaan menjadi matriks. Jika pada persamaan terdiri dari 3 persamaan dan 3 variable maka ukuran matriksnya akan 3 baris 4 kolom, dengan rincian 3 baris itu merupakan banyaknya persamaan, dan untuk nilai dari matriksnya diperoleh dari koefisien dari variable pada persamaan, sedangkan 4 kolom itu yang bagian paling kanan merupakan konstanta dari persamaan tersebut.</p>
-<p>penyelesaian:</p>
+<p>Berikut penyelesaian dari sistem persamaan linier menggunakan eliminasi gauss:</p>
 <p><strong>langkah 1:</strong> merubah bentuk persamaan menjadi matriks augmented</p>
 <div class="math notranslate nohighlight">
 \[x+2y-3z=8\]</div>
@@ -566,6 +568,7 @@
 4 &amp; -1 &amp; 3 &amp; | &amp; 4
 \end{bmatrix}
 \end{split}\]</div>
+<p><strong>langkah 3:</strong> rubah baris ke 3 kolom pertama menjadi 0 (seluruh elemen di bawah pivot di rubah menjadi 0)</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(R_3 \rightarrow R_3 - 4R_1\)</span></p></li>
 </ul>
@@ -585,9 +588,7 @@
 0 &amp; -9 &amp; 15 &amp; | &amp; -28
 \end{bmatrix}
 \end{split}\]</div>
-<ul class="simple">
-<li><p>selanjutnya merubah elemen di bawah pivot kolom ke dua menjadi nol</p></li>
-</ul>
+<p><strong>langkah 4:</strong>  merubah elemen di bawah pivot kolom ke dua menjadi nol</p>
 <p><span class="math notranslate nohighlight">\(R_3 \rightarrow R_3 - 9/5 R_2\)</span></p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -688,6 +689,7 @@
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-soal">Contoh Soal:</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jawaban">Jawaban:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminasi-gauss">Eliminasi Gauss</a></li>
 </ul>
   </nav></div>
 

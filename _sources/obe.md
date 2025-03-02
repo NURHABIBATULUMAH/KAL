@@ -114,11 +114,16 @@ Penyelesaiam:
 3. Interprestasikan hasilnya
 
 ### Jawaban:
-Pada soal di atas terdiri dari beberapa persamaan linier yang disebut dengan sistem persamaan linier. Untuk menyelesaikan, langkah pertama yaitu mengubah bentuk matriks augmented.
+Pada soal di atas terdiri dari beberapa persamaan linier yang disebut dengan sistem persamaan linier. Untuk menyelesaikan, soal ini maka menggunakan **eliminasi gauss**. Apa itu eleminiasi Gauss?
+
+### Eliminasi Gauss
+
+**Eliminasi Gauss** merupakan suatu algoritma yang menggunakan operasi baris elementer untuk memecahkan sistem persamaan linear dengan mengubah menjadi matriks augmented lalu mengubah ke bentuk yang lebih mudah diselesaikan, seperti bentuk eselon baris. Tujuannya mengurangi jumlah variable secara bertahap hingga diperoleh solusi.
+
 
 Matriks Augmented yaitu menyusun persamaan menjadi matriks. Jika pada persamaan terdiri dari 3 persamaan dan 3 variable maka ukuran matriksnya akan 3 baris 4 kolom, dengan rincian 3 baris itu merupakan banyaknya persamaan, dan untuk nilai dari matriksnya diperoleh dari koefisien dari variable pada persamaan, sedangkan 4 kolom itu yang bagian paling kanan merupakan konstanta dari persamaan tersebut.
 
-penyelesaian: 
+ Berikut penyelesaian dari sistem persamaan linier menggunakan eliminasi gauss: 
 
 **langkah 1:** merubah bentuk persamaan menjadi matriks augmented
 
@@ -157,6 +162,8 @@ $$
 \end{bmatrix}
 $$
 
+**langkah 3:** rubah baris ke 3 kolom pertama menjadi 0 (seluruh elemen di bawah pivot di rubah menjadi 0)
+
 - $R_3 \rightarrow R_3 - 4R_1$
 
 $$
@@ -175,7 +182,7 @@ $$
 \end{bmatrix}
 $$
 
-- selanjutnya merubah elemen di bawah pivot kolom ke dua menjadi nol
+**langkah 4:**  merubah elemen di bawah pivot kolom ke dua menjadi nol
 
 $R_3 \rightarrow R_3 - 9/5 R_2$
 
