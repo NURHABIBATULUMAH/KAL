@@ -177,7 +177,7 @@ $$
 \end{bmatrix}
 $$
 
-### Langkah 1: Eliminasi Baris
+**Langkah 1: Eliminasi Baris**
 
 Langkah pertama adalah membuat elemen di bawah pivot (elemen pertama di kolom pertama) menjadi nol. Kita lakukan operasi berikut:
 
@@ -251,7 +251,7 @@ $$
 \end{bmatrix}
 $$
 
-### Langkah 1: Eliminasi Baris
+**Langkah 1: Eliminasi Baris**
 
 Langkah pertama adalah membuat elemen di bawah pivot (baris 2 kolom 1 dan baris 3 kolom 1) menjadi nol. Kita lakukan operasi berikut:
 
