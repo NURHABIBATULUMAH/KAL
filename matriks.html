@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>&lt;no title&gt; &#8212; kal</title>
+    <title>Matriks &#8212; kal</title>
   
   
   
@@ -60,6 +60,8 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'matriks';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -353,7 +355,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1><no title></h1>
+    <h1>Matriks</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -362,9 +364,10 @@
                 <h2> Contents </h2>
             </div>
             <nav aria-label="Page">
-                <ul class="simple visible nav section-nav flex-column">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-matriks">Definisi Matriks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-aritmetika-matriks">Operasi Aritmetika Matriks</a></li>
 </ul>
-
             </nav>
         </div>
     </div>
@@ -375,7 +378,50 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <p>Matriks</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="matriks">
+<h1>Matriks<a class="headerlink" href="#matriks" title="Link to this heading">#</a></h1>
+<section id="definisi-matriks">
+<h2>Definisi Matriks<a class="headerlink" href="#definisi-matriks" title="Link to this heading">#</a></h2>
+<p>Matriks adalah sebuah susunan persegi panjang yang terdiri dari elemen-elemen (angka atau simbol) yang terorganisir dalam baris dan kolom. Matriks tersusun dari baris dan kolom, Baris di sumbu x dan kolom disumbu y. Matriks biasanya dituliskan dengan huruf besar, contoh <span class="math notranslate nohighlight">\(A=[a]ij\)</span>, dimana A merepresentasikan matriks, i merupakan baris dan j merupakan kolom.</p>
+</section>
+<section id="operasi-aritmetika-matriks">
+<h2>Operasi Aritmetika Matriks<a class="headerlink" href="#operasi-aritmetika-matriks" title="Link to this heading">#</a></h2>
+<ol class="arabic">
+<li><p>Penjumalahan Matrik
+Konsep penjumalahan matriks:
+Penjumlahan matriks adalah operasi yang dilakukan dengan menjumlahkan elemen-elemen yang bersesuaian pada dua matriks yang memiliki ukuran yang sama.Penjumlahan matriks dapat dilakukan jika jumlah baris dan kolomnya sama.</p>
+<p>contoh penjumlahan matriks:</p>
+<p>Terdapat dua buah matriks yaitu matriks A dan matriks B yang memiliki ukuran baris dan kolom yang sama, maka penjumlahan matriks A + B akan menghasilkan matriks C = A + B</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+1 &amp; 3 &amp; 5 \\
+2 &amp; 4 &amp; 6 \\
+7 &amp; 8 &amp; 9
+\end{bmatrix}
+\end{split}\]</div>
+</li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># penjumlahan matriks</span>
+
+<span class="n">konsep</span> <span class="n">penjumalahan</span> <span class="n">matriks</span><span class="p">:</span>
+    <span class="n">Penjumlahan</span> <span class="n">matriks</span> <span class="n">adalah</span> <span class="n">operasi</span> <span class="n">yang</span> <span class="n">dilakukan</span> <span class="n">dengan</span> <span class="n">menjumlahkan</span> <span class="n">elemen</span><span class="o">-</span><span class="n">elemen</span> <span class="n">yang</span> <span class="n">bersesuaian</span> <span class="n">pada</span> <span class="n">dua</span> <span class="n">matriks</span> <span class="n">yang</span> <span class="n">memiliki</span> <span class="n">ukuran</span> <span class="n">yang</span> <span class="n">sama</span><span class="o">.</span><span class="n">penjumlahan</span> <span class="n">matriks</span> <span class="n">dapat</span> <span class="n">dilakukan</span> <span class="n">jika</span> <span class="n">jumlah</span> <span class="n">baris</span> <span class="n">dan</span> <span class="n">kolomnya</span> <span class="n">sama</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>  <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">3</span>
+    <span class="n">konsep</span> <span class="n">penjumalahan</span> <span class="n">matriks</span><span class="p">:</span>
+           <span class="o">^</span>
+<span class="ne">SyntaxError</span>: invalid syntax
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -423,9 +469,10 @@
     <i class="fa-solid fa-list"></i> Contents
   </div>
   <nav class="bd-toc-nav page-toc">
-    <ul class="simple visible nav section-nav flex-column">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-matriks">Definisi Matriks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-aritmetika-matriks">Operasi Aritmetika Matriks</a></li>
 </ul>
-
   </nav></div>
 
 </div></div>
