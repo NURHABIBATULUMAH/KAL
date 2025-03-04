@@ -477,7 +477,7 @@ A=
 \begin{bmatrix}
 a_{11} &amp; a_{12} &amp; a_{13} &amp; ... &amp; a_{1n} \\
 a_{21} &amp; a_{22} &amp; a_{23} &amp; ... &amp; a_{2n} \\
-... &amp; ... &amp; ... &amp; ... \\
+... &amp; ... &amp; ... &amp; ... &amp; ... \\
 a_{m1} &amp; a_{m2} &amp; a_{m3} &amp; ... &amp; a_{mn}
 \end{bmatrix}
 \end{split}\]</div>
@@ -487,10 +487,25 @@ B=
 \begin{bmatrix}
 b_{11} &amp; b_{12} &amp; b_{13} &amp; ... &amp; b_{1n} \\
 b_{21} &amp; b_{22} &amp; b_{23} &amp; ... &amp; b_{2n} \\
-... &amp; ... &amp; ... &amp; ... \\
+... &amp; ... &amp; ... &amp; ... &amp; ... \\
 b_{m1} &amp; b_{m2} &amp; b_{m3} &amp; ... &amp; b_{mn}
 \end{bmatrix}
 \end{split}\]</div>
+<p>Dari perkalian matriks di atas akan menghasilkan matriks C dengan ukuran <span class="math notranslate nohighlight">\(m x p\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+C= 
+\begin{bmatrix}
+c_{11} &amp; c_{12} &amp; c_{13} &amp; ... &amp; c_{mp} \\
+c_{21} &amp; c_{22} &amp; c_{23} &amp; ... &amp; c_{2p} \\
+... &amp; ... &amp; ... &amp; ... &amp; ... \\
+c_{m1} &amp; c_{m2} &amp; c_{m3} &amp; ... &amp; c_{mp}
+\end{bmatrix}
+\end{split}\]</div>
+<p>Setiap elemen <span class="math notranslate nohighlight">\(c_{ij}\)</span> (elemen pada baris ke-i dan kolom ke-j dari matriks hasil) dihitung dengan cara mengalikan elemen baris ke-i dari matriks <span class="math notranslate nohighlight">\(A\)</span> dengan elemen kolom ke-j dari matriks <span class="math notranslate nohighlight">\(B\)</span>, lalu menjumlahkan hasil perkalian tersebut. Secara matematis:</p>
+<div class="math notranslate nohighlight">
+\[c_{ij}=a_{i1}b_{1j} + a_{i2}b_{2j} + ... + a_{in}b_{nj}\]</div>
+<p>ini berarti untuk setiap elemen yang dihasilkan dalam perkalian, dengan cara mengambil elemen-elemen dari baris tertentu matriks <span class="math notranslate nohighlight">\(A\)</span> kemudian dikalikan dengan elemen-elemen dari kolom tertentu pada matriks <span class="math notranslate nohighlight">\(B\)</span> dan menjumlahkan hasil perkalian tersebut.</p>
 </section>
 </section>
 </section>
