@@ -4,7 +4,8 @@
 format: jb-book
 root: intro
 chapters:
-- file: Sistem_Linier
-  sections:
-  - file: eliminasi_gauss
-  - file: obe
+  - file: Sistem_Linier
+    sections:
+      - file: eliminasi_gauss
+      - file: obe
+      - file: matriks

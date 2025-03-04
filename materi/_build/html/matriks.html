@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Operasi Baris Elementer &#8212; kal</title>
+    <title>Matriks &#8212; kal</title>
   
   
   
@@ -62,10 +62,10 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'obe';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'matriks';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Penyelesaian Sistem Persamaan Linear" href="eliminasi_gauss.html" />
+    <link rel="prev" title="Operasi Baris Elementer" href="obe.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -248,7 +248,7 @@
       
       
       
-      <li><a href="https://github.com/NURHABIBATULUMAH/KAL.git/issues/new?title=Issue%20on%20page%20%2Fobe.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/NURHABIBATULUMAH/KAL.git/issues/new?title=Issue%20on%20page%20%2Fmatriks.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -278,7 +278,7 @@
       
       
       
-      <li><a href="_sources/obe.md" target="_blank"
+      <li><a href="_sources/matriks.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -288,7 +288,7 @@
 <span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="btn__text-container">.md</span>
+<span class="btn__text-container">.ipynb</span>
 </a>
 </li>
       
@@ -354,7 +354,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Operasi Baris Elementer</h1>
+    <h1>Matriks</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -364,27 +364,12 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tiga-jenis-operasi-baris-elementer">Tiga Jenis Operasi Baris Elementer</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menukar-dua-baris">1. Menukar dua baris</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mengalikan-baris-dengan-skala-non-nol">2. Mengalikan baris dengan skala non-nol</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menambahkan-kelipatan-satu-baris-ke-baris-lain">3. Menambahkan kelipatan satu baris ke baris lain</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-matriks">Definisi Matriks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-aritmetika-matriks">Operasi Aritmetika Matriks</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#penjumlahan-matrik">1. Penjumlahan Matrik</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#perkalian-matriks">2. Perkalian Matriks</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-operasi-baris-elementer">Contoh Operasi Baris Elementer</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bentuk-eselon-baris-dan-eselon-baris-tereduksi">Bentuk Eselon Baris dan Eselon Baris Tereduksi</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-bentuk-eselon-baris">a. Bentuk Eselon Baris:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-bentuk-eselon-baris-tereduksi">b. Bentuk Eselon Baris Tereduksi:</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aplikasi-baris-elementer">Aplikasi Baris Elementer</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menyelesaikan-sistem-persamaan-linier">1. Menyelesaikan Sistem Persamaan Linier</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-invers-matriks">2. Mencari Invers Matriks</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-determinan">3. Menghitung Determinan</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-soal">Contoh Soal:</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jawaban">Jawaban:</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminasi-gauss">Eliminasi Gauss</a></li>
 </ul>
             </nav>
         </div>
@@ -396,220 +381,206 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="operasi-baris-elementer">
-<h1>Operasi Baris Elementer<a class="headerlink" href="#operasi-baris-elementer" title="Link to this heading">#</a></h1>
-<p>Sebelumnya, kita mengetahui terlebih dahulu <strong>Konsep Dasar Matriks</strong>.</p>
-<p><strong>Matriks</strong> adalah kumpulan bilangan yang disusun dalam baris dan kolom.</p>
-<p>contoh:</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="matriks">
+<h1>Matriks<a class="headerlink" href="#matriks" title="Link to this heading">#</a></h1>
+<section id="definisi-matriks">
+<h2>Definisi Matriks<a class="headerlink" href="#definisi-matriks" title="Link to this heading">#</a></h2>
+<p>Matriks adalah sebuah susunan persegi panjang yang terdiri dari elemen-elemen (angka atau simbol) yang terorganisir dalam baris dan kolom. Matriks tersusun dari baris dan kolom, Baris di sumbu x dan kolom disumbu y. Matriks biasanya dituliskan dengan huruf besar, contoh <span class="math notranslate nohighlight">\(A=[a]ij\)</span>, dimana A merepresentasikan matriks, i merupakan baris dan j merupakan kolom.</p>
+</section>
+<section id="operasi-aritmetika-matriks">
+<h2>Operasi Aritmetika Matriks<a class="headerlink" href="#operasi-aritmetika-matriks" title="Link to this heading">#</a></h2>
+<section id="penjumlahan-matrik">
+<h3>1. Penjumlahan Matrik<a class="headerlink" href="#penjumlahan-matrik" title="Link to this heading">#</a></h3>
+<p><strong>Konsep penjumalahan matriks:</strong></p>
+<p>Penjumlahan matriks adalah operasi yang dilakukan dengan menjumlahkan elemen-elemen yang bersesuaian pada dua matriks yang memiliki ukuran yang sama.Penjumlahan matriks dapat dilakukan jika jumlah baris dan kolomnya sama.</p>
+<p>Terdapat dua buah matriks yaitu matriks A dan matriks B yang memiliki ukuran baris dan kolom yang sama, maka penjumlahan matriks A + B akan menghasilkan matriks C = A + B</p>
+<p>Dimana elemen <span class="math notranslate nohighlight">\(c_{ij}\)</span> pada matriks hasil penjumlahan C adalah hasil penjumlahan elemen - elemen yang bersesuai pada matriks A dan B.</p>
+<div class="math notranslate nohighlight">
+\[ c_{ij} = a_{ij} + b_{ij}\]</div>
+<p><strong>contoh penjumlahan matriks:</strong></p>
+<p>Misal ada 2 matriks A dan B:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
+A:
 \begin{bmatrix}
+1 &amp; 3 \\
+2 &amp; 4
+\end{bmatrix}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+B:
+\begin{bmatrix}
+2 &amp; 6 \\
+4 &amp; 8
+\end{bmatrix}
+\end{split}\]</div>
+<p>penjumlahan A + B adalah:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A + B =
+\begin{bmatrix}
+1+2 &amp; 3+6 \\
+2+4 &amp; 4+8
+\end{bmatrix}
+\end{split}\]</div>
+<p>Jadi hasil penjumlahan matriks A + B =</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+C: 
+\begin{bmatrix}
+3 &amp; 9 \\
+6 &amp; 12
+\end{bmatrix}
+\end{split}\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># implementasi ke python penjumlahan matriks</span>
+<span class="n">A</span><span class="o">=</span><span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">]]</span>
+<span class="n">B</span><span class="o">=</span><span class="p">[[</span><span class="mi">2</span><span class="p">,</span><span class="mi">6</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">]]</span>
+
+<span class="n">baris</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<span class="n">kolom</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+<span class="n">C</span><span class="o">=</span><span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">baris</span><span class="p">):</span>
+    <span class="n">matbaru</span><span class="o">=</span><span class="p">[]</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="n">kolom</span><span class="p">):</span>
+        <span class="n">matbaru</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">+</span> <span class="n">B</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">])</span>
+    <span class="n">C</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">matbaru</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;hasil penjumlahan matriks A + B adalah: &#39;</span><span class="p">,</span> <span class="n">C</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>hasil penjumlahan matriks A + B adalah:  [[3, 9], [6, 12]]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="perkalian-matriks">
+<h3>2. Perkalian Matriks<a class="headerlink" href="#perkalian-matriks" title="Link to this heading">#</a></h3>
+<p><strong>Konsep perkalian matriks:</strong></p>
+<p>Perkalian matriks adalah operasi yang dilakukan antara dua matriks untuk menghasilkan matriks baru. Tidak semua matriks dapat diperkalikan, untuk dapat melakukan perkalian, jumlah kolom pada matriks pertama harus sama dengan jumlah baris pada matriks kedua.</p>
+<p>Secara matematis, jika kita memiliki dua matriks A dan B, maka perkalian matriks <span class="math notranslate nohighlight">\(A×B\)</span> akan menghasilkan matriks <span class="math notranslate nohighlight">\(C\)</span>. Dengan syarat:</p>
+<ul class="simple">
+<li><p>Matriks A memiliki ukuran <span class="math notranslate nohighlight">\(m×n\)</span> (m baris, n kolom)</p></li>
+<li><p>Matriks B memiliki ukuran <span class="math notranslate nohighlight">\(n×p\)</span> (n baris, p kolom)</p></li>
+</ul>
+<p>Maka hasil perkalian C akan memiliki ukuran <span class="math notranslate nohighlight">\(m×p\)</span></p>
+<p><strong>Cara melakukan perkalian matriks</strong></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A=
+\begin{bmatrix}
+a_{11} &amp; a_{12} &amp; a_{13} &amp; ... &amp; a_{1n} \\
+a_{21} &amp; a_{22} &amp; a_{23} &amp; ... &amp; a_{2n} \\
+... &amp; ... &amp; ... &amp; ... &amp; ... \\
+a_{m1} &amp; a_{m2} &amp; a_{m3} &amp; ... &amp; a_{mn}
+\end{bmatrix}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+B= 
+\begin{bmatrix}
+b_{11} &amp; b_{12} &amp; b_{13} &amp; ... &amp; b_{1n} \\
+b_{21} &amp; b_{22} &amp; b_{23} &amp; ... &amp; b_{2n} \\
+... &amp; ... &amp; ... &amp; ... &amp; ... \\
+b_{m1} &amp; b_{m2} &amp; b_{m3} &amp; ... &amp; b_{mn}
+\end{bmatrix}
+\end{split}\]</div>
+<p>Dari perkalian matriks di atas akan menghasilkan matriks C dengan ukuran <span class="math notranslate nohighlight">\(m x p\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+C= 
+\begin{bmatrix}
+c_{11} &amp; c_{12} &amp; c_{13} &amp; ... &amp; c_{mp} \\
+c_{21} &amp; c_{22} &amp; c_{23} &amp; ... &amp; c_{2p} \\
+... &amp; ... &amp; ... &amp; ... &amp; ... \\
+c_{m1} &amp; c_{m2} &amp; c_{m3} &amp; ... &amp; c_{mp}
+\end{bmatrix}
+\end{split}\]</div>
+<p>Setiap elemen <span class="math notranslate nohighlight">\(c_{ij}\)</span> (elemen pada baris ke-i dan kolom ke-j dari matriks hasil) dihitung dengan cara mengalikan elemen baris ke-i dari matriks <span class="math notranslate nohighlight">\(A\)</span> dengan elemen kolom ke-j dari matriks <span class="math notranslate nohighlight">\(B\)</span>, lalu menjumlahkan hasil perkalian tersebut. Secara matematis:</p>
+<div class="math notranslate nohighlight">
+\[c_{ij}=a_{i1}b_{1j} + a_{i2}b_{2j} + ... + a_{in}b_{nj}\]</div>
+<p>ini berarti untuk setiap elemen yang dihasilkan dalam perkalian, dengan cara mengambil elemen-elemen dari baris tertentu matriks <span class="math notranslate nohighlight">\(A\)</span> kemudian dikalikan dengan elemen-elemen dari kolom tertentu pada matriks <span class="math notranslate nohighlight">\(B\)</span> dan menjumlahkan hasil perkalian tersebut.</p>
+<p><strong>contoh perkalian matriks</strong></p>
+<p>misal memiliki 2 matriks sebagai berikut:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A: 
+\begin{bmatrix}
+2 &amp; 3 &amp; 4\\
 1 &amp; 3 &amp; 5 \\
-2 &amp; 4 &amp; 6 \\
-7 &amp; 8 &amp; 9
-\end{bmatrix}
-\end{split}\]</div>
-<p>Note:</p>
-<p><span class="math notranslate nohighlight">\( R_1, R_2, R_3  \)</span>, untuk baris pertama, kedua, ketiga.</p>
-<section id="tiga-jenis-operasi-baris-elementer">
-<h2>Tiga Jenis Operasi Baris Elementer<a class="headerlink" href="#tiga-jenis-operasi-baris-elementer" title="Link to this heading">#</a></h2>
-<section id="menukar-dua-baris">
-<h3>1. Menukar dua baris<a class="headerlink" href="#menukar-dua-baris" title="Link to this heading">#</a></h3>
-<p>Notasi: <span class="math notranslate nohighlight">\(R_i \leftrightarrow R_j\)</span></p>
-<p>contoh: Menukar baris pertama <span class="math notranslate nohighlight">\(R_1\)</span> dengan baris kedua <span class="math notranslate nohighlight">\(R_2\)</span>.</p>
-</section>
-<section id="mengalikan-baris-dengan-skala-non-nol">
-<h3>2. Mengalikan baris dengan skala non-nol<a class="headerlink" href="#mengalikan-baris-dengan-skala-non-nol" title="Link to this heading">#</a></h3>
-<p>Notasi: <span class="math notranslate nohighlight">\(R_i \rightarrow k . R_i\)</span> dimana k <span class="math notranslate nohighlight">\(\neq 0\)</span></p>
-<p>contoh: Mengalikan baris pertama dengan 3 (<span class="math notranslate nohighlight">\(R_1 \rightarrow 3R_1\)</span>)</p>
-</section>
-<section id="menambahkan-kelipatan-satu-baris-ke-baris-lain">
-<h3>3. Menambahkan kelipatan satu baris ke baris lain<a class="headerlink" href="#menambahkan-kelipatan-satu-baris-ke-baris-lain" title="Link to this heading">#</a></h3>
-<p>Notasi: <span class="math notranslate nohighlight">\(R_i \rightarrow R_i +  k . R_j\)</span></p>
-<p>contoh: Menambahkan dua kali baris kedua ke baris pertama <span class="math notranslate nohighlight">\((R_1 \rightarrow R_1 + 2R_2)\)</span></p>
-</section>
-</section>
-<section id="contoh-operasi-baris-elementer">
-<h2>Contoh Operasi Baris Elementer<a class="headerlink" href="#contoh-operasi-baris-elementer" title="Link to this heading">#</a></h2>
-<p>Matriks Awal:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{bmatrix}
-2 &amp; 4 &amp; 6 \\
-8 &amp; 10 &amp; 12 \\
-5 &amp; 3 &amp; 1
-\end{bmatrix}
-\end{split}\]</div>
-<p>Langkah 1: Menukar <span class="math notranslate nohighlight">\(R_1\)</span> dan <span class="math notranslate nohighlight">\(R_2\)</span></p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{bmatrix}
-8 &amp; 10 &amp; 12 \\
-2 &amp; 4 &amp; 6 \\
-5 &amp; 3 &amp; 1
-\end{bmatrix}
-\end{split}\]</div>
-<p>Langkah 2: Mengalikan <span class="math notranslate nohighlight">\(R_3\)</span> dengan <span class="math notranslate nohighlight">\(2\)</span>:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{bmatrix}
-8 &amp; 10 &amp; 12 \\
-2 &amp; 4 &amp; 6 \\
-10 &amp; 6 &amp; 2
-\end{bmatrix}
-\end{split}\]</div>
-<p>Langkah 3: Menambahkan <span class="math notranslate nohighlight">\(-3R_1\)</span> ke <span class="math notranslate nohighlight">\(R_3\)</span>:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{bmatrix}
-8 &amp; 10 &amp; 12 \\
-2 &amp; 4 &amp; 6 \\
--14 &amp; -24 &amp; -34
-\end{bmatrix}
-\end{split}\]</div>
-</section>
-<section id="bentuk-eselon-baris-dan-eselon-baris-tereduksi">
-<h2>Bentuk Eselon Baris dan Eselon Baris Tereduksi<a class="headerlink" href="#bentuk-eselon-baris-dan-eselon-baris-tereduksi" title="Link to this heading">#</a></h2>
-<section id="a-bentuk-eselon-baris">
-<h3>a. Bentuk Eselon Baris:<a class="headerlink" href="#a-bentuk-eselon-baris" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p>Baris nol berada di bawah baris non-nol</p></li>
-<li><p>Elemen pivot (elemen pertama non-nol pada suatu baris) berada di kanan elemen pivot baris Sebelumnya</p></li>
-</ul>
-</section>
-<section id="b-bentuk-eselon-baris-tereduksi">
-<h3>b. Bentuk Eselon Baris Tereduksi:<a class="headerlink" href="#b-bentuk-eselon-baris-tereduksi" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p>Memenuhi semua syarat bentuk eselon baris</p></li>
-<li><p>Setiap elemen pivot bernilai 1</p></li>
-<li><p>Kolom yang mengandung elemen pivot hanya memiliki satu elemen non-nol (yaitu pivot)</p></li>
-</ul>
-</section>
-</section>
-<section id="aplikasi-baris-elementer">
-<h2>Aplikasi Baris Elementer<a class="headerlink" href="#aplikasi-baris-elementer" title="Link to this heading">#</a></h2>
-<section id="menyelesaikan-sistem-persamaan-linier">
-<h3>1. Menyelesaikan Sistem Persamaan Linier<a class="headerlink" href="#menyelesaikan-sistem-persamaan-linier" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p>Menggunakan eliminasi gauss atau gauss-jordan</p></li>
-</ul>
-</section>
-<section id="mencari-invers-matriks">
-<h3>2. Mencari Invers Matriks<a class="headerlink" href="#mencari-invers-matriks" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p>Menggabungkan matriks dengan matriks identitas dan melakukan OBE hingga diperoleh invers</p></li>
-</ul>
-</section>
-<section id="menghitung-determinan">
-<h3>3. Menghitung Determinan<a class="headerlink" href="#menghitung-determinan" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p>Menggunakan reduksi baris untuk menyederhanakan perhitungan determinan</p></li>
-</ul>
-</section>
-</section>
-<section id="contoh-soal">
-<h2>Contoh Soal:<a class="headerlink" href="#contoh-soal" title="Link to this heading">#</a></h2>
-<p>Selesaikan sistem persamaan berikut menggunakan OBE:</p>
-<div class="math notranslate nohighlight">
-\[x+2y-3z=8\]</div>
-<div class="math notranslate nohighlight">
-\[2x-y+2z=6\]</div>
-<div class="math notranslate nohighlight">
-\[4x-y+3z=4\]</div>
-<p>Penyelesaiam:</p>
-<ol class="arabic simple">
-<li><p>Ubah ke bentuk matriks augmentasi</p></li>
-<li><p>Lakukan OBE hingga memperoleh bentuk eselon baris Tereduksi</p></li>
-<li><p>Interprestasikan hasilnya</p></li>
-</ol>
-</section>
-<section id="jawaban">
-<h2>Jawaban:<a class="headerlink" href="#jawaban" title="Link to this heading">#</a></h2>
-<p>Pada soal di atas terdiri dari beberapa persamaan linier yang disebut dengan sistem persamaan linier. Untuk menyelesaikan, soal ini maka menggunakan <strong>eliminasi gauss</strong>. Apa itu eleminiasi Gauss?</p>
-</section>
-<section id="eliminasi-gauss">
-<h2>Eliminasi Gauss<a class="headerlink" href="#eliminasi-gauss" title="Link to this heading">#</a></h2>
-<p><strong>Eliminasi Gauss</strong> merupakan suatu algoritma yang menggunakan operasi baris elementer untuk memecahkan sistem persamaan linear dengan mengubah menjadi matriks augmented lalu mengubah ke bentuk yang lebih mudah diselesaikan, seperti bentuk eselon baris. Tujuannya mengurangi jumlah variable secara bertahap hingga diperoleh solusi.</p>
-<p>Matriks Augmented yaitu menyusun persamaan menjadi matriks. Jika pada persamaan terdiri dari 3 persamaan dan 3 variable maka ukuran matriksnya akan 3 baris 4 kolom, dengan rincian 3 baris itu merupakan banyaknya persamaan, dan untuk nilai dari matriksnya diperoleh dari koefisien dari variable pada persamaan, sedangkan 4 kolom itu yang bagian paling kanan merupakan konstanta dari persamaan tersebut.</p>
-<p>Berikut penyelesaian dari sistem persamaan linier menggunakan eliminasi gauss:</p>
-<p><strong>langkah 1:</strong> merubah bentuk persamaan menjadi matriks augmented</p>
-<div class="math notranslate nohighlight">
-\[x+2y-3z=8\]</div>
-<div class="math notranslate nohighlight">
-\[2x-y+2z=6\]</div>
-<div class="math notranslate nohighlight">
-\[4x-y+3z=4\]</div>
-<p>maka untuk matriks augmentednya adalah:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{bmatrix}
-1 &amp; 2 &amp; -3 &amp; | &amp; 8 \\
-2 &amp; -1 &amp; 2 &amp; | &amp; 6\\
-4 &amp; -1 &amp; 3 &amp; | &amp; 4
-\end{bmatrix}
-\end{split}\]</div>
-<p><strong>langkah 2:</strong> bentuk eselon baris, yang pertama jadikan elemen pivot pertama (baris 1 kolom 1) bernilai 1, jika sudah bernilai 1 tidak perlu diubah, setelah itu nolkan elemen yang berada di bawah pivot (<span class="math notranslate nohighlight">\(R_2\)</span> dan <span class="math notranslate nohighlight">\(R_3\)</span>).</p>
-<ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(R_2 \rightarrow R_2 - 2R_1\)</span>:</p></li>
-</ul>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{bmatrix}
-1 &amp; 2 &amp; -3 &amp; | &amp; 8 \\
-2 &amp; -1 &amp; 2 &amp; | &amp; 6\\
-4 &amp; -1 &amp; 3 &amp; | &amp; 4
+4 &amp; 3 &amp; 6
 \end{bmatrix}
 \end{split}\]</div>
 <div class="math notranslate nohighlight">
 \[\begin{split}
+B: 
 \begin{bmatrix}
-1 &amp; 2 &amp; -3 &amp; | &amp; 8 \\
-0 &amp; -5 &amp; -8 &amp; | &amp; -10\\
-4 &amp; -1 &amp; 3 &amp; | &amp; 4
+1 &amp; 4 &amp; 2\\
+3 &amp; 7 &amp; 2 \\
+5 &amp; 1 &amp; 4
 \end{bmatrix}
 \end{split}\]</div>
-<p><strong>langkah 3:</strong> rubah baris ke 3 kolom pertama menjadi 0 (seluruh elemen di bawah pivot di rubah menjadi 0)</p>
-<ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(R_3 \rightarrow R_3 - 4R_1\)</span></p></li>
-</ul>
+<p>untuk menghitung matriks hasil, <span class="math notranslate nohighlight">\(C = A x B =\)</span></p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
+C= 
 \begin{bmatrix}
-1 &amp; 2 &amp; -3 &amp; | &amp; 8 \\
-0 &amp; -5 &amp; 8 &amp; | &amp; -10\\
-4 &amp; -1 &amp; 3 &amp; | &amp; 4
+c_{11} &amp; c_{12} &amp; c_{13} \\
+c_{21} &amp; c_{22} &amp; c_{23}  \\
+c_{31} &amp; c_{32} &amp; c_{33}
 \end{bmatrix}
 \end{split}\]</div>
+<p>Dengan elemen-elemen yang dihitung sebagai berikut:</p>
+<p><span class="math notranslate nohighlight">\(c_{11} = (2 x 1) + (3 x 3) + (4 x 5) = 31\)</span></p>
+<p><span class="math notranslate nohighlight">\(c_{12} = (2 x 4) + (3 x 7) + (4 x 1) = 33\)</span></p>
+<p><span class="math notranslate nohighlight">\(c_{13} = (2 x 2) + (3 x 2) + (4 x 4) = 26\)</span></p>
+<p><span class="math notranslate nohighlight">\(c_{21} = (1 x 1) + (3 x 3) + (5 x 5) = 35\)</span></p>
+<p><span class="math notranslate nohighlight">\(c_{22} = (1 x 4) + (3 x 7) + (5 x 1) = 30\)</span></p>
+<p><span class="math notranslate nohighlight">\(c_{23} = (1 x 2) + (3 x 2) + (5 x 4) = 28\)</span></p>
+<p><span class="math notranslate nohighlight">\(c_{31} = (4 x 1) + (3 x 3) + (6 x 5) = 43\)</span></p>
+<p><span class="math notranslate nohighlight">\(c_{32} = (4 x 4) + (3 x 7) + (6 x 1) = 43\)</span></p>
+<p><span class="math notranslate nohighlight">\(c_{33} = (4 x 2) + (3 x 2) + (6 x 4) = 38\)</span></p>
+<p>maka hasil matriks C adalah:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
+C= 
 \begin{bmatrix}
-1 &amp; 2 &amp; -3 &amp; | &amp; 8 \\
-0 &amp; -5 &amp; 8 &amp; | &amp; -10\\
-0 &amp; -9 &amp; 15 &amp; | &amp; -28
+31 &amp; 33&amp; 26\\
+35 &amp; 30 &amp; 28\\
+43 &amp; 43 &amp; 38
 \end{bmatrix}
 \end{split}\]</div>
-<p><strong>langkah 4:</strong>  merubah elemen di bawah pivot kolom ke dua menjadi nol</p>
-<p><span class="math notranslate nohighlight">\(R_3 \rightarrow R_3 - 9/5 R_2\)</span></p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{bmatrix}
-1 &amp; 2 &amp; -3 &amp; | &amp; 8 \\
-0 &amp; -5 &amp; 8 &amp; | &amp; -10\\
-0 &amp; -9 &amp; 15 &amp; | &amp; -28
-\end{bmatrix}
-\end{split}\]</div>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{bmatrix}
-1 &amp; 2 &amp; -3 &amp; | &amp; 8 \\
-0 &amp; -5 &amp; 8 &amp; | &amp; -10\\
-0 &amp; 0 &amp; 0 &amp; | &amp; -10
-\end{bmatrix}
-\end{split}\]</div>
-<p>Dari matriks tersebut pada garis ketiga mendapatkan persamaan:</p>
-<div class="math notranslate nohighlight">
-\[0x+0y+0z=-10\]</div>
-<p>Ini merupakan persamaan yang tidak konsisten, dan berarti sistem persamaan ini <strong>tidak memiliki solusi.</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># implementasi ke python perkalian matriks</span>
+<span class="n">A</span><span class="o">=</span><span class="p">[[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">6</span><span class="p">]]</span>
+<span class="n">B</span><span class="o">=</span><span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">]]</span>
+<span class="n">C</span><span class="o">=</span><span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">)):</span>
+  <span class="n">temp</span><span class="o">=</span><span class="p">[]</span>
+  <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">B</span><span class="p">[</span><span class="mi">0</span><span class="p">])):</span>
+    <span class="n">total</span><span class="o">=</span><span class="mi">0</span>
+    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">B</span><span class="p">)):</span>
+      <span class="n">total</span><span class="o">=</span><span class="n">total</span><span class="o">+</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">k</span><span class="p">]</span> <span class="o">*</span> <span class="n">B</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="n">j</span><span class="p">])</span>
+    <span class="n">temp</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">total</span><span class="p">)</span>
+  <span class="n">C</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">temp</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;hasil perkalian matriks A x B adalah: &#39;</span><span class="p">,</span> <span class="n">C</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>hasil perkalian matriks A x B adalah:  [[31, 33, 26], [35, 30, 28], [43, 43, 38]]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
 </section>
 </section>
 
@@ -644,12 +615,12 @@
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="eliminasi_gauss.html"
+       href="obe.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Penyelesaian Sistem Persamaan Linear</p>
+        <p class="prev-next-title">Operasi Baris Elementer</p>
       </div>
     </a>
 </div>
@@ -669,27 +640,12 @@
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tiga-jenis-operasi-baris-elementer">Tiga Jenis Operasi Baris Elementer</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menukar-dua-baris">1. Menukar dua baris</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mengalikan-baris-dengan-skala-non-nol">2. Mengalikan baris dengan skala non-nol</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menambahkan-kelipatan-satu-baris-ke-baris-lain">3. Menambahkan kelipatan satu baris ke baris lain</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-matriks">Definisi Matriks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-aritmetika-matriks">Operasi Aritmetika Matriks</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#penjumlahan-matrik">1. Penjumlahan Matrik</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#perkalian-matriks">2. Perkalian Matriks</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-operasi-baris-elementer">Contoh Operasi Baris Elementer</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bentuk-eselon-baris-dan-eselon-baris-tereduksi">Bentuk Eselon Baris dan Eselon Baris Tereduksi</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-bentuk-eselon-baris">a. Bentuk Eselon Baris:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-bentuk-eselon-baris-tereduksi">b. Bentuk Eselon Baris Tereduksi:</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aplikasi-baris-elementer">Aplikasi Baris Elementer</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menyelesaikan-sistem-persamaan-linier">1. Menyelesaikan Sistem Persamaan Linier</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-invers-matriks">2. Mencari Invers Matriks</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-determinan">3. Menghitung Determinan</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-soal">Contoh Soal:</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jawaban">Jawaban:</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminasi-gauss">Eliminasi Gauss</a></li>
 </ul>
   </nav></div>
 

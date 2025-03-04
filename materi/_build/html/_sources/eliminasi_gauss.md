@@ -155,8 +155,6 @@ di mana \(p\) adalah parameter bebas.
 
 Contoh Soal 1
 
-## Penyelesaian Sistem Persamaan Linear
-
 Diberikan sistem persamaan:
 
 $$
@@ -179,7 +177,7 @@ $$
 \end{bmatrix}
 $$
 
-### Langkah 1: Eliminasi Baris
+**Langkah 1: Eliminasi Baris**
 
 Langkah pertama adalah membuat elemen di bawah pivot (elemen pertama di kolom pertama) menjadi nol. Kita lakukan operasi berikut:
 
@@ -190,4 +188,143 @@ $$
 Setelah melakukan perhitungan, kita mendapatkan:
 
 $$
-R_2: \quad 2 - 2 \cdot 1
+\begin{bmatrix}
+1 & 2 & 3 & | & 6 \\
+0 & 0 & 0 & | & 0 \\
+0 & 1 & 1 & | & 2
+\end{bmatrix}
+$$
+
+Dari hasil tersebut tidak diperlukan langkah selanjutnya karena elemen di bawah pivot sudah 1 kolom ke 2
+
+Selanjutnya, menyelesaikan sistem persamaan 
+
+dari persamaan 1 diperoleh: 
+
+$$x_1 + x_2 + x_3 = 6$$
+
+untuk persamaan 2 tidak diperoleh informasi karena 0=0
+
+dari persamaan 3 diperoleh:
+
+$$x_2 + x_3 = 2$$
+
+dari persamaan 3 dapat diselesaikan untuk $x_2$:
+
+$$x_2 = 2 - x_3$$
+
+maka, untuk $x_2$ ini bisa disubtitusikan pada persamaan pertama, maka diperoleh:
+
+$$x_1 + 2x_2 + 3x_3 = 6$$
+$$x_1 + 2x_2 (2-x_3) + 3x_3 = 6$$
+$$x_1 + 4-2x_3 + x_3 = 6$$
+$$x_1 + 4 + x_3 = 6$$
+$$x_1 = 6 - 4 - x_3$$
+$$x_1 = 2 - x_3$$
+
+kesimpulan solusi:
+$$x_1 = 2- x_3$$
+$$x_2 = 2 - x_3$$
+$$x_3=x_3$$
+
+untuk $x_3$ parameter bebas tidak ada yang membatasi.
+
+### soal no 2 sistem persamaan:
+
+$$
+x_1 + x_2 + x_3 = 3
+$$
+$$
+2x_1 + x_3 = 5
+$$
+$$
+x_1 + 2x_2 = 3
+$$
+
+Kita akan menyelesaikannya menggunakan metode eliminasi Gauss. Pertama, kita tuliskan sistem ini dalam bentuk matriks augmented:
+
+$$
+\begin{bmatrix}
+1 & 1 & 1 & | & 3 \\
+2 & 0 & 1 & | & 5 \\
+1 & 2 & 0 & | & 3
+\end{bmatrix}
+$$
+
+**Langkah 1: Eliminasi Baris**
+
+Langkah pertama adalah membuat elemen di bawah pivot (baris 2 kolom 1 dan baris 3 kolom 1) menjadi nol. Kita lakukan operasi berikut:
+
+$$
+R_2 \leftarrow R_2 - 2R_1
+$$
+
+$$R_3 \leftarrow R_3 - R_1$$
+
+Setelah melakukan perhitungan, kita mendapatkan:
+
+$$
+\begin{bmatrix}
+1 & 2 & 3 & | & 6 \\
+0 & -2 & -1 & | & -1 \\
+0 & 1 & -1 & | & 0
+\end{bmatrix}
+$$
+
+selanjutnya jadikan 0 pada baris ke 3 kolom ke 2
+
+$$R_3 \leftarrow R_3 + 1/2R_2$$
+
+maka akan menjadi 
+
+$$
+\begin{bmatrix}
+1 & 2 & 3 & | & 6 \\
+0 & -2 & -1 & | & -1 \\
+0 & 0 & -3/2 & | & -1/2
+\end{bmatrix}
+$$
+
+selanjutnya rubah elemen baris ke 3 kolom ke 3 menjadi 1
+
+$$R_3 \rightarrow -2/3R_3$$
+
+maka menjadi
+
+$$
+\begin{bmatrix}
+1 & 2 & 3 & | & 6 \\
+0 & -2 & -1 & | & -1 \\
+0 & 0 & 1 & | & 1/3
+\end{bmatrix}
+$$
+
+langkah selanjutnya yaitu subtitusi:
+
+dari persamaan 3 diperoleh:
+$$x_3 = 1/3$$
+
+dari persamaan 2 diperoleh:
+$$-2x_2 - 1x_3 = -1$$
+
+kita subtitusikan dari persamaan 3:
+$$-2x_2 - 1x_3 = -1$$
+$$-2x_2 - 1/3 = -1 $$
+$$-2x_2 = -1 + 1/3 = -2/3$$
+$$x_2 = -2/3 + 2$$
+$$x_2 = 1/3$$
+
+sekarang memiliki $x_2= 1/3$ dan $x_3= 1/3$ maka subtitusi di baris pertama, akan diperoleh
+
+
+$$x_1 + x_2 + x_3 = 3$$
+$$x_1 + 1/3 + 1/3 = 3$$
+$$x_1 + 2/3 = 3$$
+$$x_1 = 3 - 2/3$$
+$$x_1 = 7/3$$
+
+jadi, solusi penyelesaiannya adalah:
+
+$$x_1 = 7/3$$
+$$x_2= 1/3$$
+$$x_3 = 1/3$$
