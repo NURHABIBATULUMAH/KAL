@@ -391,13 +391,13 @@
 <h2>Operasi Aritmetika Matriks<a class="headerlink" href="#operasi-aritmetika-matriks" title="Link to this heading">#</a></h2>
 <section id="penjumlahan-matrik">
 <h3>1. Penjumlahan Matrik<a class="headerlink" href="#penjumlahan-matrik" title="Link to this heading">#</a></h3>
-<p>Konsep penjumalahan matriks:</p>
+<p><strong>Konsep penjumalahan matriks:</strong></p>
 <p>Penjumlahan matriks adalah operasi yang dilakukan dengan menjumlahkan elemen-elemen yang bersesuaian pada dua matriks yang memiliki ukuran yang sama.Penjumlahan matriks dapat dilakukan jika jumlah baris dan kolomnya sama.</p>
 <p>Terdapat dua buah matriks yaitu matriks A dan matriks B yang memiliki ukuran baris dan kolom yang sama, maka penjumlahan matriks A + B akan menghasilkan matriks C = A + B</p>
 <p>Dimana elemen <span class="math notranslate nohighlight">\(c_{ij}\)</span> pada matriks hasil penjumlahan C adalah hasil penjumlahan elemen - elemen yang bersesuai pada matriks A dan B.</p>
 <div class="math notranslate nohighlight">
 \[ c_{ij} = a_{ij} + b_{ij}\]</div>
-<p>contoh penjumlahan matriks:</p>
+<p><strong>contoh penjumlahan matriks:</strong></p>
 <p>Misal ada 2 matriks A dan B:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -462,7 +462,7 @@ C:
 </section>
 <section id="perkalian-matriks">
 <h3>2. Perkalian Matriks<a class="headerlink" href="#perkalian-matriks" title="Link to this heading">#</a></h3>
-<p>Konsep perkalian matriks:</p>
+<p><strong>Konsep perkalian matriks:</strong></p>
 <p>Perkalian matriks adalah operasi yang dilakukan antara dua matriks untuk menghasilkan matriks baru. Tidak semua matriks dapat diperkalikan, untuk dapat melakukan perkalian, jumlah kolom pada matriks pertama harus sama dengan jumlah baris pada matriks kedua.</p>
 <p>Secara matematis, jika kita memiliki dua matriks A dan B, maka perkalian matriks <span class="math notranslate nohighlight">\(A×B\)</span> akan menghasilkan matriks <span class="math notranslate nohighlight">\(C\)</span>. Dengan syarat:</p>
 <ul class="simple">
@@ -506,6 +506,56 @@ c_{m1} &amp; c_{m2} &amp; c_{m3} &amp; ... &amp; c_{mp}
 <div class="math notranslate nohighlight">
 \[c_{ij}=a_{i1}b_{1j} + a_{i2}b_{2j} + ... + a_{in}b_{nj}\]</div>
 <p>ini berarti untuk setiap elemen yang dihasilkan dalam perkalian, dengan cara mengambil elemen-elemen dari baris tertentu matriks <span class="math notranslate nohighlight">\(A\)</span> kemudian dikalikan dengan elemen-elemen dari kolom tertentu pada matriks <span class="math notranslate nohighlight">\(B\)</span> dan menjumlahkan hasil perkalian tersebut.</p>
+<p><strong>contoh perkalian matriks</strong></p>
+<p>misal memiliki 2 matriks sebagai berikut:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A: 
+\begin{bmatrix}
+2 &amp; 3 &amp; 4\\
+1 &amp; 3 &amp; 5 \\
+4 &amp; 3 &amp; 6
+\end{bmatrix}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+B: 
+\begin{bmatrix}
+1 &amp; 4 &amp; 2\\
+3 &amp; 7 &amp; 2 \\
+5 &amp; 1 &amp; 4
+\end{bmatrix}
+\end{split}\]</div>
+<p>untuk menghitung matriks hasil, <span class="math notranslate nohighlight">\(C = A X B =\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+C= 
+\begin{bmatrix}
+c_{11} &amp; c_{12} &amp; c_{13} \\
+c_{21} &amp; c_{22} &amp; c_{23}  \\
+c_{31} &amp; c_{32} &amp; c_{33}
+\end{bmatrix}
+\end{split}\]</div>
+<p>Dengan elemen-elemen yang dihitung sebagai berikut:</p>
+<p><span class="math notranslate nohighlight">\(c_{11} = (2x1) + (3x3) + (4x5) = 22\)</span>
+<span class="math notranslate nohighlight">\(c_{12} = (2x4) + (3x7) + (4x1) = 33\)</span>
+<span class="math notranslate nohighlight">\(c_{13} = (2x2) + (3x2) + (4x4) = 26\)</span>
+<span class="math notranslate nohighlight">\(c_{21} = (1x1) + (3x3) + (5x5) = 34\)</span>
+<span class="math notranslate nohighlight">\(c_{22} = (1x4) + (3x7) + (5x1) = 30\)</span>
+<span class="math notranslate nohighlight">\(c_{23} = (1x2) + (3x2) + (5x4) = 28\)</span>
+<span class="math notranslate nohighlight">\(c_{31} = (4x1) + (3x3) + (6x5) = 43\)</span>
+<span class="math notranslate nohighlight">\(c_{32} = (4x4) + (3x7) + (6x1) = 43\)</span>
+<span class="math notranslate nohighlight">\(c_{33} = (4x2) + (3x2) + (6x4) = 38\)</span></p>
+<p>maka hasil matriks C adalah:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+C= 
+\begin{bmatrix}
+22 &amp; 33&amp; 26\\
+34 &amp; 20 &amp; 28\\
+43 &amp; 43 &amp; 38
+\end{bmatrix}
+\end{split}\]</div>
 </section>
 </section>
 </section>
