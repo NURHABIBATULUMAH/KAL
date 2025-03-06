@@ -216,15 +216,23 @@ $$x_2 = 2 - x_3$$
 maka, untuk $x_2$ ini bisa disubtitusikan pada persamaan pertama, maka diperoleh:
 
 $$x_1 + 2x_2 + 3x_3 = 6$$
+
 $$x_1 + 2x_2 (2-x_3) + 3x_3 = 6$$
+
 $$x_1 + 4-2x_3 + x_3 = 6$$
+
 $$x_1 + 4 + x_3 = 6$$
+
 $$x_1 = 6 - 4 - x_3$$
+
 $$x_1 = 2 - x_3$$
 
 kesimpulan solusi:
+
 $$x_1 = 2- x_3$$
+
 $$x_2 = 2 - x_3$$
+
 $$x_3=x_3$$
 
 untuk $x_3$ parameter bebas tidak ada yang membatasi.
@@ -302,29 +310,46 @@ $$
 langkah selanjutnya yaitu subtitusi:
 
 dari persamaan 3 diperoleh:
+
 $$x_3 = 1/3$$
 
 dari persamaan 2 diperoleh:
+
 $$-2x_2 - 1x_3 = -1$$
 
 kita subtitusikan dari persamaan 3:
+
 $$-2x_2 - 1x_3 = -1$$
+
 $$-2x_2 - 1/3 = -1 $$
+
 $$-2x_2 = -1 + 1/3 = -2/3$$
+
 $$x_2 = -2/3 + 2$$
+
 $$x_2 = 1/3$$
 
 sekarang memiliki $x_2= 1/3$ dan $x_3= 1/3$ maka subtitusi di baris pertama, akan diperoleh
 
 
 $$x_1 + x_2 + x_3 = 3$$
+
 $$x_1 + 1/3 + 1/3 = 3$$
+
 $$x_1 + 2/3 = 3$$
+
 $$x_1 = 3 - 2/3$$
+
 $$x_1 = 7/3$$
 
 jadi, solusi penyelesaiannya adalah:
 
 $$x_1 = 7/3$$
+
 $$x_2= 1/3$$
+
 $$x_3 = 1/3$$
+
+<iframe src="https://www.geogebra.org/3d/m9uqkygu?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+
+Pada geogebra ini titik solusinya berbentuk desimal, tetapi jika dkonversi ke pecahan hasilnya akan sama dengan titik solusi yang berbentuk pecahan.

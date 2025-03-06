@@ -368,6 +368,7 @@
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-aritmetika-matriks">Operasi Aritmetika Matriks</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#penjumlahan-matrik">1. Penjumlahan Matrik</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#perkalian-matriks">2. Perkalian Matriks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#perkalian-skalar-matriks">3. Perkalian Skalar Matriks</a></li>
 </ul>
 </li>
 </ul>
@@ -475,20 +476,20 @@ C:
 \[\begin{split}
 A=
 \begin{bmatrix}
-a_{11} &amp; a_{12} &amp; a_{13} &amp; ... &amp; a_{1n} \\
-a_{21} &amp; a_{22} &amp; a_{23} &amp; ... &amp; a_{2n} \\
-... &amp; ... &amp; ... &amp; ... &amp; ... \\
-a_{m1} &amp; a_{m2} &amp; a_{m3} &amp; ... &amp; a_{mn}
+a_{11} &amp; a_{12} &amp; ... &amp; a_{1n} \\
+a_{21} &amp; a_{22} &amp; ... &amp; a_{2n} \\
+... &amp; ... &amp; ... &amp; ... \\
+a_{m1} &amp; a_{m2} &amp; ... &amp; a_{mn}
 \end{bmatrix}
 \end{split}\]</div>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 B= 
 \begin{bmatrix}
-b_{11} &amp; b_{12} &amp; b_{13} &amp; ... &amp; b_{1n} \\
-b_{21} &amp; b_{22} &amp; b_{23} &amp; ... &amp; b_{2n} \\
-... &amp; ... &amp; ... &amp; ... &amp; ... \\
-b_{m1} &amp; b_{m2} &amp; b_{m3} &amp; ... &amp; b_{mn}
+b_{11} &amp; b_{12} &amp; ... &amp; b_{1n} \\
+b_{21} &amp; b_{22} &amp; ... &amp; b_{2n} \\
+... &amp; ... &amp; ... &amp; ... \\
+b_{m1} &amp; b_{m2} &amp; ... &amp; b_{mn}
 \end{bmatrix}
 \end{split}\]</div>
 <p>Dari perkalian matriks di atas akan menghasilkan matriks C dengan ukuran <span class="math notranslate nohighlight">\(m x p\)</span></p>
@@ -496,10 +497,10 @@ b_{m1} &amp; b_{m2} &amp; b_{m3} &amp; ... &amp; b_{mn}
 \[\begin{split}
 C= 
 \begin{bmatrix}
-c_{11} &amp; c_{12} &amp; c_{13} &amp; ... &amp; c_{mp} \\
-c_{21} &amp; c_{22} &amp; c_{23} &amp; ... &amp; c_{2p} \\
-... &amp; ... &amp; ... &amp; ... &amp; ... \\
-c_{m1} &amp; c_{m2} &amp; c_{m3} &amp; ... &amp; c_{mp}
+c_{11} &amp; c_{12} &amp; ... &amp; c_{mp} \\
+c_{21} &amp; c_{22} &amp; ... &amp; c_{2p} \\
+... &amp; ... &amp; ... &amp; ... \\
+c_{m1} &amp; c_{m2} &amp; ... &amp; c_{mp}
 \end{bmatrix}
 \end{split}\]</div>
 <p>Setiap elemen <span class="math notranslate nohighlight">\(c_{ij}\)</span> (elemen pada baris ke-i dan kolom ke-j dari matriks hasil) dihitung dengan cara mengalikan elemen baris ke-i dari matriks <span class="math notranslate nohighlight">\(A\)</span> dengan elemen kolom ke-j dari matriks <span class="math notranslate nohighlight">\(B\)</span>, lalu menjumlahkan hasil perkalian tersebut. Secara matematis:</p>
@@ -581,6 +582,85 @@ C=
 </div>
 </div>
 </section>
+<section id="perkalian-skalar-matriks">
+<h3>3. Perkalian Skalar Matriks<a class="headerlink" href="#perkalian-skalar-matriks" title="Link to this heading">#</a></h3>
+<p><strong>Konsep perkalian skalar matriks:</strong></p>
+<p>Perkalian skalar matriks berati mengalikan semua elemen yang ada pada matriks dengan bilangan skalarnya. Operasi ini tetap mempertahankan dimensi matriks atau tidak merubah dimensi matriks.</p>
+<p><strong>cara melakukan perkalian skalar matriks:</strong></p>
+<p>Misal ada matriks <span class="math notranslate nohighlight">\(A\)</span> berukuran <span class="math notranslate nohighlight">\(m\)</span> x <span class="math notranslate nohighlight">\(n\)</span> :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A=
+\begin{bmatrix}
+a_{11} &amp; a_{12} &amp; ... &amp; a_{1n} \\
+a_{21} &amp; a_{22} &amp; ... &amp; a_{2n} \\
+... &amp; ... &amp; ... &amp; ... \\
+a_{m1} &amp; a_{m2} &amp; ... &amp; a_{mn}
+\end{bmatrix}
+\end{split}\]</div>
+<p>dengan skalar <span class="math notranslate nohighlight">\(k\)</span>, maka perkalian matriks skalar adalah <span class="math notranslate nohighlight">\(kA\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+kA=
+\begin{bmatrix}
+k.a_{11} &amp; k.a_{12} &amp; ... &amp; k.a_{1n} \\
+k.a_{21} &amp; k.a_{22} &amp; ... &amp; k.a_{2n} \\
+... &amp; ... &amp; ... &amp; ... \\
+k.a_{m1} &amp; k.a_{m2} &amp; ... &amp; k.a_{mn}
+\end{bmatrix}
+\end{split}\]</div>
+<p><strong>contoh perkalian skalar matriks:</strong></p>
+<p>Terdapat matriks:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A: 
+\begin{bmatrix}
+1 &amp; 6 &amp; 5\\
+2 &amp; 7 &amp; 4 \\
+3 &amp; 8 &amp; 3
+\end{bmatrix}
+\end{split}\]</div>
+<p>dan skalar <span class="math notranslate nohighlight">\(k = 2\)</span>, maka hasil perkalian skalar matriks:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+3A=3 x=
+\begin{bmatrix}
+1 &amp; 6 &amp; 5\\
+2 &amp; 7 &amp; 4 \\
+3 &amp; 8 &amp; 3
+\end{bmatrix}
+= 
+\begin{bmatrix}
+3 &amp; 18 &amp; 15\\
+6 &amp; 21 &amp; 12 \\
+9 &amp; 24 &amp; 9
+\end{bmatrix}
+\end{split}\]</div>
+<p>Jadi, semua elemen yang ada pada matriks <span class="math notranslate nohighlight">\(A\)</span> dikalikan dengan skalar yaitu <span class="math notranslate nohighlight">\(3\)</span>, dan akan memperoleh matriks tersebut.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># implementasi python perkalian skalar matriks</span>
+
+<span class="n">A</span><span class="o">=</span><span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">5</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">4</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">3</span><span class="p">]]</span>
+<span class="n">k</span><span class="o">=</span><span class="mi">3</span>
+<span class="n">kA</span><span class="o">=</span><span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">)):</span>
+    <span class="n">temp</span><span class="o">=</span><span class="p">[]</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">])):</span>
+        <span class="n">temp</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">*</span><span class="n">k</span><span class="p">)</span>
+    <span class="n">kA</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">temp</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;hasil perkalian skalar matriksnya adalah: &#39;</span><span class="p">,</span> <span class="n">kA</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>hasil perkalian skalar matriksnya adalah:  [[3, 18, 15], [6, 21, 12], [9, 24, 9]]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
 </section>
 </section>
 
@@ -644,6 +724,7 @@ C=
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-aritmetika-matriks">Operasi Aritmetika Matriks</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#penjumlahan-matrik">1. Penjumlahan Matrik</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#perkalian-matriks">2. Perkalian Matriks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#perkalian-skalar-matriks">3. Perkalian Skalar Matriks</a></li>
 </ul>
 </li>
 </ul>
