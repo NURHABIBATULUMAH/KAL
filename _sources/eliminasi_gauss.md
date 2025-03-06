@@ -1,4 +1,4 @@
-## Penyelesaian Sistem Persamaan Linear
+# Penyelesaian Sistem Persamaan Linear
 
 ### soal no 3 sistem persamaan:
 
