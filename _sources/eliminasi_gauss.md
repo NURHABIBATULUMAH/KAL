@@ -349,3 +349,5 @@ $$x_1 = 7/3$$
 $$x_2= 1/3$$
 
 $$x_3 = 1/3$$
+
+<iframe src="https://www.geogebra.org/3d/m9uqkygu?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
