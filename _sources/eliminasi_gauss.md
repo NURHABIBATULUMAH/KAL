@@ -216,15 +216,23 @@ $$x_2 = 2 - x_3$$
 maka, untuk $x_2$ ini bisa disubtitusikan pada persamaan pertama, maka diperoleh:
 
 $$x_1 + 2x_2 + 3x_3 = 6$$
+
 $$x_1 + 2x_2 (2-x_3) + 3x_3 = 6$$
+
 $$x_1 + 4-2x_3 + x_3 = 6$$
+
 $$x_1 + 4 + x_3 = 6$$
+
 $$x_1 = 6 - 4 - x_3$$
+
 $$x_1 = 2 - x_3$$
 
 kesimpulan solusi:
+
 $$x_1 = 2- x_3$$
+
 $$x_2 = 2 - x_3$$
+
 $$x_3=x_3$$
 
 untuk $x_3$ parameter bebas tidak ada yang membatasi.
