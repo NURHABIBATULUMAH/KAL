@@ -450,12 +450,16 @@ C:
         <span class="n">matbaru</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">+</span> <span class="n">B</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">])</span>
     <span class="n">C</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">matbaru</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;hasil penjumlahan matriks A + B adalah: &#39;</span><span class="p">,</span> <span class="n">C</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;hasil penjumlahan matriks A + B adalah: &#39;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">C</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>hasil penjumlahan matriks A + B adalah:  [[3, 9], [6, 12]]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>hasil penjumlahan matriks A + B adalah: 
+[3, 9]
+[6, 12]
 </pre></div>
 </div>
 </div>
@@ -571,12 +575,18 @@ C=
       <span class="n">total</span><span class="o">=</span><span class="n">total</span><span class="o">+</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">k</span><span class="p">]</span> <span class="o">*</span> <span class="n">B</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="n">j</span><span class="p">])</span>
     <span class="n">temp</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">total</span><span class="p">)</span>
   <span class="n">C</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">temp</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;hasil perkalian matriks A x B adalah: &#39;</span><span class="p">,</span> <span class="n">C</span><span class="p">)</span>
+  
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;hasil perkalian matriks A x B adalah: &#39;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">C</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>hasil perkalian matriks A x B adalah:  [[31, 33, 26], [35, 30, 28], [43, 43, 38]]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>hasil perkalian matriks A x B adalah: 
+[31, 33, 26]
+[35, 30, 28]
+[43, 43, 38]
 </pre></div>
 </div>
 </div>
@@ -650,12 +660,17 @@ A:
     <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">])):</span>
         <span class="n">temp</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">*</span><span class="n">k</span><span class="p">)</span>
     <span class="n">kA</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">temp</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;hasil perkalian skalar matriksnya adalah: &#39;</span><span class="p">,</span> <span class="n">kA</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;hasil perkalian skalar matriksnya adalah: &#39;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">kA</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>hasil perkalian skalar matriksnya adalah:  [[3, 18, 15], [6, 21, 12], [9, 24, 9]]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>hasil perkalian skalar matriksnya adalah: 
+[3, 18, 15]
+[6, 21, 12]
+[9, 24, 9]
 </pre></div>
 </div>
 </div>
