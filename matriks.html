@@ -716,98 +716,25 @@ B:
 5
 \end{bmatrix}
 \end{split}\]</div>
-<p>Kita ingin mencari solusi <span class="math notranslate nohighlight">\(x_1, x_2, x_3\)</span> menggunakan invers matriks :</p>
-<p><span class="math notranslate nohighlight">\(x = A^{-1} \cdot b\)</span></p>
-<ol class="arabic simple" start="2">
-<li><p>Langkah 2: Mencari Invers Matriks <span class="math notranslate nohighlight">\(A {-1}\)</span> dengan OBE</p></li>
-</ol>
-<p>Kita bentuk matriks augmented <span class="math notranslate nohighlight">\([A | I]\)</span>:</p>
-<p><span class="math notranslate nohighlight">\(
-\left[
-\begin{array}{ccc|ccc}
--7 &amp; -6 &amp; -12 &amp; 1 &amp; 0 &amp; 0 \\
-5 &amp; 5 &amp; 7 &amp; 0 &amp; 1 &amp; 0 \\
-1 &amp; 0 &amp; 4 &amp; 0 &amp; 0 &amp; 1
-\end{array}
-\right]\)</span></p>
-<p>Lakukan Operasi Baris Elementer (OBE) untuk mengubah <span class="math notranslate nohighlight">\(A\)</span> menjadi matriks identitas <span class="math notranslate nohighlight">\(I\)</span>, sambil menerapkan perubahan yang sama pada bagian kanan untuk mendapatkan <span class="math notranslate nohighlight">\(A^{-1}\)</span></p>
+<p>Tulis Matriks A berdampingan dengan matriks Identitas:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A: 
+\begin{bmatrix}
+-7 &amp; -6 &amp; -12\\|
+5 &amp; 5 &amp; 7 \\|
+1 &amp; 0 &amp; 4|
+1 &amp; 0 &amp; 0\\
+0 &amp; 1 &amp; 0\\
+0 &amp; 0 &amp; 1
+\end{bmatrix}
+\end{split}\]</div>
+<p>Lakukan OBE agar matriks kiri menjadi matriks identitas</p>
+<p>Mencari <span class="math notranslate nohighlight">\(A^-1\)</span> menggunakan Operasi Baris Elementer</p>
 <ul class="simple">
-<li><p>Step 1: Ubah Elemen (1,1) menjadi 1</p></li>
+<li><p>Ubah elemen pivot (1,1) menjadi 1.</p></li>
 </ul>
-<p>Bagi baris pertama dengan <span class="math notranslate nohighlight">\(-7\)</span> agar elemen pertama menjadi 1:</p>
-<p><span class="math notranslate nohighlight">\(R_1 \leftarrow \frac{R_1}{-7}\)</span></p>
-<p><span class="math notranslate nohighlight">\(\left[
-\begin{array}{ccc|ccc}
-1 &amp; \frac{6}{7} &amp; \frac{12}{7} &amp; -\frac{1}{7} &amp; 0 &amp; 0 \\
-5 &amp; 5 &amp; 7 &amp; 0 &amp; 1 &amp; 0 \\
-1 &amp; 0 &amp; 4 &amp; 0 &amp; 0 &amp; 1
-\end{array}
-\right]\)</span></p>
-<ul class="simple">
-<li><p>Step 2: Hilangkan Elemen di bawah Pivot (Kolom 1)</p></li>
-</ul>
-<p>Gunakan <span class="math notranslate nohighlight">\(R_1\)</span> untuk mengubah elemen (2,1) dan (3,1) menjadi nol:</p>
-<p><span class="math notranslate nohighlight">\(R_2 \leftarrow R_2 - 5R_1\)</span></p>
-<p><span class="math notranslate nohighlight">\(R_3 \leftarrow R_3 - R_1\)</span></p>
-<p><span class="math notranslate nohighlight">\(
-\left[
-\begin{array}{ccc|ccc}
-1 &amp; \frac{6}{7} &amp; \frac{12}{7} &amp; -\frac{1}{7} &amp; 0 &amp; 0 \\
-0 &amp; -\frac{7}{7} &amp; -\frac{16}{7} &amp; \frac{5}{7} &amp; 1 &amp; 0 \\
-0 &amp; -\frac{6}{7} &amp; -\frac{16}{7} &amp; \frac{1}{7} &amp; 0 &amp; 1
-\end{array}
-\right]\)</span></p>
-<ul class="simple">
-<li><p>Step 3: Ubah Elemen (2,2) menjadi 1</p></li>
-</ul>
-<p>Bagi baris kedua dengan <span class="math notranslate nohighlight">\(\frac{5}{7}\)</span> agar elemen kedua menjadi 1:</p>
-<p><span class="math notranslate nohighlight">\(R_2 \leftarrow R_2 \times \frac{7}{5}\)</span></p>
-<p><span class="math notranslate nohighlight">\(\left[
-\begin{array}{ccc|ccc}
-1 &amp; \frac{6}{7} &amp; \frac{12}{7} &amp; -\frac{1}{7} &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; -\frac{1}{5} &amp; \frac{1}{5} &amp; \frac{7}{5} &amp; 0 \\
-0 &amp; -\frac{6}{7} &amp; \frac{16}{7} &amp; \frac{1}{7} &amp; 0 &amp; 1
-\end{array}
-\right]\)</span></p>
-<ul class="simple">
-<li><p>Step 4: Hilangkan Elemen di Atas dan Bawah Pivot (Kolom 2)</p></li>
-</ul>
-<p><span class="math notranslate nohighlight">\(R_1 \leftarrow R_1 - \frac{6}{7} R_2\)</span></p>
-<p><span class="math notranslate nohighlight">\(R_3 \leftarrow R_3 + \frac{6}{7} R_2\)</span></p>
-<p><span class="math notranslate nohighlight">\(
-\left[
-\begin{array}{ccc|ccc}
-1 &amp; 0 &amp; \frac{42}{35} &amp; -\frac{13}{35} &amp; -\frac{6}{5} &amp; 0 \\
-0 &amp; 1 &amp; -\frac{1}{5} &amp; \frac{1}{5} &amp; \frac{7}{5} &amp; 0 \\
-0 &amp; 0 &amp; \frac{35}{35} &amp; \frac{5}{35} &amp; \frac{25}{35} &amp; 1
-\end{array}
-\right]\)</span></p>
-<ul class="simple">
-<li><p>Step 5: Ubah Elemen (3,3) menjadi 1</p></li>
-</ul>
-<p><span class="math notranslate nohighlight">\(R_3 \leftarrow R_3 \times \frac{35}{22}\)</span></p>
-<p><span class="math notranslate nohighlight">\(
-\left[
-\begin{array}{ccc|ccc}
-1 &amp; 0 &amp; \frac{42}{35} &amp; -\frac{13}{35} &amp; -\frac{6}{5} &amp; 0 \\
-0 &amp; 1 &amp; -\frac{1}{5} &amp; \frac{1}{5} &amp; \frac{7}{5} &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; \frac{11}{22} \times \frac{35}{22} &amp; \frac{42}{35} \times \frac{35}{22} &amp; \frac{35}{22} \times \frac{35}{22}
-\end{array}
-\right]
-\)</span></p>
-<p>Setelah langkah-langkah lebih lanjut, kita mendapatkan matriks identitas di kiri dan invers matriks <span class="math notranslate nohighlight">\(A^{-1}\)</span> di kanan.</p>
-<ol class="arabic simple" start="3">
-<li><p>Langkah 3: Hitung <span class="math notranslate nohighlight">\(x = A^{-1} b\)</span></p></li>
-</ol>
-<p>Sekarang kita gunakan <span class="math notranslate nohighlight">\(A^{-1}\)</span> untuk menghitung:</p>
-<p><span class="math notranslate nohighlight">\(x = A^{-1} \cdot b\)</span></p>
-<p>Dihitung menggunakan Python, kita mendapatkan:</p>
-<p><span class="math notranslate nohighlight">\(
-\begin{aligned}
-x_1 &amp;= -3 \\
-x_2 &amp;= 5 \\
-x_3 &amp;= 2
-\end{aligned}\)</span></p>
+<p><span class="math notranslate nohighlight">\(R_1 \leftarrow R_1/7\)</span></p>
 </section>
 </section>
 </section>
