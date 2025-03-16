@@ -734,6 +734,114 @@ A:
 <li><p>Ubah elemen pivot (1,1) menjadi 1.</p></li>
 </ul>
 <p><span class="math notranslate nohighlight">\(R_1 \leftarrow R_1/7\)</span></p>
+<p>Hasil:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} 
+\begin{bmatrix}
+\begin{array}{ccc|ccc}
+1 &amp; 6/7 &amp; 12/7 &amp; -1/7 &amp; 0 &amp; 0 \\
+5 &amp; 5 &amp; 7 &amp; 0 &amp; 1 &amp; 0 \\
+1 &amp; 0 &amp; 4 &amp; 0 &amp; 0 &amp; 1
+\end{array}
+\end{bmatrix}
+\end{split}\]</div>
+<ul class="simple">
+<li><p>Nol kan elemen di bawah pivot (kolom 1, baris 2 dan 3)</p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(R_2 \leftarrow R_2 - 5R_1\)</span>
+<span class="math notranslate nohighlight">\(R_3 \leftarrow R_3 -  R_1\)</span></p>
+<p>Hasil:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} 
+\begin{bmatrix}
+\begin{array}{ccc|ccc}
+1 &amp; 6/7 &amp; 12/7 &amp; -1/7 &amp; 0 &amp; 0 \\
+0 &amp; 5/7 &amp; -13/7 &amp; 5/7 &amp; 1 &amp; 0 \\
+0 &amp; -6/7 &amp; 16/7 &amp; 1/7 &amp; 0 &amp; 1
+\end{array}
+\end{bmatrix}
+\end{split}\]</div>
+<ul class="simple">
+<li><p>Ubah elemen pivot (2,2) menjadi 1</p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(R_2 \leftarrow R_2 X 7/5\)</span></p>
+<p>Hasil:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} 
+\begin{bmatrix}
+\begin{array}{ccc|ccc}
+1 &amp; 6/7 &amp; 12/7 &amp; -1/7 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; -13/5 &amp; 1/5 &amp; 7/5 &amp; 0 \\
+0 &amp; -6/7 &amp; 16/7 &amp; 1/7 &amp; 0 &amp; 1
+\end{array}
+\end{bmatrix}
+\end{split}\]</div>
+<ul class="simple">
+<li><p>Nol kan elemen di atas dan di bawah pivot (kolom 2, baris 1 dan 3)</p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(R_1 \leftarrow R_1 - 6/7R_2\)</span>
+<span class="math notranslate nohighlight">\(R_3 \leftarrow R_3 + 6/7R_2\)</span></p>
+<p>Hasil:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} 
+\begin{bmatrix}
+\begin{array}{ccc|ccc}
+1 &amp; 0 &amp; 36/35 &amp; -13/35 &amp; -6/5 &amp; 0 \\
+0 &amp; 1 &amp; -13/5 &amp; 1/5 &amp; 7/5 &amp; 0 \\
+0 &amp; 0 &amp; 10/7 &amp; 5/3 &amp; 6/5 &amp; 1
+\end{array}
+\end{bmatrix}
+\end{split}\]</div>
+<ul class="simple">
+<li><p>Ubah elemen pivot (3,3) menjadi 1</p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(R_3 \leftarrow R_3 x 7/10\)</span></p>
+<p>Hasil:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} 
+\begin{bmatrix}
+\begin{array}{ccc|ccc}
+1 &amp; 0 &amp; 0 &amp; -5/7 &amp; -6/5 &amp; -36/35 \\
+0 &amp; 1 &amp; 0 &amp; 4/7 &amp; 7/5 &amp; 26/35 \\
+0 &amp; 0 &amp; 1 &amp; 1/2 &amp; 3/5 &amp; 7/10
+\end{array}
+\end{bmatrix}
+\end{split}\]</div>
+<p>Sekarang bagian kanan adalah <span class="math notranslate nohighlight">\(A^_1\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split} 
+A^-1
+\begin{bmatrix}
+\begin{array}{ccc|ccc}
+-5/7 &amp; -6/5 &amp; -36/35 \\
+4/7 &amp; 7/5 &amp; 26/35 \\
+1/2 &amp; 3/5 &amp; 7/10
+\end{array}
+\end{bmatrix}
+\end{split}\]</div>
+<p>Hitung <span class="math notranslate nohighlight">\(X = A^-1B\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split} 
+X = A^-1B = 
+\begin{bmatrix}
+\begin{array}{ccc|ccc}
+-5/7 &amp; -6/5 &amp; -36/35 \\
+4/7 &amp; 7/5 &amp; 26/35 \\
+1/2 &amp; 3/5 &amp; 7/10
+\end{array}
+\end{bmatrix}
+\begin{bmatrix}
+\begin{array}{ccc|ccc}
+-33 \\
+24 \\
+5
+\end{array}
+\end{bmatrix}
+\end{split}\]</div>
+<p>Hitung Perkalian:</p>
+<p><span class="math notranslate nohighlight">\(x_1 = (-5/7)(-33)+(-6/5)(24)+(-36/35)(5)=25\)</span></p>
+<p><span class="math notranslate nohighlight">\(x_2 = (4/7)(-33)+(7/5)(24)+(26/35)(5)=-4\)</span></p>
+<p><span class="math notranslate nohighlight">\(x_3 = (1/2)(-33)+(3/5)(24)+(7/10)(5)= 3\)</span></p>
 </section>
 </section>
 </section>
