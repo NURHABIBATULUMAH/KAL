@@ -385,7 +385,8 @@
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#minor-dan-cofactor">Minor dan Cofactor</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-soal-mencari-determinan-matriks-dengan-konsep-minor-dan-cofactor">contoh soal mencari determinan matriks dengan konsep minor dan cofactor</a><ul class="nav section-nav flex-column">
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ukuran-matriks-3x3">ukuran matriks 3x3</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-ukuran-matriks-4x4">contoh ukuran matriks 4x4</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ukuran-matriks-4x4">ukuran matriks 4x4</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ukuran-matriks-5x5">ukuran matriks 5x5</a></li>
 </ul>
 </li>
 </ul>
@@ -944,8 +945,8 @@ a_{13}:
 \[det(A)=1(-11) + 6(6) + 5(-5) = 0\]</div>
 <p>Jadi, det(A)=0, yang berarti matriks singular (tidak memiliki invers)</p>
 </section>
-<section id="contoh-ukuran-matriks-4x4">
-<h5>contoh ukuran matriks 4x4<a class="headerlink" href="#contoh-ukuran-matriks-4x4" title="Link to this heading">#</a></h5>
+<section id="ukuran-matriks-4x4">
+<h5>ukuran matriks 4x4<a class="headerlink" href="#ukuran-matriks-4x4" title="Link to this heading">#</a></h5>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 A = 
@@ -961,7 +962,7 @@ A =
 \[det(A) = a_{11}M_{11} - a_{12}M_{12} + a_{13}M_{13} - a_{14}M_{14}\]</div>
 <p>Dimana <span class="math notranslate nohighlight">\(M_{ij}\)</span> adalah determinan minor, yaitu matriks 3x3 yang diperoleh dari menghapus baris 1 dan kolom ke-<span class="math notranslate nohighlight">\(_j\)</span>.</p>
 <p><strong>Langkah 2:</strong> Menghitung minor 3x3</p>
-<p><span class="math notranslate nohighlight">\(Minor M_{11}\)</span></p>
+<p>Minor <span class="math notranslate nohighlight">\(M_{11}\)</span></p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 M_{11} = 
@@ -971,7 +972,7 @@ M_{11} =
 14 &amp; 15 &amp; 16
 \end{bmatrix}
 \end{split}\]</div>
-<p><span class="math notranslate nohighlight">\(Minor M_{12}\)</span></p>
+<p>Minor <span class="math notranslate nohighlight">\(M_{12}\)</span></p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 M_{12} = 
@@ -981,7 +982,7 @@ M_{12} =
 13 &amp; 15 &amp; 16
 \end{bmatrix}
 \end{split}\]</div>
-<p><span class="math notranslate nohighlight">\(Minor M_{13}\)</span></p>
+<p>Minor <span class="math notranslate nohighlight">\(M_{13}\)</span></p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 M_{13} = 
@@ -991,7 +992,7 @@ M_{13} =
 13 &amp; 14 &amp; 16
 \end{bmatrix}
 \end{split}\]</div>
-<p><span class="math notranslate nohighlight">\(Minor M_{14}\)</span></p>
+<p>Minor <span class="math notranslate nohighlight">\(M_{14}\)</span></p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 M_{14} = 
@@ -1176,6 +1177,22 @@ M_{14} =
 \[det(A) = 1(0) - 2(0) + 3(0) - 4(0) = 0\]</div>
 <p>Jadi, det(A)=0, matriks ini singular(tidak memiliki invers)</p>
 </section>
+<section id="ukuran-matriks-5x5">
+<h5>ukuran matriks 5x5<a class="headerlink" href="#ukuran-matriks-5x5" title="Link to this heading">#</a></h5>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A = \begin{bmatrix}
+2 &amp; -1 &amp; 3 &amp; 4 &amp; 5 \\
+1 &amp; 0 &amp; 2 &amp; -3 &amp; 4 \\
+3 &amp; 1 &amp; 1 &amp; 2 &amp; -2 \\
+4 &amp; -2 &amp; 0 &amp; 1 &amp; 3 \\
+-1 &amp; 2 &amp; -3 &amp; 4 &amp; 0 
+\end{bmatrix}
+\end{split}\]</div>
+<p><strong>Langkah 1:</strong> Ekspansi berdasarkan baris pertama, yaitu:</p>
+<div class="math notranslate nohighlight">
+\[\det(A) = a_{11}M_{11} - a_{12}M_{12} + a_{13}M_{13} - a_{14}M_{14} + a_{15}M_{15}\]</div>
+</section>
 </section>
 </section>
 </section>
@@ -1258,7 +1275,8 @@ M_{14} =
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#minor-dan-cofactor">Minor dan Cofactor</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-soal-mencari-determinan-matriks-dengan-konsep-minor-dan-cofactor">contoh soal mencari determinan matriks dengan konsep minor dan cofactor</a><ul class="nav section-nav flex-column">
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ukuran-matriks-3x3">ukuran matriks 3x3</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-ukuran-matriks-4x4">contoh ukuran matriks 4x4</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ukuran-matriks-4x4">ukuran matriks 4x4</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ukuran-matriks-5x5">ukuran matriks 5x5</a></li>
 </ul>
 </li>
 </ul>
