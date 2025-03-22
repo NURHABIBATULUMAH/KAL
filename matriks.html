@@ -1189,9 +1189,66 @@ A = \begin{bmatrix}
 -1 &amp; 2 &amp; -3 &amp; 4 &amp; 0 
 \end{bmatrix}
 \end{split}\]</div>
-<p><strong>Langkah 1:</strong> Ekspansi berdasarkan baris pertama, yaitu:</p>
+<p><strong>Langkah 1:</strong> Menghitung minor 5x5 menjadi 4x4</p>
 <div class="math notranslate nohighlight">
-\[\det(A) = a_{11}M_{11} - a_{12}M_{12} + a_{13}M_{13} - a_{14}M_{14} + a_{15}M_{15}\]</div>
+\[\begin{split}
+M_{11}= \begin{bmatrix}
+0 &amp; 2 &amp; -3 &amp; 4 \\
+1 &amp; 1 &amp; 2 &amp; -2 \\
+-2 &amp; 0 &amp; 1 &amp; 3 \\
+2 &amp; -3 &amp; 4 &amp; 0 
+\end{bmatrix}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+M_{12} \begin{bmatrix}
+1 &amp; 2 &amp; -3 &amp; 4 \\
+3 &amp; 1 &amp; 2 &amp; -2 \\
+4 &amp; 0 &amp; 1 &amp; 3 \\
+-1 &amp; -3 &amp; 4 &amp; 0 
+\end{bmatrix}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+M_{13} = \begin{bmatrix}
+1 &amp; 0 &amp; -3 &amp; 4 \\
+3 &amp; 1 &amp; 2 &amp; -2 \\
+4 &amp; -2 &amp; 1 &amp; 3 \\
+-1 &amp; 2 &amp; 4 &amp; 0 
+\end{bmatrix}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+M_{14} = \begin{bmatrix}
+1 &amp; 0 &amp; 2 &amp; 4 \\
+3 &amp; 1 &amp; 1 &amp; -2 \\
+4 &amp; -2 &amp; 0 &amp; 3 \\
+-1 &amp; 2 &amp; -3 &amp; 0 
+\end{bmatrix}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+M_{15} = \begin{bmatrix}
+1 &amp; 0 &amp; 2 &amp; -3 \\
+3 &amp; 1 &amp; 1 &amp; 2\\
+4 &amp; -2 &amp; 0 &amp; 1\\
+-1 &amp; 2 &amp; -3 &amp; 4 
+\end{bmatrix}
+\end{split}\]</div>
+<p><strong>Langkah 2:</strong> Setelah ditemukan semua minornya, selanjutnya menghitung determinan dari matriks 4x4 tersebut, menggunakan konsep ekspansi kofaktor pada baris pertama:</p>
+<p>Untuk <span class="math notranslate nohighlight">\(M_{11}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+M_{11}= \begin{bmatrix}
+0 &amp; 2 &amp; -3 &amp; 4 \\
+1 &amp; 1 &amp; 2 &amp; -2 \\
+-2 &amp; 0 &amp; 1 &amp; 3 \\
+2 &amp; -3 &amp; 4 &amp; 0 
+\end{bmatrix}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[det(M_{11})=0C_{11} + 2C_{12} + (-3)C_{13} + 4C_{14}\]</div>
+<p>Untuk menghitung <span class="math notranslate nohighlight">\(C_{ij} = (-1)^{i+j}\)</span>det<span class="math notranslate nohighlight">\((M_{ij}^{3 \times 3})\)</span>, jadi perlu mencari minor 3x3 berikutnya</p>
 </section>
 </section>
 </section>
