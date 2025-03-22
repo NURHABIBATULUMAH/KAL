@@ -385,6 +385,7 @@
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#minor-dan-cofactor">Minor dan Cofactor</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-soal-mencari-determinan-matriks-dengan-konsep-minor-dan-cofactor">contoh soal mencari determinan matriks dengan konsep minor dan cofactor</a><ul class="nav section-nav flex-column">
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ukuran-matriks-3x3">ukuran matriks 3x3</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-ukuran-matriks-4x4">contoh ukuran matriks 4x4</a></li>
 </ul>
 </li>
 </ul>
@@ -943,6 +944,68 @@ a_{13}:
 \[det(A)=1(-11) + 6(6) + 5(-5) = 0\]</div>
 <p>Jadi, det(A)=0, yang berarti matriks singular (tidak memiliki invers)</p>
 </section>
+<section id="contoh-ukuran-matriks-4x4">
+<h5>contoh ukuran matriks 4x4<a class="headerlink" href="#contoh-ukuran-matriks-4x4" title="Link to this heading">#</a></h5>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A = 
+\begin{bmatrix}
+1 &amp; 2 &amp; 3 &amp; 4 \\
+5 &amp; 6 &amp; 7 &amp; 8 \\
+9 &amp; 10 &amp; 11 &amp; 12 \\
+13 &amp; 14 &amp; 15 &amp; 16
+\end{bmatrix}
+\end{split}\]</div>
+<p><strong>Langkah 1:</strong> ekspansi berdasarkan baris pertama, yaitu:</p>
+<div class="math notranslate nohighlight">
+\[det(A) = a_{11}M_{11} - a_{12}M_{12} + a_{13}M_{13} - a_{14}M_{14}\]</div>
+<p>Dimana <span class="math notranslate nohighlight">\(M_{ij}\)</span> adalah determinan minor, yaitu matriks 3x3 yang diperoleh dari menghapus baris 1 dan kolom ke-<span class="math notranslate nohighlight">\(_j\)</span>.</p>
+<p><strong>Langkah 2:</strong> Menghitung minor 3x3</p>
+<p>Minor M_{11}:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+M_{11} = 
+\begin{bmatrix}
+6 &amp; 7 &amp; 8 \\
+10 &amp; 11 &amp; 12 \\
+14 &amp; 15 &amp; 16
+\end{bmatrix}
+\end{split}\]</div>
+<p>Minor M_{12}</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+M_{12} = 
+\begin{bmatrix}
+5 &amp; 7 &amp; 8 \\
+9 &amp; 11 &amp; 12 \\
+13 &amp; 15 &amp; 16
+\end{bmatrix}
+\end{split}\]</div>
+<p>Minor M_{13}</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+M_{13} = 
+\begin{bmatrix}
+5 &amp; 6 &amp; 8 \\
+9 &amp; 10 &amp; 12 \\
+13 &amp; 14 &amp; 16
+\end{bmatrix}
+\end{split}\]</div>
+<p>Minor M_{14}</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A = 
+\begin{bmatrix}
+5 &amp; 6 &amp; 7 \\
+9 &amp; 10 &amp; 11 \\
+13 &amp; 14 &amp; 15
+\end{bmatrix}
+\end{split}\]</div>
+<p><strong>Langkah 3:</strong> Menghitung determinan 3x3 dengan ekspansi</p>
+<div class="math notranslate nohighlight">
+\[det(M)= a_{11}det(M_{11}^{2 \times 2})- a_{12}det(M_{12}^{2 \times 2})a_{13}det(M_{13}^{2 \times 2})\]</div>
+<p>Dimana <span class="math notranslate nohighlight">\((M_{11}^{2 \times 2})\)</span> adalah matriks minor 2x2</p>
+</section>
 </section>
 </section>
 </section>
@@ -1025,6 +1088,7 @@ a_{13}:
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#minor-dan-cofactor">Minor dan Cofactor</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-soal-mencari-determinan-matriks-dengan-konsep-minor-dan-cofactor">contoh soal mencari determinan matriks dengan konsep minor dan cofactor</a><ul class="nav section-nav flex-column">
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ukuran-matriks-3x3">ukuran matriks 3x3</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-ukuran-matriks-4x4">contoh ukuran matriks 4x4</a></li>
 </ul>
 </li>
 </ul>
