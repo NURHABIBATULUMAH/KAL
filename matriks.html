@@ -1452,8 +1452,16 @@ M_{15} = \begin{bmatrix}
 <p><strong>Langkah 3:</strong> Setelah menemukan minor 3x3, langkah selanjutnya menghitung determinan det<span class="math notranslate nohighlight">\((M_{ij}^{3 \times 3})\)</span></p>
 <p><strong>Untuk <span class="math notranslate nohighlight">\(M_{11}\)</span>:</strong></p>
 <div class="math notranslate nohighlight">
-\[det(M_{12}^{3 \times 3})=1C_{11}^({3 \times 3}) + 2C_{12}^({3 \times 3}) +(-2)C_{13}^({3 \times 3})\]</div>
-<p>Untuk menghitung <span class="math notranslate nohighlight">\(C_{ij} = (-1)^{i+j}\)</span> det <span class="math notranslate nohighlight">\((M_{ij}^{2 \times 2})\)</span>, jadi perlu mencari minor 2x2 berikutnya</p>
+\[\begin{split}
+M_{11}= \begin{bmatrix}
+0 &amp; 2 &amp; -3 &amp; 4 \\
+1 &amp; 1 &amp; 2 &amp; -2 \\
+-2 &amp; 0 &amp; 1 &amp; 3 \\
+2 &amp; -3 &amp; 4 &amp; 0 
+\end{bmatrix}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[det(M_{11})=0C_{11} + 2C_{12} + (-3)C_{13} + 4C_{14}\]</div>
 <p>Hitung <span class="math notranslate nohighlight">\(C_{12}\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -1463,6 +1471,9 @@ M_{15} = \begin{bmatrix}
 2 &amp; 4 &amp; 0 
 \end{bmatrix}
 \end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[det(M_{12}^{3 \times 3})=1C_{11}^({3 \times 3}) + 2C_{12}^({3 \times 3}) +(-2)C_{13}^({3 \times 3})\]</div>
+<p>Untuk menghitung <span class="math notranslate nohighlight">\(C_{ij} = (-1)^{i+j}\)</span> det <span class="math notranslate nohighlight">\((M_{ij}^{2 \times 2})\)</span>, jadi perlu mencari minor 2x2 berikutnya</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{vmatrix}
@@ -1501,6 +1512,9 @@ M_{15} = \begin{bmatrix}
 \end{bmatrix}
 \end{split}\]</div>
 <div class="math notranslate nohighlight">
+\[det(M_{13}^{3 \times 3})=1C_{11}^({3 \times 3}) + 1C_{12}^({3 \times 3}) +(-2)C_{13}^({3 \times 3})\]</div>
+<p>Untuk menghitung <span class="math notranslate nohighlight">\(C_{ij} = (-1)^{i+j}\)</span> det <span class="math notranslate nohighlight">\((M_{ij}^{2 \times 2})\)</span>, jadi perlu mencari minor 2x2 berikutnya</p>
+<div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{vmatrix}
 0 &amp; 3 \\
@@ -1531,12 +1545,15 @@ M_{15} = \begin{bmatrix}
 <p>Hitung <span class="math notranslate nohighlight">\(C_{14}\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-(M_{12}^{3 \times 3})= \begin{bmatrix}
+(M_{14}^{3 \times 3})= \begin{bmatrix}
 1 &amp; -2 &amp; 2 \\
 1 &amp; 0 &amp; -3 \\
 2 &amp; 1 &amp; 4 
 \end{bmatrix}
 \end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[det(M_{14}^{3 \times 3})=1C_{11}^({3 \times 3}) + (-2)C_{12}^({3 \times 3}) +2C_{13}^({3 \times 3})\]</div>
+<p>Untuk menghitung <span class="math notranslate nohighlight">\(C_{ij} = (-1)^{i+j}\)</span> det <span class="math notranslate nohighlight">\((M_{ij}^{2 \times 2})\)</span>, jadi perlu mencari minor 2x2 berikutnya</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \det(M^{3 \times 3}_{14}) = 1 \cdot \left| \begin{array}{cc}
@@ -1593,16 +1610,18 @@ M_{12} = \begin{bmatrix}
 \end{split}\]</div>
 <div class="math notranslate nohighlight">
 \[det(M_{12})=1C_{11} + 2C_{12} + (-3)C_{13} + 4C_{14}\]</div>
-<p>Untuk menghitung <span class="math notranslate nohighlight">\(C_{ij} = (-1)^{i+j}\)</span> det <span class="math notranslate nohighlight">\((M_{ij}^{2 \times 2})\)</span>, jadi perlu mencari minor 2x2 berikutnya</p>
 <p>Hitung <span class="math notranslate nohighlight">\(C_{11}\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-(M_{12}^{3 \times 3})= \begin{bmatrix}
+(M_{11}^{3 \times 3})= \begin{bmatrix}
 1 &amp; 2 &amp; -2 \\
 0 &amp; 1 &amp; 3 \\
 -3 &amp; 4 &amp; 0 
 \end{bmatrix}
 \end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[det(M_{11}^{3 \times 3})=1C_{11}^({3 \times 3}) + 2C_{12}^({3 \times 3}) +(-2)C_{13}^({3 \times 3})\]</div>
+<p>Untuk menghitung <span class="math notranslate nohighlight">\(C_{ij} = (-1)^{i+j}\)</span> det <span class="math notranslate nohighlight">\((M_{ij}^{2 \times 2})\)</span>, jadi perlu mencari minor 2x2 berikutnya</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{vmatrix}
@@ -1638,6 +1657,9 @@ M^{3 \times 3}_{12} = \begin{bmatrix}
 \end{bmatrix}
 \end{split}\]</div>
 <div class="math notranslate nohighlight">
+\[det(M_{12}^{3 \times 3})=3C_{11}^({3 \times 3}) + 2C_{12}^({3 \times 3}) +(-2)C_{13}^({3 \times 3})\]</div>
+<p>Untuk menghitung <span class="math notranslate nohighlight">\(C_{ij} = (-1)^{i+j}\)</span> det <span class="math notranslate nohighlight">\((M_{ij}^{2 \times 2})\)</span>, jadi perlu mencari minor 2x2 berikutnya</p>
+<div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{vmatrix}
 1 &amp; 3 \\
@@ -1671,6 +1693,9 @@ M^{3 \times 3}_{13} = \begin{bmatrix}
 -1 &amp; -3 &amp; 0 
 \end{bmatrix}
 \end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[det(M_{13}^{3 \times 3})=3C_{11}^({3 \times 3}) + 1C_{12}^({3 \times 3}) +(-2)C_{13}^({3 \times 3})\]</div>
+<p>Untuk menghitung <span class="math notranslate nohighlight">\(C_{ij} = (-1)^{i+j}\)</span> det <span class="math notranslate nohighlight">\((M_{ij}^{2 \times 2})\)</span>, jadi perlu mencari minor 2x2 berikutnya</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \text{det}(M^{3 \times 3}_{13}) = 3 \begin{vmatrix}
@@ -1720,6 +1745,9 @@ M^{3 \times 3}_{14} =
 -1 &amp; -3 &amp; 4
 \end{bmatrix}
 \end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[det(M_{14}^{3 \times 3})=3C_{11}^({3 \times 3}) + 1C_{12}^({3 \times 3}) +2C_{13}^({3 \times 3})\]</div>
+<p>Untuk menghitung <span class="math notranslate nohighlight">\(C_{ij} = (-1)^{i+j}\)</span> det <span class="math notranslate nohighlight">\((M_{ij}^{2 \times 2})\)</span>, jadi perlu mencari minor 2x2 berikutnya</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \text{det}(M^{3 \times 3}_{14}) = 3 \cdot 
@@ -1787,6 +1815,9 @@ M_{13} = \begin{bmatrix}
 \end{bmatrix}
 \end{split}\]</div>
 <div class="math notranslate nohighlight">
+\[det(M_{11}^{3 \times 3})=1C_{11}^({3 \times 3}) + 2C_{12}^({3 \times 3}) +(-2)C_{13}^({3 \times 3})\]</div>
+<p>Untuk menghitung <span class="math notranslate nohighlight">\(C_{ij} = (-1)^{i+j}\)</span> det <span class="math notranslate nohighlight">\((M_{ij}^{2 \times 2})\)</span>, jadi perlu mencari minor 2x2 berikutnya</p>
+<div class="math notranslate nohighlight">
 \[\begin{split}
 \text{det}(M^{3 \times 3}_{11}) = 1 \cdot 
 \begin{vmatrix}
@@ -1836,6 +1867,9 @@ M_{13} = \begin{bmatrix}
 -1 &amp; 2 &amp; 0 
 \end{bmatrix}
 \end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[det(M_{13}^{3 \times 3})=3C_{11}^({3 \times 3}) + 1C_{12}^({3 \times 3}) +(-2)C_{13}^({3 \times 3})\]</div>
+<p>Untuk menghitung <span class="math notranslate nohighlight">\(C_{ij} = (-1)^{i+j}\)</span> det <span class="math notranslate nohighlight">\((M_{ij}^{2 \times 2})\)</span>, jadi perlu mencari minor 2x2 berikutnya</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \text{det}(M^{3 \times 3}_{13}) = 3 \cdot 
@@ -1887,6 +1921,9 @@ M_{13} = \begin{bmatrix}
 \end{bmatrix}
 \end{split}\]</div>
 <div class="math notranslate nohighlight">
+\[det(M_{14}^{3 \times 3})=3C_{11}^({3 \times 3}) + 1C_{12}^({3 \times 3}) + 2C_{13}^({3 \times 3})\]</div>
+<p>Untuk menghitung <span class="math notranslate nohighlight">\(C_{ij} = (-1)^{i+j}\)</span> det <span class="math notranslate nohighlight">\((M_{ij}^{2 \times 2})\)</span>, jadi perlu mencari minor 2x2 berikutnya</p>
+<div class="math notranslate nohighlight">
 \[\begin{split}
 \text{det}(M^{3 \times 3}_{14}) = 3 \cdot 
 \begin{vmatrix}
@@ -1927,6 +1964,8 @@ M_{13} = \begin{bmatrix}
 \end{split}\]</div>
 <div class="math notranslate nohighlight">
 \[\text{det}(M^{3 \times 3}_{13}) = (3 \times -10) - (1 \times 17) + (2 \times 6)= -30 - 17 + 12 = -35\]</div>
+<div class="math notranslate nohighlight">
+\[C_{13}=(-1)^{1+3} det(M_{13})=(-1)^4(-35)=-35\]</div>
 <p><strong>Untuk</strong> <span class="math notranslate nohighlight">\(M_{14}\)</span> <strong>diperoleh:</strong></p>
 <div class="math notranslate nohighlight">
 \[det(M_{13})=1(20) + 0(C_{12}) + (-3)(-33) + 4(-35) = 20 + 99 - 140= -21\]</div>
@@ -1942,7 +1981,7 @@ M_{14} = \begin{bmatrix}
 \end{split}\]</div>
 <div class="math notranslate nohighlight">
 \[det(M_{14})=1C_{11} + 0C_{12} + 2C_{13} + 4C_{14}\]</div>
-<p>Hitung <span class="math notranslate nohighlight">\(M_{11}\)</span>:</p>
+<p>Hitung <span class="math notranslate nohighlight">\(C_{11}\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 (M_{11}^{3 \times 3})= \begin{bmatrix}
@@ -1952,8 +1991,11 @@ M_{14} = \begin{bmatrix}
 \end{bmatrix}
 \end{split}\]</div>
 <div class="math notranslate nohighlight">
+\[det(M_{11}^{3 \times 3})=1C_{11}^({3 \times 3}) + 2C_{12}^({3 \times 3}) +(-2)C_{13}^({3 \times 3})\]</div>
+<p>Untuk menghitung <span class="math notranslate nohighlight">\(C_{ij} = (-1)^{i+j}\)</span> det <span class="math notranslate nohighlight">\((M_{ij}^{2 \times 2})\)</span>, jadi perlu mencari minor 2x2 berikutnya</p>
+<div class="math notranslate nohighlight">
 \[\begin{split}
-\text{det}(M^{3 \times 3}_{14}) = 1 \cdot 
+\text{det}(M^{3 \times 3}_{11}) = 1 \cdot 
 \begin{vmatrix}
 0 &amp; 3 \\
 -3 &amp; 0
@@ -1992,6 +2034,299 @@ M_{14} = \begin{bmatrix}
 \end{split}\]</div>
 <div class="math notranslate nohighlight">
 \[\text{det}(M^{3 \times 3}_{11}) = (1 \times 9) - (1 \times (-6)) + (-2 \times 6)= 9 + 6 - 12 = 3\]</div>
+<p>Hitung <span class="math notranslate nohighlight">\(C_{13}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+(M_{13}^{3 \times 3})= \begin{bmatrix}
+3 &amp; 1 &amp; -2 \\
+4 &amp; -2 &amp; 3 \\
+-1 &amp; 2 &amp; 0 
+\end{bmatrix}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[det(M_{13}^{3 \times 3})=3C_{11}^({3 \times 3}) + 1C_{12}^({3 \times 3}) +(-2)C_{13}^({3 \times 3})\]</div>
+<p>Untuk menghitung <span class="math notranslate nohighlight">\(C_{ij} = (-1)^{i+j}\)</span> det <span class="math notranslate nohighlight">\((M_{ij}^{2 \times 2})\)</span>, jadi perlu mencari minor 2x2 berikutnya</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\text{det}(M^{3 \times 3}_{13}) = 3 \cdot 
+\begin{vmatrix}
+-2 &amp; 3 \\
+2 &amp; 0
+\end{vmatrix} 
+-1 \cdot 
+\begin{vmatrix}
+4 &amp; 3 \\
+-1 &amp; 0
+\end{vmatrix} 
++ (-2) \cdot 
+\begin{vmatrix}
+4 &amp; -2 \\
+-1 &amp; 2
+\end{vmatrix} 
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{vmatrix}
+-2 &amp; 3 \\
+2 &amp; 0
+\end{vmatrix} = (-2 \times 0) - (3 \times 2) = -6
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{vmatrix}
+4 &amp; 3 \\
+-1 &amp; 0
+\end{vmatrix} = (4 \times 0) - (3 \times -1) = 3
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{vmatrix}
+4 &amp; -2 \\
+-1 &amp; 2
+\end{vmatrix} = (4 \times 2) - (-2 \times -1) = 6
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\text{det}(M^{3 \times 3}_{13}) = (3 \times -6) - (1 \times 3) + (-2 \times (-6))= -18 - 3 - 12 = -33\]</div>
+<div class="math notranslate nohighlight">
+\[C_{13}=(-1)^{1+3} det(M_{13})=(-1)^4(-33)=33\]</div>
+<p>Hitung <span class="math notranslate nohighlight">\(C_{14}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+(M_{14}^{3 \times 3})= \begin{bmatrix}
+3 &amp; 1 &amp; 1 \\
+4 &amp; -2 &amp; 0 \\
+-1 &amp; 2 &amp; -3
+\end{bmatrix}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[det(M_{14}^{3 \times 3})=3C_{11}^({3 \times 3}) + 1C_{12}^({3 \times 3}) + 1C_{13}^({3 \times 3})\]</div>
+<p>Untuk menghitung <span class="math notranslate nohighlight">\(C_{ij} = (-1)^{i+j}\)</span> det <span class="math notranslate nohighlight">\((M_{ij}^{2 \times 2})\)</span>, jadi perlu mencari minor 2x2 berikutnya</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\text{det}(M^{3 \times 3}_{14}) = 3 \cdot 
+\begin{vmatrix}
+-2 &amp; 0 \\
+2 &amp; -3
+\end{vmatrix} 
+-1 \cdot 
+\begin{vmatrix}
+4 &amp; 0 \\
+-1 &amp; -3
+\end{vmatrix} 
++ 1 \cdot 
+\begin{vmatrix}
+4 &amp; -2 \\
+-1 &amp; 2
+\end{vmatrix} 
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{vmatrix}
+-2 &amp; 0 \\
+2 &amp; -3
+\end{vmatrix} = (-2 \times -3) - (0 \times 2) = 6
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{vmatrix}
+4 &amp; 0 \\
+-1 &amp; -3
+\end{vmatrix} = (4 \times -3) - (0 \times -1) = -12
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{vmatrix}
+4 &amp; -2 \\
+-1 &amp; 2
+\end{vmatrix} = (4 \times 2) - (-2 \times -1) = 6
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\text{det}(M^{3 \times 3}_{14}) = (3 \times -6) - (1 \times -12) + (1 \times 6)= -18 + 12 + 6 = 36\]</div>
+<div class="math notranslate nohighlight">
+\[C_{14}=(-1)^{1+4} det(M_{14})=(-1)^5(36)=-36\]</div>
+<p><strong>Untuk</strong> <span class="math notranslate nohighlight">\(M_{14}\)</span> <strong>diperoleh:</strong></p>
+<div class="math notranslate nohighlight">
+\[det(M_{14})=1(3) + 0(C_{12}) + (2)(33) + 4(36) = 3 + 66 + 144= 213\]</div>
+<p><strong>Untuk <span class="math notranslate nohighlight">\(M_{15}\)</span>:</strong></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+M_{15} = \begin{bmatrix}
+1 &amp; 0 &amp; 2 &amp; -3 \\
+3 &amp; 1 &amp; 1 &amp; 2\\
+4 &amp; -2 &amp; 0 &amp; 1\\
+-1 &amp; 2 &amp; -3 &amp; 4 
+\end{bmatrix}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[det(M_{15})=1C_{11} + 0C_{12} + 2C_{13} + -3C_{14}\]</div>
+<p>Hitung <span class="math notranslate nohighlight">\(C_{11}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+(M_{11}^{3 \times 3})= \begin{bmatrix}
+1 &amp; 1 &amp; 2\\
+-2 &amp; 0 &amp; 1\\
+ 2 &amp; -3 &amp; 4 
+\end{bmatrix}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[det(M_{11}^{3 \times 3})=1C_{11}^({3 \times 3}) + 1C_{12}^({3 \times 3}) + 2C_{13}^({3 \times 3})\]</div>
+<p>Untuk menghitung <span class="math notranslate nohighlight">\(C_{ij} = (-1)^{i+j}\)</span> det <span class="math notranslate nohighlight">\((M_{ij}^{2 \times 2})\)</span>, jadi perlu mencari minor 2x2 berikutnya</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\text{det}(M^{3 \times 3}_{11}) = 1 \cdot 
+\begin{vmatrix}
+0 &amp; 1 \\
+-3 &amp; 4
+\end{vmatrix} 
+-1 \cdot 
+\begin{vmatrix}
+-2 &amp; 1 \\
+2 &amp; 4
+\end{vmatrix} 
++ 2 \cdot 
+\begin{vmatrix}
+-2 &amp; 0 \\
+2 &amp; -3
+\end{vmatrix} 
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{vmatrix}
+0 &amp; 1 \\
+-3 &amp; 4
+\end{vmatrix} = (0 \times 4) - (1 \times -3) = 3
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{vmatrix}
+-2 &amp; 1 \\
+2 &amp; 4
+\end{vmatrix} = (-2 \times 4) - (1 \times 2) = -10
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{vmatrix}
+-2 &amp; 0 \\
+2 &amp; -3
+\end{vmatrix} = (-2 \times -3) - (0 \times 2) = 6
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\text{det}(M^{3 \times 3}_{11}) = (1 \times 3) - (1 \times -10) + (2 \times 6)= 3 + 10 + 12 = 25\]</div>
+<div class="math notranslate nohighlight">
+\[C_{11}=(-1)^{1+1} det(M_{11})=(-1)^2(25)=25\]</div>
+<p>Hitung <span class="math notranslate nohighlight">\(C_{13}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+(M_{13}^{3 \times 3})= \begin{bmatrix}
+3 &amp; 1 &amp; 2\\
+4 &amp; -2 &amp; 1\\
+-1 &amp; 2 &amp; 4 
+\end{bmatrix}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[det(M_{13}^{3 \times 3})=3C_{11}^({3 \times 3}) + 1C_{12}^({3 \times 3}) + 2C_{13}^({3 \times 3})\]</div>
+<p>Untuk menghitung <span class="math notranslate nohighlight">\(C_{ij} = (-1)^{i+j}\)</span> det <span class="math notranslate nohighlight">\((M_{ij}^{2 \times 2})\)</span>, jadi perlu mencari minor 2x2 berikutnya</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\text{det}(M^{3 \times 3}_{13}) = 3 \cdot 
+\begin{vmatrix}
+-2 &amp; 1 \\
+2 &amp; 4
+\end{vmatrix} 
+-1 \cdot 
+\begin{vmatrix}
+4 &amp; 1 \\
+-1 &amp; 4
+\end{vmatrix} 
++ 2 \cdot 
+\begin{vmatrix}
+4 &amp; -2 \\
+-1 &amp; 2
+\end{vmatrix} 
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{vmatrix}
+-2 &amp; 1 \\
+2 &amp; 4
+\end{vmatrix} = (-2 \times 4) - (1 \times 2) = -10
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{vmatrix}
+4 &amp; 1 \\
+-1 &amp; 4
+\end{vmatrix} = (4 \times 4) - (1 \times -1) = 17
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{vmatrix}
+4 &amp; -2 \\
+-1 &amp; 2
+\end{vmatrix} = (4 \times 2) - (-2 \times -1) = 6
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\text{det}(M^{3 \times 3}_{13}) = (3 \times -10) - (1 \times 17) + (2 \times 6)= -30 - 17 + 12 = -35\]</div>
+<div class="math notranslate nohighlight">
+\[C_{13}=(-1)^{1+3} det(M_{13})=(-1)^4(-35)=-35\]</div>
+<p>Hitung <span class="math notranslate nohighlight">\(C_{14}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+(M_{14}^{3 \times 3})= \begin{bmatrix}
+3 &amp; 1 &amp; 1 \\
+4 &amp; -2 &amp; 0 \\
+-1 &amp; 2 &amp; -3  
+\end{bmatrix}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[det(M_{14}^{3 \times 3})=3C_{11}^({3 \times 3}) + 1C_{12}^({3 \times 3}) + 1C_{13}^({3 \times 3})\]</div>
+<p>Untuk menghitung <span class="math notranslate nohighlight">\(C_{ij} = (-1)^{i+j}\)</span> det <span class="math notranslate nohighlight">\((M_{ij}^{2 \times 2})\)</span>, jadi perlu mencari minor 2x2 berikutnya</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\text{det}(M^{3 \times 3}_{14}) = 3 \cdot 
+\begin{vmatrix}
+-2 &amp; 0 \\
+2 &amp; -3
+\end{vmatrix} 
+-1 \cdot 
+\begin{vmatrix}
+4 &amp; 0 \\
+-1 &amp; -3
+\end{vmatrix} 
++ 1 \cdot 
+\begin{vmatrix}
+4 &amp; -2 \\
+-1 &amp; 2
+\end{vmatrix} 
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{vmatrix}
+-2 &amp; 0 \\
+2 &amp; -3
+\end{vmatrix} = (-2 \times -3) - (0 \times 2) = 6
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{vmatrix}
+4 &amp; 0 \\
+-1 &amp; -3
+\end{vmatrix} = (4 \times -3) - (0 \times -1) = -12
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{vmatrix}
+4 &amp; -2 \\
+-1 &amp; 2
+\end{vmatrix} = (4 \times 2) - (-2 \times -1) = 6
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\text{det}(M^{3 \times 3}_{14}) = (3 \times 6) - (1 \times -12) + (1\times 6)= 18 + 12 + 6 = 36\]</div>
+<div class="math notranslate nohighlight">
+\[C_{14}=(-1)^{1+4} det(M_{14})=(-1)^5(35)=-36\]</div>
+<p><strong>Untuk</strong> <span class="math notranslate nohighlight">\(M_{14}\)</span> <strong>diperoleh:</strong></p>
+<div class="math notranslate nohighlight">
+\[det(M_{15})=1(25) + 0(C_{12}) + 2(-35) + (-3)(-36) = 25 - 75 + 108=58\]</div>
 </section>
 </section>
 </section>
