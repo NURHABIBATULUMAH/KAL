@@ -381,7 +381,7 @@
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latihan">Latihan</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jawaban">Jawaban</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Jawaban</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2"></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penggabungan-y-x-dengan-y-x">Penggabungan y=x dengan y=-x</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matrik-geser-shear-matrix">Matrik Geser ( Shear Matrix)</a><ul class="visible nav section-nav flex-column">
@@ -399,7 +399,7 @@
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-dan-komposisi">Matriks dan Komposisi:</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-komposisi-transformasi">Contoh Komposisi Transformasi:</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aplikasi-dalam-dunia-nyata">Aplikasi dalam Dunia Nyata:</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Latihan</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Latihan</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas">TUGAS</a><ul class="visible nav section-nav flex-column">
@@ -791,8 +791,53 @@ x
 </div>
 </div>
 </section>
-<section id="id2">
-<h2><a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<section id="penggabungan-y-x-dengan-y-x">
+<h2>Penggabungan y=x dengan y=-x<a class="headerlink" href="#penggabungan-y-x-dengan-y-x" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="n">points</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
+    <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="p">[</span><span class="mf">1.5</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">],</span>
+    <span class="p">[</span><span class="mf">1.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">]</span>
+<span class="p">])</span><span class="o">.</span><span class="n">T</span>
+
+<span class="n">ref_y_eq_x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]])</span>
+<span class="n">ref_y_eq_negx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]])</span>
+
+<span class="n">hasil</span> <span class="o">=</span> <span class="n">ref_y_eq_negx</span> <span class="o">@</span> <span class="n">ref_y_eq_x</span>
+<span class="n">composed</span> <span class="o">=</span> <span class="n">hasil</span> <span class="o">@</span> <span class="n">points</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">points</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">points</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s1">&#39;ro-&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Asal&#39;</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">composed</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">composed</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s1">&#39;mo-&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Refleksi y=x lalu y=-x&#39;</span><span class="p">)</span>
+
+<span class="n">x_vals</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_vals</span><span class="p">,</span> <span class="n">x_vals</span><span class="p">,</span> <span class="s1">&#39;g--&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;y = x&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_vals</span><span class="p">,</span> <span class="o">-</span><span class="n">x_vals</span><span class="p">,</span> <span class="s1">&#39;b--&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;y = -x&#39;</span><span class="p">)</span>
+
+<span class="c1"># Format sumbu dan tampilan</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;k&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;:&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;k&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;:&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s1">&#39;equal&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Komposisi Refleksi: y = x lalu y = -x&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/920946b15204f1df65caf2364993147ae3f74317f6916fec8f43f689bc2688f3.png" src="_images/920946b15204f1df65caf2364993147ae3f74317f6916fec8f43f689bc2688f3.png" />
+</div>
+</div>
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="matrik-geser-shear-matrix">
@@ -1097,8 +1142,8 @@ C = A \times B
 </ul>
 </section>
 <hr class="docutils" />
-<section id="id3">
-<h2>Latihan<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<section id="id2">
+<h2>Latihan<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>Buatlah beberapa operasi  komposisi shear, rotasi dan reflesi  pada 2D untuk titik koordinat (2,2)</p></li>
 <li><p>Buatlah beberapa operasi  komposisi shear, rotasi dan reflesi  pada 2D untuk titik koordinat (2,2) sehingga titik tersebut kembali lagi ke (2,2)</p></li>
@@ -1198,6 +1243,7 @@ d. a x b x c</p>
 <span class="c1"># Ploting titik titik.  x dan y are vektor asal(domain) , x_LT1 dab y_LT1 bayangan (codomain)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="s1">&#39;ro&#39;</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_LT2</span><span class="p">,</span><span class="n">y_LT2</span><span class="p">,</span><span class="s1">&#39;bo&#39;</span><span class="p">)</span>
+
 
 <span class="c1"># Menghubungkan titik dengan baris</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">,</span><span class="n">ls</span><span class="o">=</span><span class="s2">&quot;--&quot;</span><span class="p">)</span>
@@ -1545,7 +1591,7 @@ z \\
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latihan">Latihan</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jawaban">Jawaban</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Jawaban</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2"></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penggabungan-y-x-dengan-y-x">Penggabungan y=x dengan y=-x</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matrik-geser-shear-matrix">Matrik Geser ( Shear Matrix)</a><ul class="visible nav section-nav flex-column">
@@ -1563,7 +1609,7 @@ z \\
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-dan-komposisi">Matriks dan Komposisi:</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-komposisi-transformasi">Contoh Komposisi Transformasi:</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aplikasi-dalam-dunia-nyata">Aplikasi dalam Dunia Nyata:</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Latihan</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Latihan</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas">TUGAS</a><ul class="visible nav section-nav flex-column">
