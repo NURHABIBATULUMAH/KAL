@@ -182,6 +182,7 @@
 
 
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Eignvalue dan Eignvector</a></li>
+
 </ul>
 
     </div>
@@ -374,13 +375,42 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-eignvalues-dan-eignvector">1. Definisi Eignvalues dan Eignvector</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-eign-value-dan-eign-vector-dari">Mencari Eign Value dan Eign Vector dari:</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a">a.</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Eignvalue dan Eignvector</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-eignvalues-dan-eignvector">Definisi Eignvalues dan Eignvector</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretasi-geometris">Interpretasi Geometris:</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#b">b.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-eign-value-dan-eign-vector-dengan-plynomial-characteristic">Mencari Eign Value dan Eign Vector dengan plynomial characteristic</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-soal">Contoh Soal</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-a">Matriks A:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jawaban">Jawaban:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-1-menentukan-eigenvalue">Langkah 1: Menentukan Eigenvalue</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-2-menentukan-eigenvector">Langkah 2: Menentukan Eigenvector</a></li>
 </ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#rightarrow-begin-bmatrix-0-0-0-0-end-bmatrix-begin-bmatrix-x-y-end-bmatrix">[
+\Rightarrow \begin{bmatrix}
+0 &amp; 0 \
+0 &amp; 0
+\end{bmatrix}
+\begin{bmatrix}
+x \
+y
+\end{bmatrix}</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-b">Matriks B:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-1-mencari-eigenvalue">Langkah 1: Mencari Eigenvalue</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-2-mencari-eigenvector">Langkah 2: Mencari Eigenvector</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#untuk-lambda-2">Untuk ( \lambda = -2 ):</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#untuk-lambda-4">Untuk ( \lambda = 4 ):</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-akhir">Hasil Akhir:</a></li>
+</ul>
+</li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -394,32 +424,166 @@
   <section class="tex2jax_ignore mathjax_ignore" id="eignvalue-dan-eignvector">
 <h1>Eignvalue dan Eignvector<a class="headerlink" href="#eignvalue-dan-eignvector" title="Link to this heading">#</a></h1>
 <section id="definisi-eignvalues-dan-eignvector">
-<h2>1. Definisi Eignvalues dan Eignvector<a class="headerlink" href="#definisi-eignvalues-dan-eignvector" title="Link to this heading">#</a></h2>
+<h2>Definisi Eignvalues dan Eignvector<a class="headerlink" href="#definisi-eignvalues-dan-eignvector" title="Link to this heading">#</a></h2>
+<p>Untuk sebuah matriks kuadrat ( A ), sebuah <strong>eigenvalue</strong> ( \lambda ) dan <strong>eigenvector</strong> ( \vec{v} ) memenuhi:</p>
+<p>[
+A\vec{v} = \lambda \vec{v}
+]</p>
+<p>dengan syarat:</p>
+<ul class="simple">
+<li><p>( \vec{v} \ne \vec{0} ) (vektor tak nol)</p></li>
+<li><p>( \lambda \in \mathbb{R} ) atau ( \mathbb{C} )</p></li>
+<li><p>( A \in \mathbb{R}^{n \times n} ) atau ( \mathbb{C}^{n \times n} )</p></li>
+</ul>
+<section id="interpretasi-geometris">
+<h3>Interpretasi Geometris:<a class="headerlink" href="#interpretasi-geometris" title="Link to this heading">#</a></h3>
+<p>Vektor ( \vec{v} ) tidak berubah arah ketika dikalikan dengan matriks ( A ), hanya panjang dan arahnya yang bisa berubah (karena ( \lambda )).</p>
 </section>
-<section id="mencari-eign-value-dan-eign-vector-dari">
-<h2>Mencari Eign Value dan Eign Vector dari:<a class="headerlink" href="#mencari-eign-value-dan-eign-vector-dari" title="Link to this heading">#</a></h2>
-<section id="a">
-<h3>a.<a class="headerlink" href="#a" title="Link to this heading">#</a></h3>
+</section>
+<section id="mencari-eign-value-dan-eign-vector-dengan-plynomial-characteristic">
+<h2>Mencari Eign Value dan Eign Vector dengan plynomial characteristic<a class="headerlink" href="#mencari-eign-value-dan-eign-vector-dengan-plynomial-characteristic" title="Link to this heading">#</a></h2>
+<p>urutkan eign vector berdasarkan eign value dari besar ke kecil</p>
+<section id="contoh-soal">
+<h3>Contoh Soal<a class="headerlink" href="#contoh-soal" title="Link to this heading">#</a></h3>
+</section>
+<section id="matriks-a">
+<h3>Matriks A:<a class="headerlink" href="#matriks-a" title="Link to this heading">#</a></h3>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 A : 
 \begin{bmatrix}
-2 &amp; 4 \\
-3 &amp; 3
+3 &amp; 0 \\
+0 &amp; 3
 \end{bmatrix}
 \end{split}\]</div>
 </section>
+<section id="jawaban">
+<h3>Jawaban:<a class="headerlink" href="#jawaban" title="Link to this heading">#</a></h3>
 </section>
-<section id="b">
-<h2>b.<a class="headerlink" href="#b" title="Link to this heading">#</a></h2>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-a_{12}: 
+<section id="langkah-1-menentukan-eigenvalue">
+<h3>Langkah 1: Menentukan Eigenvalue<a class="headerlink" href="#langkah-1-menentukan-eigenvalue" title="Link to this heading">#</a></h3>
+<p>Gunakan persamaan karakteristik:</p>
+<p>[
+\det(A - \lambda I) = 0
+]</p>
+<p>[
+A - \lambda I = \begin{bmatrix}
+3 - \lambda &amp; 0 \
+0 &amp; 3 - \lambda
+\end{bmatrix}
+]</p>
+<p>[
+\Rightarrow \det(A - \lambda I) = (3 - \lambda)^2 = 0
+]</p>
+<p>[
+\Rightarrow \lambda_1 = 3, \quad \lambda_2 = 3
+]</p>
+<p>Nilai eigen ( \lambda = 3 ) muncul dua kali → <strong>aljabar multiplicity = 2</strong></p>
+</section>
+<hr class="docutils" />
+<section id="langkah-2-menentukan-eigenvector">
+<h3>Langkah 2: Menentukan Eigenvector<a class="headerlink" href="#langkah-2-menentukan-eigenvector" title="Link to this heading">#</a></h3>
+<p>Kita cari vektor ( \vec{v} ) yang memenuhi:</p>
+<p>[
+(A - 3I)\vec{v} = \vec{0}
+]</p>
+</section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="rightarrow-begin-bmatrix-0-0-0-0-end-bmatrix-begin-bmatrix-x-y-end-bmatrix">
+<h1>[
+\Rightarrow \begin{bmatrix}
+0 &amp; 0 \
+0 &amp; 0
+\end{bmatrix}
 \begin{bmatrix}
-2 &amp; 4 \\
-3 &amp; 3
+x \
+y
+\end{bmatrix}<a class="headerlink" href="#rightarrow-begin-bmatrix-0-0-0-0-end-bmatrix-begin-bmatrix-x-y-end-bmatrix" title="Link to this heading">#</a></h1>
+<p>\begin{bmatrix}
+0 \
+0
 \end{bmatrix}
-\end{split}\]</div>
+]</p>
+<p>Persamaan ini selalu benar untuk semua vektor tak nol.</p>
+<p>[
+\Rightarrow \text{Eigenvector: } \vec{v} =
+\begin{bmatrix}
+x \
+y
+\end{bmatrix}, \quad \text{dengan } x, y \in \mathbb{R},\ (x, y) \neq (0, 0)
+]</p>
+<section id="matriks-b">
+<h2>Matriks B:<a class="headerlink" href="#matriks-b" title="Link to this heading">#</a></h2>
+<p>[
+B = \begin{bmatrix}
+-2 &amp; 0 \
+0 &amp; 4
+\end{bmatrix}
+]</p>
+<hr class="docutils" />
+</section>
+<section id="langkah-1-mencari-eigenvalue">
+<h2>Langkah 1: Mencari Eigenvalue<a class="headerlink" href="#langkah-1-mencari-eigenvalue" title="Link to this heading">#</a></h2>
+<p>[
+\det(B - \lambda I) = (-2 - \lambda)(4 - \lambda) = 0
+]</p>
+<p>[
+\Rightarrow \lambda_1 = -2,\quad \lambda_2 = 4
+]</p>
+<hr class="docutils" />
+</section>
+<section id="langkah-2-mencari-eigenvector">
+<h2>Langkah 2: Mencari Eigenvector<a class="headerlink" href="#langkah-2-mencari-eigenvector" title="Link to this heading">#</a></h2>
+<section id="untuk-lambda-2">
+<h3>Untuk ( \lambda = -2 ):<a class="headerlink" href="#untuk-lambda-2" title="Link to this heading">#</a></h3>
+<p>[
+(B + 2I) =
+\begin{bmatrix}
+0 &amp; 0 \
+0 &amp; 6
+\end{bmatrix}
+\Rightarrow y = 0
+]</p>
+<p>[
+\vec{v}_1 =
+x\begin{bmatrix}
+1 \
+0
+\end{bmatrix}, \quad x \ne 0
+]</p>
+</section>
+<section id="untuk-lambda-4">
+<h3>Untuk ( \lambda = 4 ):<a class="headerlink" href="#untuk-lambda-4" title="Link to this heading">#</a></h3>
+<p>[
+(B - 4I) =
+\begin{bmatrix}
+-6 &amp; 0 \
+0 &amp; 0
+\end{bmatrix}
+\Rightarrow x = 0
+]</p>
+<p>[
+\vec{v}_2 =
+y\begin{bmatrix}
+0 \
+1
+\end{bmatrix}, \quad y \ne 0
+]</p>
+<hr class="docutils" />
+</section>
+</section>
+<section id="hasil-akhir">
+<h2>Hasil Akhir:<a class="headerlink" href="#hasil-akhir" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Eigenvalue: ( \lambda = -2, \lambda = 4 )</p></li>
+<li><p>Eigenvector:</p>
+<ul>
+<li><p>Untuk ( \lambda = -2 ): ( \vec{v}_1 = x \begin{bmatrix} 1 \ 0 \end{bmatrix} )</p></li>
+<li><p>Untuk ( \lambda = 4 ): ( \vec{v}_2 = y \begin{bmatrix} 0 \ 1 \end{bmatrix} )</p></li>
+</ul>
+</li>
+</ul>
 </section>
 </section>
 
@@ -479,13 +643,42 @@ a_{12}:
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-eignvalues-dan-eignvector">1. Definisi Eignvalues dan Eignvector</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-eign-value-dan-eign-vector-dari">Mencari Eign Value dan Eign Vector dari:</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a">a.</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Eignvalue dan Eignvector</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-eignvalues-dan-eignvector">Definisi Eignvalues dan Eignvector</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretasi-geometris">Interpretasi Geometris:</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#b">b.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-eign-value-dan-eign-vector-dengan-plynomial-characteristic">Mencari Eign Value dan Eign Vector dengan plynomial characteristic</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-soal">Contoh Soal</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-a">Matriks A:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jawaban">Jawaban:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-1-menentukan-eigenvalue">Langkah 1: Menentukan Eigenvalue</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-2-menentukan-eigenvector">Langkah 2: Menentukan Eigenvector</a></li>
 </ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#rightarrow-begin-bmatrix-0-0-0-0-end-bmatrix-begin-bmatrix-x-y-end-bmatrix">[
+\Rightarrow \begin{bmatrix}
+0 &amp; 0 \
+0 &amp; 0
+\end{bmatrix}
+\begin{bmatrix}
+x \
+y
+\end{bmatrix}</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-b">Matriks B:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-1-mencari-eigenvalue">Langkah 1: Mencari Eigenvalue</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-2-mencari-eigenvector">Langkah 2: Mencari Eigenvector</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#untuk-lambda-2">Untuk ( \lambda = -2 ):</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#untuk-lambda-4">Untuk ( \lambda = 4 ):</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-akhir">Hasil Akhir:</a></li>
+</ul>
+</li>
+</ul>
+
   </nav></div>
 
 </div></div>
