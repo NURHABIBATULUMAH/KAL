@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Perkalian Silang &#8212; kal</title>
+    <title>Perkalian Silang (Cross Product) &#8212; kal</title>
   
   
   
@@ -183,9 +183,7 @@
 
 <li class="toctree-l1"><a class="reference internal" href="Eign_val_vec.html">Eignvalue dan Eignvector</a></li>
 <li class="toctree-l1"><a class="reference internal" href="perkalian_dot_product.html">Perkalian Titik (DOT PRODUCT)</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Perkalian Silang</a></li>
-
-
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Perkalian Silang (Cross Product)</a></li>
 
 
 </ul>
@@ -370,7 +368,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Perkalian Silang</h1>
+    <h1>Perkalian Silang (Cross Product)</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -380,11 +378,28 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Perkalian Silang</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-hasil-kali-silang">Definisi Hasil Kali Silang</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-penghitungan-hasil-kali-silang">Contoh Penghitungan Hasil Kali Silang</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#solusi">Solusi</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-soal">contoh soal</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Perkalian Silang (Cross Product)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-hasil-kali-silang">Definisi Hasil Kali Silang</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-penghitungan-hasil-kali-silang">Contoh Penghitungan Hasil Kali Silang</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solusi">Solusi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menggunakan-determinan-untuk-menemukan-perkalian-silang">Menggunakan determinan untuk menemukan perkalian silang</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh">Contoh</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-kali-silang-dan-sudut">Hasil Kali Silang dan Sudut</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi">Implementasi</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#luas-jajaran-genjang">Luas Jajaran Genjang</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas">TUGAS</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tentukan-luas-jajaran-genjang-yang-ditentukan-oleh-vektor">1. Tentukan luas jajaran genjang yang ditentukan oleh vektor</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">2. Tentukan luas jajaran genjang yang ditentukan oleh vektor</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tentukan-luas-segitiga-dengan-titik-titik-sudut">3. Tentukan luas segitiga dengan titik-titik sudut</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">4. Tentukan luas segitiga dengan titik-titik sudut</a></li>
+</ul>
+</li>
 </ul>
 
             </nav>
@@ -397,11 +412,10 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="perkalian-silang">
-<h1>Perkalian Silang<a class="headerlink" href="#perkalian-silang" title="Link to this heading">#</a></h1>
-</section>
+  <section id="perkalian-silang-cross-product">
+<h1>Perkalian Silang (Cross Product)<a class="headerlink" href="#perkalian-silang-cross-product" title="Link to this heading">#</a></h1>
 <section id="definisi-hasil-kali-silang">
-<h1>Definisi Hasil Kali Silang<a class="headerlink" href="#definisi-hasil-kali-silang" title="Link to this heading">#</a></h1>
+<h2>Definisi Hasil Kali Silang<a class="headerlink" href="#definisi-hasil-kali-silang" title="Link to this heading">#</a></h2>
 <p><span class="math notranslate nohighlight">\(\vec{u} = \begin{bmatrix} u_1 \\ u_2 \\ u_3 \end{bmatrix}, \quad
 \vec{v} = \begin{bmatrix} v_1 \\ v_2 \\ v_3 \end{bmatrix}\)</span></p>
 <p>adalah vektor-vektor di <span class="math notranslate nohighlight">\(\mathbb{R}^3.\)</span></p>
@@ -414,14 +428,14 @@ u_1 v_2 - u_2 v_1
 \end{bmatrix}\)</span></p>
 </section>
 <section id="contoh-penghitungan-hasil-kali-silang">
-<h1>Contoh Penghitungan Hasil Kali Silang<a class="headerlink" href="#contoh-penghitungan-hasil-kali-silang" title="Link to this heading">#</a></h1>
+<h2>Contoh Penghitungan Hasil Kali Silang<a class="headerlink" href="#contoh-penghitungan-hasil-kali-silang" title="Link to this heading">#</a></h2>
 <p>Misalkan</p>
 <p><span class="math notranslate nohighlight">\(\vec{u} = \begin{bmatrix} 2 \\ -1 \\ 4 \end{bmatrix} \quad \text{dan} \quad
 \vec{v} = \begin{bmatrix} 3 \\ 2 \\ 5 \end{bmatrix}\)</span></p>
 <p>Temukan <span class="math notranslate nohighlight">\(\vec{u} \times \vec{v}\)</span>, dan verifikasi bahwa hasil kali silang ini tegak lurus terhadap baik <span class="math notranslate nohighlight">\(\vec{u} \) maupun \( \vec{v}.\)</span></p>
 </section>
 <section id="solusi">
-<h1>Solusi<a class="headerlink" href="#solusi" title="Link to this heading">#</a></h1>
+<h2>Solusi<a class="headerlink" href="#solusi" title="Link to this heading">#</a></h2>
 <p>Menggunakan definisi:</p>
 <p><span class="math notranslate nohighlight">\(\vec{u} \times \vec{v} =
 \begin{bmatrix}
@@ -435,11 +449,173 @@ u_1 v_2 - u_2 v_1
 7
 \end{bmatrix}\)</span></p>
 </section>
-<section id="contoh-soal">
-<h1>contoh soal<a class="headerlink" href="#contoh-soal" title="Link to this heading">#</a></h1>
-<p><span class="math notranslate nohighlight">\(\vec{i} = (1, 0, 0), \quad \vec{j} = (0, 1, 0)\)</span></p>
-<p><span class="math notranslate nohighlight">\(\vec{i} \times \vec{j} = (0, 0, 1) = \vec{k}\)</span></p>
-<p><span class="math notranslate nohighlight">\(- (\vec{j} \times \vec{i}) = (0, 0, -1) = -\vec{k}\)</span></p>
+<section id="menggunakan-determinan-untuk-menemukan-perkalian-silang">
+<h2>Menggunakan determinan untuk menemukan perkalian silang<a class="headerlink" href="#menggunakan-determinan-untuk-menemukan-perkalian-silang" title="Link to this heading">#</a></h2>
+<p>Pertama, kita membentuk array <span class="math notranslate nohighlight">\(3 \times 3\)</span> seperti yang ditunjukkan di bawah ini:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{vmatrix}
+\hat{i} &amp; \hat{j} &amp; \hat{k} \\
+u_1 &amp; u_2 &amp; u_3 \\
+v_1 &amp; v_2 &amp; v_3
+\end{vmatrix}\end{split}\]</div>
+<p>Hasil dari <span class="math notranslate nohighlight">\(\mathbf{u} \times \mathbf{v}\)</span> adalah:</p>
+<p><span class="math notranslate nohighlight">\(\mathbf{u} \times \mathbf{v} = 
+\begin{vmatrix}
+\hat{i} &amp; \hat{j} &amp; \hat{k} \\
+u_1 &amp; u_2 &amp; u_3 \\
+v_1 &amp; v_2 &amp; v_3
+\end{vmatrix}=(u_2v_3 - u_3v_2) \hat{i} - (u_1v_3 - u_3v_1) \hat{j} + (u_1v_2 - u_2v_1) \hat{k}\)</span></p>
+<section id="contoh">
+<h3>Contoh<a class="headerlink" href="#contoh" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{vmatrix}
+\hat{i} &amp; \hat{j} &amp; \hat{k} \\
+2 &amp; -1 &amp; 4 \\
+3 &amp; 2 &amp; 5
+\end{vmatrix}
+\Rightarrow -\frac{1}{2} \cdot \frac{4}{5} \hat{i} = -(-1)(5) - (4)(2)\hat{i} = -13\hat{i}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{vmatrix}
+\hat{i} &amp; \hat{j} &amp; \hat{k} \\
+2 &amp; -1 &amp; 4 \\
+3 &amp; 2 &amp; 5
+\end{vmatrix}
+\Rightarrow \frac{2}{3} \cdot \frac{4}{5} \hat{j} = -(-2)(5) - (4)(3)\hat{j} = -2\hat{j}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{vmatrix}
+\hat{i} &amp; \hat{j} &amp; \hat{k} \\
+2 &amp; -1 &amp; 4 \\
+3 &amp; 2 &amp; 5
+\end{vmatrix}
+\Rightarrow -\frac{1}{2} \cdot \frac{2}{3} \hat{k} = (2)(2) - (-1)(3)\hat{k} = 7\hat{k}
+\end{split}\]</div>
+<p><em>Sehingga</em></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\mathbf{u} \times \mathbf{v} =
+\begin{vmatrix}
+\hat{i} &amp; \hat{j} &amp; \hat{k} \\
+2 &amp; -1 &amp; 4 \\
+3 &amp; 2 &amp; 5
+\end{vmatrix}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+= 13\hat{i} - (-2)\hat{j} + 7\hat{k} =
+\begin{bmatrix}
+-13 \\
+2 \\
+7
+\end{bmatrix}
+\end{split}\]</div>
+</section>
+</section>
+<section id="hasil-kali-silang-dan-sudut">
+<h2>Hasil Kali Silang dan Sudut<a class="headerlink" href="#hasil-kali-silang-dan-sudut" title="Link to this heading">#</a></h2>
+<p>Misalkan <span class="math notranslate nohighlight">\(\mathbf{u}\)</span> dan <span class="math notranslate nohighlight">\(\mathbf{v}\)</span> adalah vektor tak nol di <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span>. Maka:</p>
+<div class="math notranslate nohighlight">
+\[
+\|\mathbf{u} \times \mathbf{v}\| = \|\mathbf{u}\| \|\mathbf{v}\| \sin(\theta),
+\]</div>
+<p>di mana <span class="math notranslate nohighlight">\(\theta\)</span>, <span class="math notranslate nohighlight">\(0 \leq \theta \leq \pi\)</span>, adalah sudut antara <span class="math notranslate nohighlight">\(\mathbf{u}\)</span> dan <span class="math notranslate nohighlight">\(\mathbf{v}\)</span>.</p>
+</section>
+</section>
+<section id="implementasi">
+<h1>Implementasi<a class="headerlink" href="#implementasi" title="Link to this heading">#</a></h1>
+<section id="luas-jajaran-genjang">
+<h2>Luas Jajaran Genjang<a class="headerlink" href="#luas-jajaran-genjang" title="Link to this heading">#</a></h2>
+<p>Secara geometris, luas jajaran genjang adalah:</p>
+<p><span class="math notranslate nohighlight">\(A = bh\)</span> di mana <span class="math notranslate nohighlight">\(b\)</span> adalah panjang alas dan <span class="math notranslate nohighlight">\(h\)</span> adalah tinggi jajaran genjang, seperti yang ditunjukkan dalam Gambar (a).</p>
+<p>Ketika kita mendefinisikan aturan jajaran genjang penjumlahan vektor, dua vektor <span class="math notranslate nohighlight">\(\vec{u}\)</span> dan <span class="math notranslate nohighlight">\(\vec{v}\)</span> membentuk jajaran genjang jika ditarik dari titik awal yang sama, seperti yang ditunjukkan dalam Gambar (b). Trigonometri mengatakan bahwa: <span class="math notranslate nohighlight">\(h = \lVert \vec{u} \rVert \sin(\theta),\)</span> sehingga luas jajaran genjang adalah:</p>
+<p><span class="math notranslate nohighlight">\(A = \lVert \vec{u} \rVert \lVert \vec{v} \rVert \sin(\theta) = \lVert \vec{u} \times \vec{v} \rVert.\)</span></p>
+</section>
+</section>
+<section id="tugas">
+<h1>TUGAS<a class="headerlink" href="#tugas" title="Link to this heading">#</a></h1>
+<section id="tentukan-luas-jajaran-genjang-yang-ditentukan-oleh-vektor">
+<h2>1. Tentukan luas jajaran genjang yang ditentukan oleh vektor<a class="headerlink" href="#tentukan-luas-jajaran-genjang-yang-ditentukan-oleh-vektor" title="Link to this heading">#</a></h2>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\vec{u} = \begin{bmatrix} 1 \\ 2 \end{bmatrix}, \quad 
+\vec{v} = \begin{bmatrix} 2 \\ 1 \end{bmatrix}.
+\end{split}\]</div>
+<p><em>Jawab:</em></p>
+<p>Anggap vektor berada di <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span>:</p>
+<p><span class="math notranslate nohighlight">\(\vec{u} = \begin{bmatrix} 1 \\ 2 \\ 0 \end{bmatrix}, \quad 
+\vec{v} = \begin{bmatrix} 2 \\ 1 \\ 0 \end{bmatrix}\)</span></p>
+<p>Hasil kali silang:
+<span class="math notranslate nohighlight">\(\vec{u} \times \vec{v} = \begin{bmatrix} 0 \\ 0 \\ -3 \end{bmatrix}\)</span></p>
+<p>Luas jajaran genjang:
+<span class="math notranslate nohighlight">\(A = \|\vec{u} \times \vec{v}\| = \sqrt{(-3)^2} = \boxed{3}\)</span></p>
+</section>
+<hr class="docutils" />
+<section id="id1">
+<h2>2. Tentukan luas jajaran genjang yang ditentukan oleh vektor<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\vec{u} = \begin{bmatrix} 2 \\ 0 \end{bmatrix}, \quad 
+\vec{v} = \begin{bmatrix} 0 \\ 3 \end{bmatrix}.
+\end{split}\]</div>
+<p><em>Jawab:</em></p>
+<p>Bentuk 3 dimensi:
+<span class="math notranslate nohighlight">\(\vec{u} = \begin{bmatrix} 2 \\ 0 \\ 0 \end{bmatrix}, \quad 
+\vec{v} = \begin{bmatrix} 0 \\ 3 \\ 0 \end{bmatrix}\)</span></p>
+<p>Hasil kali silang:
+<span class="math notranslate nohighlight">\(\vec{u} \times \vec{v} = \begin{bmatrix} 0 \\ 0 \\ 6 \end{bmatrix}\)</span></p>
+<p>Luas jajaran genjang:
+<span class="math notranslate nohighlight">\(A = \|\vec{u} \times \vec{v}\| = \boxed{6}\)</span></p>
+</section>
+<hr class="docutils" />
+<section id="tentukan-luas-segitiga-dengan-titik-titik-sudut">
+<h2>3. Tentukan luas segitiga dengan titik-titik sudut<a class="headerlink" href="#tentukan-luas-segitiga-dengan-titik-titik-sudut" title="Link to this heading">#</a></h2>
+<p><span class="math notranslate nohighlight">\((0, 0, 0), \quad (1, 3, -1), \quad (2, 1, 1).\)</span></p>
+<p><em>Jawab:</em></p>
+<p>Vektor:
+<span class="math notranslate nohighlight">\(\vec{AB} = \begin{bmatrix} 1 \\ 3 \\ -1 \end{bmatrix}, \quad 
+\vec{AC} = \begin{bmatrix} 2 \\ 1 \\ 1 \end{bmatrix}\)</span></p>
+<p>Hasil kali silang:
+<span class="math notranslate nohighlight">\(\vec{AB} \times \vec{AC} = 
+\begin{bmatrix}
+(3)(1) - (-1)(1) \\
+-[(1)(1) - (-1)(2)] \\
+(1)(1) - (3)(2)
+\end{bmatrix}
+= \begin{bmatrix} 4 \\ -3 \\ -5 \end{bmatrix}\)</span></p>
+<p>Panjang vektor:
+<span class="math notranslate nohighlight">\(\|\vec{AB} \times \vec{AC}\| = \sqrt{4^2 + (-3)^2 + (-5)^2} = \sqrt{50}\)</span></p>
+<p>Luas segitiga:
+<span class="math notranslate nohighlight">\(A = \frac{1}{2} \sqrt{50} = \boxed{\frac{5\sqrt{2}}{1}}\)</span></p>
+</section>
+<hr class="docutils" />
+<section id="id2">
+<h2>4. Tentukan luas segitiga dengan titik-titik sudut<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<div class="math notranslate nohighlight">
+\[
+(5, 2, -1), \quad (3, 6, 2), \quad (1, 0, 4).
+\]</div>
+<p><em>Jawab:</em></p>
+<p>Vektor:
+<span class="math notranslate nohighlight">\(\vec{AB} = \begin{bmatrix} -2 \\ 4 \\ 3 \end{bmatrix}, \quad 
+\vec{AC} = \begin{bmatrix} -4 \\ -2 \\ 5 \end{bmatrix}\)</span></p>
+<p>Hasil kali silang:
+<span class="math notranslate nohighlight">\(\vec{AB} \times \vec{AC} =
+\begin{bmatrix}
+(4)(5) - (3)(-2) \\
+-[-2(5) - 3(-4)] \\
+-2(-2) - 4(-4)
+\end{bmatrix}
+= \begin{bmatrix} 26 \\ -2 \\ 20 \end{bmatrix}\)</span></p>
+<p>Panjang:
+<span class="math notranslate nohighlight">\(\|\vec{AB} \times \vec{AC}\| = \sqrt{26^2 + (-2)^2 + 20^2} = \sqrt{1080}\)</span></p>
+<p>Luas segitiga:
+<span class="math notranslate nohighlight">\(A = \frac{1}{2} \sqrt{1080} = \boxed{\frac{\sqrt{1080}}{2}}\)</span></p>
+<hr class="docutils" />
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -498,11 +674,28 @@ u_1 v_2 - u_2 v_1
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Perkalian Silang</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-hasil-kali-silang">Definisi Hasil Kali Silang</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-penghitungan-hasil-kali-silang">Contoh Penghitungan Hasil Kali Silang</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#solusi">Solusi</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-soal">contoh soal</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Perkalian Silang (Cross Product)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-hasil-kali-silang">Definisi Hasil Kali Silang</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-penghitungan-hasil-kali-silang">Contoh Penghitungan Hasil Kali Silang</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solusi">Solusi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menggunakan-determinan-untuk-menemukan-perkalian-silang">Menggunakan determinan untuk menemukan perkalian silang</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh">Contoh</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-kali-silang-dan-sudut">Hasil Kali Silang dan Sudut</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi">Implementasi</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#luas-jajaran-genjang">Luas Jajaran Genjang</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas">TUGAS</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tentukan-luas-jajaran-genjang-yang-ditentukan-oleh-vektor">1. Tentukan luas jajaran genjang yang ditentukan oleh vektor</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">2. Tentukan luas jajaran genjang yang ditentukan oleh vektor</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tentukan-luas-segitiga-dengan-titik-titik-sudut">3. Tentukan luas segitiga dengan titik-titik sudut</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">4. Tentukan luas segitiga dengan titik-titik sudut</a></li>
+</ul>
+</li>
 </ul>
 
   </nav></div>
