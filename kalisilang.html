@@ -185,7 +185,6 @@
 <li class="toctree-l1"><a class="reference internal" href="perkalian_dot_product.html">Perkalian Titik (DOT PRODUCT)</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Perkalian Silang (Cross Product)</a></li>
 
-
 </ul>
 
     </div>
@@ -387,10 +386,10 @@
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-kali-silang-dan-sudut">Hasil Kali Silang dan Sudut</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi">Implementasi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#luas-jajaran-genjang">Luas Jajaran Genjang</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi">Implementasi</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#luas-jajaran-genjang">Luas Jajaran Genjang</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas">TUGAS</a><ul class="visible nav section-nav flex-column">
@@ -524,15 +523,15 @@ v_1 &amp; v_2 &amp; v_3
 \]</div>
 <p>di mana <span class="math notranslate nohighlight">\(\theta\)</span>, <span class="math notranslate nohighlight">\(0 \leq \theta \leq \pi\)</span>, adalah sudut antara <span class="math notranslate nohighlight">\(\mathbf{u}\)</span> dan <span class="math notranslate nohighlight">\(\mathbf{v}\)</span>.</p>
 </section>
-</section>
 <section id="implementasi">
-<h1>Implementasi<a class="headerlink" href="#implementasi" title="Link to this heading">#</a></h1>
+<h2>Implementasi<a class="headerlink" href="#implementasi" title="Link to this heading">#</a></h2>
 <section id="luas-jajaran-genjang">
-<h2>Luas Jajaran Genjang<a class="headerlink" href="#luas-jajaran-genjang" title="Link to this heading">#</a></h2>
+<h3>Luas Jajaran Genjang<a class="headerlink" href="#luas-jajaran-genjang" title="Link to this heading">#</a></h3>
 <p>Secara geometris, luas jajaran genjang adalah:</p>
 <p><span class="math notranslate nohighlight">\(A = bh\)</span> di mana <span class="math notranslate nohighlight">\(b\)</span> adalah panjang alas dan <span class="math notranslate nohighlight">\(h\)</span> adalah tinggi jajaran genjang, seperti yang ditunjukkan dalam Gambar (a).</p>
 <p>Ketika kita mendefinisikan aturan jajaran genjang penjumlahan vektor, dua vektor <span class="math notranslate nohighlight">\(\vec{u}\)</span> dan <span class="math notranslate nohighlight">\(\vec{v}\)</span> membentuk jajaran genjang jika ditarik dari titik awal yang sama, seperti yang ditunjukkan dalam Gambar (b). Trigonometri mengatakan bahwa: <span class="math notranslate nohighlight">\(h = \lVert \vec{u} \rVert \sin(\theta),\)</span> sehingga luas jajaran genjang adalah:</p>
 <p><span class="math notranslate nohighlight">\(A = \lVert \vec{u} \rVert \lVert \vec{v} \rVert \sin(\theta) = \lVert \vec{u} \times \vec{v} \rVert.\)</span></p>
+</section>
 </section>
 </section>
 <section id="tugas">
@@ -544,7 +543,7 @@ v_1 &amp; v_2 &amp; v_3
 \vec{u} = \begin{bmatrix} 1 \\ 2 \end{bmatrix}, \quad 
 \vec{v} = \begin{bmatrix} 2 \\ 1 \end{bmatrix}.
 \end{split}\]</div>
-<p><em>Jawab:</em></p>
+<p><strong>Jawab:</strong></p>
 <p>Anggap vektor berada di <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span>:</p>
 <p><span class="math notranslate nohighlight">\(\vec{u} = \begin{bmatrix} 1 \\ 2 \\ 0 \end{bmatrix}, \quad 
 \vec{v} = \begin{bmatrix} 2 \\ 1 \\ 0 \end{bmatrix}\)</span></p>
@@ -561,7 +560,7 @@ v_1 &amp; v_2 &amp; v_3
 \vec{u} = \begin{bmatrix} 2 \\ 0 \end{bmatrix}, \quad 
 \vec{v} = \begin{bmatrix} 0 \\ 3 \end{bmatrix}.
 \end{split}\]</div>
-<p><em>Jawab:</em></p>
+<p><strong>Jawab:</strong></p>
 <p>Bentuk 3 dimensi:
 <span class="math notranslate nohighlight">\(\vec{u} = \begin{bmatrix} 2 \\ 0 \\ 0 \end{bmatrix}, \quad 
 \vec{v} = \begin{bmatrix} 0 \\ 3 \\ 0 \end{bmatrix}\)</span></p>
@@ -574,7 +573,7 @@ v_1 &amp; v_2 &amp; v_3
 <section id="tentukan-luas-segitiga-dengan-titik-titik-sudut">
 <h2>3. Tentukan luas segitiga dengan titik-titik sudut<a class="headerlink" href="#tentukan-luas-segitiga-dengan-titik-titik-sudut" title="Link to this heading">#</a></h2>
 <p><span class="math notranslate nohighlight">\((0, 0, 0), \quad (1, 3, -1), \quad (2, 1, 1).\)</span></p>
-<p><em>Jawab:</em></p>
+<p><strong>Jawab:</strong></p>
 <p>Vektor:
 <span class="math notranslate nohighlight">\(\vec{AB} = \begin{bmatrix} 1 \\ 3 \\ -1 \end{bmatrix}, \quad 
 \vec{AC} = \begin{bmatrix} 2 \\ 1 \\ 1 \end{bmatrix}\)</span></p>
@@ -598,7 +597,7 @@ v_1 &amp; v_2 &amp; v_3
 \[
 (5, 2, -1), \quad (3, 6, 2), \quad (1, 0, 4).
 \]</div>
-<p><em>Jawab:</em></p>
+<p><strong>Jawab:</strong></p>
 <p>Vektor:
 <span class="math notranslate nohighlight">\(\vec{AB} = \begin{bmatrix} -2 \\ 4 \\ 3 \end{bmatrix}, \quad 
 \vec{AC} = \begin{bmatrix} -4 \\ -2 \\ 5 \end{bmatrix}\)</span></p>
@@ -683,10 +682,10 @@ v_1 &amp; v_2 &amp; v_3
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-kali-silang-dan-sudut">Hasil Kali Silang dan Sudut</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi">Implementasi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#luas-jajaran-genjang">Luas Jajaran Genjang</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi">Implementasi</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#luas-jajaran-genjang">Luas Jajaran Genjang</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas">TUGAS</a><ul class="visible nav section-nav flex-column">
