@@ -60,6 +60,8 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'svd';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -184,6 +186,7 @@
 <li class="toctree-l1"><a class="reference internal" href="kalisilang.html">Perkalian Silang (Cross Product)</a></li>
 
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Singular Value Decomposition</a></li>
+
 
 </ul>
 
@@ -385,6 +388,18 @@
 </li>
 </ul>
 </li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-langkah-svd">Langkah-Langkah SVD</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-awal">Matriks Awal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-transpose-a">Mencari Transpose A</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hitung-a-t-a">Hitung <span class="math notranslate nohighlight">\(A^T A\)</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cari-nilai-eigen-a-t-a">Cari Nilai Eigen <span class="math notranslate nohighlight">\(A^T A\)</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#singular-value">Singular Value</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cari-vektor-eigen-untuk-v">Cari Vektor Eigen untuk <span class="math notranslate nohighlight">\(V\)</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-v">Matriks V</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cari-u">Cari U</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-akhir-svd">Hasil Akhir SVD</a></li>
+</ul>
+</li>
 </ul>
 
             </nav>
@@ -407,6 +422,164 @@
 <section id="id1">
 <h3><a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
 </section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="langkah-langkah-svd">
+<h1>Langkah-Langkah SVD<a class="headerlink" href="#langkah-langkah-svd" title="Link to this heading">#</a></h1>
+<section id="matriks-awal">
+<h2>Matriks Awal<a class="headerlink" href="#matriks-awal" title="Link to this heading">#</a></h2>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A = \begin{bmatrix}
+3 &amp; 1 \\
+1 &amp; 3
+\end{bmatrix}
+\end{split}\]</div>
+</section>
+<section id="mencari-transpose-a">
+<h2>Mencari Transpose A<a class="headerlink" href="#mencari-transpose-a" title="Link to this heading">#</a></h2>
+<p>Transpose = baris jadi kolom:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A^T = \begin{bmatrix}
+3 &amp; 1 \\
+1 &amp; 3
+\end{bmatrix}
+\end{split}\]</div>
+<p>Karena <span class="math notranslate nohighlight">\(A\)</span> simetris, maka <span class="math notranslate nohighlight">\(A^T = A\)</span>.</p>
+</section>
+<section id="hitung-a-t-a">
+<h2>Hitung <span class="math notranslate nohighlight">\(A^T A\)</span><a class="headerlink" href="#hitung-a-t-a" title="Link to this heading">#</a></h2>
+<div class="math notranslate nohighlight">
+\[\begin{split}A^T A = A A =
+\begin{bmatrix} 3 &amp; 1 \\ 1 &amp; 3 \end{bmatrix}
+\begin{bmatrix} 3 &amp; 1 \\ 1 &amp; 3 \end{bmatrix}
+=\begin{bmatrix}
+10 &amp; 6 \\
+6 &amp; 10
+\end{bmatrix}\end{split}\]</div>
+</section>
+<section id="cari-nilai-eigen-a-t-a">
+<h2>Cari Nilai Eigen <span class="math notranslate nohighlight">\(A^T A\)</span><a class="headerlink" href="#cari-nilai-eigen-a-t-a" title="Link to this heading">#</a></h2>
+<div class="math notranslate nohighlight">
+\[
+\det(A^T A - \lambda I) = 0
+\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\det \begin{bmatrix}
+10 - \lambda &amp; 6 \\
+6 &amp; 10 - \lambda
+\end{bmatrix} = 0
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[
+(10 - \lambda)^2 - 36 = 0
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+(10 - \lambda)^2 = 36
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+10 - \lambda = \pm 6
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\lambda = 10 \mp 6
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\Rightarrow \lambda_1 = 16, \quad \lambda_2 = 4
+\]</div>
+</section>
+<section id="singular-value">
+<h2>Singular Value<a class="headerlink" href="#singular-value" title="Link to this heading">#</a></h2>
+<div class="math notranslate nohighlight">
+\[
+\sigma_1 = \sqrt{16} = 4, \quad \sigma_2 = \sqrt{4} = 2
+\]</div>
+</section>
+<section id="cari-vektor-eigen-untuk-v">
+<h2>Cari Vektor Eigen untuk <span class="math notranslate nohighlight">\(V\)</span><a class="headerlink" href="#cari-vektor-eigen-untuk-v" title="Link to this heading">#</a></h2>
+<p>Untuk <span class="math notranslate nohighlight">\(\lambda = 16\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix} -6 &amp; 6 \\ 6 &amp; -6 \end{bmatrix}
+\Rightarrow v_1 = v_2
+\end{split}\]</div>
+<p>Normalisasi:</p>
+<div class="math notranslate nohighlight">
+\[
+v_1 = \frac{1}{\sqrt{2}}, \quad v_2 = \frac{1}{\sqrt{2}}
+\]</div>
+<p>Untuk <span class="math notranslate nohighlight">\(\lambda = 4\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix} 6 &amp; 6 \\ 6 &amp; 6 \end{bmatrix}
+\Rightarrow v_1 = -v_2
+\end{split}\]</div>
+<p>Normalisasi:</p>
+<div class="math notranslate nohighlight">
+\[
+v_1 = \frac{1}{\sqrt{2}}, \quad v_2 = -\frac{1}{\sqrt{2}}
+\]</div>
+</section>
+<section id="matriks-v">
+<h2>Matriks V<a class="headerlink" href="#matriks-v" title="Link to this heading">#</a></h2>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+V = \begin{bmatrix}
+\frac{1}{\sqrt{2}} &amp; \frac{1}{\sqrt{2}} \\
+\frac{1}{\sqrt{2}} &amp; -\frac{1}{\sqrt{2}}
+\end{bmatrix}
+\end{split}\]</div>
+</section>
+<section id="cari-u">
+<h2>Cari U<a class="headerlink" href="#cari-u" title="Link to this heading">#</a></h2>
+<div class="math notranslate nohighlight">
+\[
+U = A V \Sigma^{-1}
+\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A V =
+\begin{bmatrix}
+2 \sqrt{2} &amp; \sqrt{2} \\
+2 \sqrt{2} &amp; -\sqrt{2}
+\end{bmatrix}
+\end{split}\]</div>
+<p>Normalisasi:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+U = \begin{bmatrix}
+\frac{1}{\sqrt{2}} &amp; \frac{1}{\sqrt{2}} \\
+\frac{1}{\sqrt{2}} &amp; -\frac{1}{\sqrt{2}}
+\end{bmatrix}
+\end{split}\]</div>
+</section>
+<section id="hasil-akhir-svd">
+<h2>Hasil Akhir SVD<a class="headerlink" href="#hasil-akhir-svd" title="Link to this heading">#</a></h2>
+<div class="math notranslate nohighlight">
+\[
+A = U \Sigma V^T
+\]</div>
+<p>dengan:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+U = \begin{bmatrix}
+\frac{1}{\sqrt{2}} &amp; \frac{1}{\sqrt{2}} \\
+\frac{1}{\sqrt{2}} &amp; -\frac{1}{\sqrt{2}}
+\end{bmatrix}, \quad
+\Sigma = \begin{bmatrix}
+4 &amp; 0 \\
+0 &amp; 2
+\end{bmatrix}, \quad
+V = \begin{bmatrix}
+\frac{1}{\sqrt{2}} &amp; \frac{1}{\sqrt{2}} \\
+\frac{1}{\sqrt{2}} &amp; -\frac{1}{\sqrt{2}}
+\end{bmatrix}
+\end{split}\]</div>
 </section>
 </section>
 
@@ -472,6 +645,18 @@
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"></a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-langkah-svd">Langkah-Langkah SVD</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-awal">Matriks Awal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-transpose-a">Mencari Transpose A</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hitung-a-t-a">Hitung <span class="math notranslate nohighlight">\(A^T A\)</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cari-nilai-eigen-a-t-a">Cari Nilai Eigen <span class="math notranslate nohighlight">\(A^T A\)</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#singular-value">Singular Value</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cari-vektor-eigen-untuk-v">Cari Vektor Eigen untuk <span class="math notranslate nohighlight">\(V\)</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-v">Matriks V</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cari-u">Cari U</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-akhir-svd">Hasil Akhir SVD</a></li>
 </ul>
 </li>
 </ul>
